@@ -117,11 +117,11 @@ export function ProductReviewTemplate({ post }: ProductReviewTemplateProps) {
 
           {/* Quick Specs Grid */}
           {reviewData.specs && reviewData.specs.length > 0 && (
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
               {reviewData.specs.map((spec, index) => (
-                <Card key={index} className="p-6 text-center">
-                  <div className="text-sm text-muted-foreground mb-1">{spec.label}</div>
-                  <div className="text-2xl font-bold">{spec.value}</div>
+                <Card key={index} className="p-4 sm:p-6 text-center">
+                  <div className="text-xs sm:text-sm text-muted-foreground mb-1 truncate">{spec.label}</div>
+                  <div className="text-lg sm:text-2xl font-bold truncate">{spec.value}</div>
                 </Card>
               ))}
             </div>
@@ -129,9 +129,11 @@ export function ProductReviewTemplate({ post }: ProductReviewTemplateProps) {
 
           {/* Introduction */}
           <div className="prose prose-lg max-w-none mb-16">
-            <p className="text-xl leading-relaxed text-foreground/90 first-letter:text-6xl first-letter:font-bold first-letter:text-primary first-letter:mr-2 first-letter:float-left first-letter:leading-none first-letter:mt-1">
-              {post.content}
-            </p>
+            <div className="relative pl-6 border-l-4 border-primary/30">
+              <p className="text-xl leading-relaxed text-foreground/90">
+                {post.content}
+              </p>
+            </div>
           </div>
 
           {/* Performance Breakdown */}

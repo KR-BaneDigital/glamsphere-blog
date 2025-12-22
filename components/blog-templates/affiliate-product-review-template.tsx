@@ -76,11 +76,11 @@ export function AffiliateProductReviewTemplate({ post }: AffiliateProductReviewT
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             {/* Left Side - Stats */}
             <div className="space-y-8">
-              <div className="grid grid-cols-2 gap-4 sm:gap-6">
+              <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:gap-6">
                 {typeData.stats.map((stat, index) => (
-                  <div key={index} className="bg-card border-2 border-primary/20 rounded-2xl p-6 text-center hover:border-primary/40 transition-colors shadow-lg">
-                    <div className="text-4xl sm:text-5xl font-bold text-primary mb-2">{stat.value}</div>
-                    <div className="text-sm sm:text-base font-medium text-muted-foreground">{stat.label}</div>
+                  <div key={index} className="bg-card border-2 border-primary/20 rounded-2xl p-4 sm:p-6 text-center hover:border-primary/40 transition-colors shadow-lg">
+                    <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-2 truncate">{stat.value}</div>
+                    <div className="text-xs sm:text-sm lg:text-base font-medium text-muted-foreground truncate">{stat.label}</div>
                   </div>
                 ))}
               </div>
@@ -149,13 +149,8 @@ export function AffiliateProductReviewTemplate({ post }: AffiliateProductReviewT
             </div>
 
             <div className="prose prose-lg max-w-none space-y-6">
-              <div className="bg-accent/20 border-l-4 border-primary rounded-r-xl p-6 sm:p-8">
-                <p className="text-lg sm:text-xl leading-relaxed text-foreground m-0">
-                  <span className="text-6xl sm:text-7xl font-bold text-primary float-left mr-4 leading-none mt-1">
-                    H
-                  </span>
-                  <span dangerouslySetInnerHTML={{ __html: typeData.problemSection.introText }} />
-                </p>
+              <div className="bg-accent/20 border-l-4 border-primary rounded-r-xl p-4 sm:p-6 lg:p-8">
+                <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-foreground m-0 pl-2 sm:pl-4" dangerouslySetInnerHTML={{ __html: typeData.problemSection.introText }} />
               </div>
 
               <p className="text-base sm:text-lg text-foreground/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: typeData.problemSection.mainText }} />
@@ -271,11 +266,14 @@ export function AffiliateProductReviewTemplate({ post }: AffiliateProductReviewT
           </div>
         )}
 
-        {/* Ingredients Breakdown */}
+        {/* Ingredients/Features Breakdown */}
         <section className="mb-20">
           <div className="text-center space-y-4 mb-12">
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold">
-              The Science: Key Ingredients That <span className="text-primary">Actually Work</span>
+              {typeData.ingredients[0]?.name?.toLowerCase().includes('ingredient') || typeData.ingredients[0]?.name?.toLowerCase().includes('formula') || typeData.ingredients[0]?.name?.toLowerCase().includes('acid') || typeData.ingredients[0]?.name?.toLowerCase().includes('vitamin')
+                ? <>The Science: Key Ingredients That <span className="text-primary">Actually Work</span></>
+                : <>Key Features That Make It <span className="text-primary">Stand Out</span></>
+              }
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
           </div>
@@ -651,76 +649,76 @@ export function AffiliateProductReviewTemplate({ post }: AffiliateProductReviewT
 
         {/* Where to Buy CTA */}
         <section>
-          <Card className="p-12 bg-gradient-to-br from-accent/20 to-accent/10 border-2 border-accent/40 text-center">
+          <Card className="p-6 sm:p-8 lg:p-12 bg-gradient-to-br from-accent/20 to-accent/10 border-2 border-accent/40 text-center">
             {typeData.ctaSections?.find((cta: any) => cta.location === 'final') ? (
-              <div className="max-w-3xl mx-auto space-y-8">
-                <h2 className="font-heading text-4xl lg:text-5xl font-bold">
+              <div className="max-w-3xl mx-auto space-y-6 sm:space-y-8">
+                <h2 className="font-heading text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold">
                   {typeData.ctaSections.find((cta: any) => cta.location === 'final')!.headline}
                 </h2>
-                <p className="text-xl text-muted-foreground leading-relaxed">
+                <p className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed">
                   {typeData.ctaSections.find((cta: any) => cta.location === 'final')!.description}
                 </p>
 
-                <div className="pt-6">
+                <div className="pt-4 sm:pt-6">
                   <Button
                     size="lg"
-                    className="gap-3 bg-primary text-primary-foreground hover:bg-primary/90 text-lg font-semibold py-7 px-12 shadow-xl transition-all"
+                    className="gap-2 sm:gap-3 bg-primary text-primary-foreground hover:bg-primary/90 text-base sm:text-lg font-semibold py-5 sm:py-6 lg:py-7 px-8 sm:px-10 lg:px-12 shadow-xl transition-all w-full sm:w-auto"
                     asChild
                   >
                     <a href={typeData.affiliate.affiliateLink} target="_blank" rel="noopener noreferrer nofollow sponsored">
-                      <ShoppingCart className="size-6" />
-                      {typeData.ctaSections.find((cta: any) => cta.location === 'final')!.buttonText}
+                      <ShoppingCart className="size-5 sm:size-6" />
+                      <span className="truncate">{typeData.ctaSections.find((cta: any) => cta.location === 'final')!.buttonText}</span>
                     </a>
                   </Button>
                 </div>
 
-                <div className="pt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-base text-muted-foreground border-t border-primary/20">
+                <div className="pt-6 sm:pt-8 flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-4 sm:gap-x-6 lg:gap-x-8 sm:gap-y-4 text-sm sm:text-base text-muted-foreground border-t border-primary/20">
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="size-6 text-primary" />
-                    <span>Free Shipping</span>
+                    <CheckCircle className="size-5 sm:size-6 text-primary flex-shrink-0" />
+                    <span className="whitespace-nowrap">Free Shipping</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="size-6 text-primary" />
-                    <span>30-Day Returns</span>
+                    <CheckCircle className="size-5 sm:size-6 text-primary flex-shrink-0" />
+                    <span className="whitespace-nowrap">30-Day Returns</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="size-6 text-primary" />
-                    <span>{typeData.reviewsSummary.totalReviews} Reviews</span>
+                    <CheckCircle className="size-5 sm:size-6 text-primary flex-shrink-0" />
+                    <span className="whitespace-nowrap truncate max-w-[200px]">{typeData.reviewsSummary.totalReviews} Reviews</span>
                   </div>
                 </div>
               </div>
             ) : (
-              <div className="max-w-3xl mx-auto space-y-8">
-                <h2 className="font-heading text-4xl lg:text-5xl font-bold">Ready to Transform Your Results?</h2>
-                <p className="text-xl text-muted-foreground leading-relaxed">
+              <div className="max-w-3xl mx-auto space-y-6 sm:space-y-8">
+                <h2 className="font-heading text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold">Ready to Transform Your Results?</h2>
+                <p className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed">
                   Get {typeData.affiliate.productTitle} on Amazon with fast, free shipping.
                 </p>
 
-                <div className="pt-6">
+                <div className="pt-4 sm:pt-6">
                   <Button
                     size="lg"
-                    className="gap-3 bg-primary text-primary-foreground hover:bg-primary/90 text-lg font-semibold py-7 px-12 shadow-xl transition-all"
+                    className="gap-2 sm:gap-3 bg-primary text-primary-foreground hover:bg-primary/90 text-base sm:text-lg font-semibold py-5 sm:py-6 lg:py-7 px-8 sm:px-10 lg:px-12 shadow-xl transition-all w-full sm:w-auto"
                     asChild
                   >
                     <a href={typeData.affiliate.affiliateLink} target="_blank" rel="noopener noreferrer nofollow sponsored">
-                      <ShoppingCart className="size-6" />
-                      Buy Now on Amazon - ${typeData.affiliate.price}
+                      <ShoppingCart className="size-5 sm:size-6" />
+                      <span className="truncate">Buy Now on Amazon - ${typeData.affiliate.price}</span>
                     </a>
                   </Button>
                 </div>
 
-                <div className="pt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-base text-muted-foreground border-t border-primary/20">
+                <div className="pt-6 sm:pt-8 flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-4 sm:gap-x-6 lg:gap-x-8 sm:gap-y-4 text-sm sm:text-base text-muted-foreground border-t border-primary/20">
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="size-6 text-primary" />
-                    <span>Free Shipping</span>
+                    <CheckCircle className="size-5 sm:size-6 text-primary flex-shrink-0" />
+                    <span className="whitespace-nowrap">Free Shipping</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="size-6 text-primary" />
-                    <span>30-Day Returns</span>
+                    <CheckCircle className="size-5 sm:size-6 text-primary flex-shrink-0" />
+                    <span className="whitespace-nowrap">30-Day Returns</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="size-6 text-primary" />
-                    <span>{typeData.reviewsSummary.totalReviews} Reviews</span>
+                    <CheckCircle className="size-5 sm:size-6 text-primary flex-shrink-0" />
+                    <span className="whitespace-nowrap truncate max-w-[200px]">{typeData.reviewsSummary.totalReviews} Reviews</span>
                   </div>
                 </div>
               </div>

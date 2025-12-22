@@ -10,9 +10,11 @@ import { post as nail_prep_set_unlock_salon_quality_manicures_at_home } from './
 import { post as unlock_radiant_hair_herbal_essences_set_for_lush_transformat } from './unlock-radiant-hair-herbal-essences-set-for-lush-transformat.data'
 import { post as elevate_your_elegance_french_tip_nails_review_for_effortless } from './elevate-your-elegance-french-tip-nails-review-for-effortless.data'
 import { post as master_the_art_of_brows_the_brow_pencil_that_elevates_your_l } from './master-the-art-of-brows-the-brow-pencil-that-elevates-your-l.data'
+import { post as revitalize_your_hair_the_rosemary_mint_shampoo_that_refreshe } from './revitalize-your-hair-the-rosemary-mint-shampoo-that-refreshe.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  revitalize_your_hair_the_rosemary_mint_shampoo_that_refreshe,
   master_the_art_of_brows_the_brow_pencil_that_elevates_your_l,
   elevate_your_elegance_french_tip_nails_review_for_effortless,
   unlock_radiant_hair_herbal_essences_set_for_lush_transformat,

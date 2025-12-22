@@ -11,9 +11,11 @@ import { post as unlock_radiant_hair_herbal_essences_set_for_lush_transformat } 
 import { post as elevate_your_elegance_french_tip_nails_review_for_effortless } from './elevate-your-elegance-french-tip-nails-review-for-effortless.data'
 import { post as master_the_art_of_brows_the_brow_pencil_that_elevates_your_l } from './master-the-art-of-brows-the-brow-pencil-that-elevates-your-l.data'
 import { post as revitalize_your_hair_the_rosemary_mint_shampoo_that_refreshe } from './revitalize-your-hair-the-rosemary-mint-shampoo-that-refreshe.data'
+import { post as unlock_thicker_hair_why_the_ogx_biotin_set_is_a_game_changer } from './unlock-thicker-hair-why-the-ogx-biotin-set-is-a-game-changer.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_thicker_hair_why_the_ogx_biotin_set_is_a_game_changer,
   revitalize_your_hair_the_rosemary_mint_shampoo_that_refreshe,
   master_the_art_of_brows_the_brow_pencil_that_elevates_your_l,
   elevate_your_elegance_french_tip_nails_review_for_effortless,

@@ -20,9 +20,11 @@ import { post as unlock_your_nail_game_the_poly_extension_gel_kit_review } from 
 import { post as press_on_nails_instant_glamour_for_effortless_style_transfor } from './press-on-nails-instant-glamour-for-effortless-style-transfor.data'
 import { post as unlock_effortless_elegance_retractable_gel_eyeliner_review } from './unlock-effortless-elegance-retractable-gel-eyeliner-review.data'
 import { post as unlock_luxurious_locks_why_pantene_shampoo_set_is_a_game_cha } from './unlock-luxurious-locks-why-pantene-shampoo-set-is-a-game-cha.data'
+import { post as unlock_your_nail_art_potential_the_ultimate_acrylic_powder_s } from './unlock-your-nail-art-potential-the-ultimate-acrylic-powder-s.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_your_nail_art_potential_the_ultimate_acrylic_powder_s,
   unlock_luxurious_locks_why_pantene_shampoo_set_is_a_game_cha,
   unlock_effortless_elegance_retractable_gel_eyeliner_review,
   press_on_nails_instant_glamour_for_effortless_style_transfor,

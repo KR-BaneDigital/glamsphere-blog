@@ -18,9 +18,11 @@ import { post as unlock_salon_quality_nails_at_home_acrylic_nail_kit_review } fr
 import { post as unlock_gorgeous_length_the_magic_of_the_grow_long_set_review } from './unlock-gorgeous-length-the-magic-of-the-grow-long-set-review.data'
 import { post as unlock_your_nail_game_the_poly_extension_gel_kit_review } from './unlock-your-nail-game-the-poly-extension-gel-kit-review.data'
 import { post as press_on_nails_instant_glamour_for_effortless_style_transfor } from './press-on-nails-instant-glamour-for-effortless-style-transfor.data'
+import { post as unlock_effortless_elegance_retractable_gel_eyeliner_review } from './unlock-effortless-elegance-retractable-gel-eyeliner-review.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_effortless_elegance_retractable_gel_eyeliner_review,
   press_on_nails_instant_glamour_for_effortless_style_transfor,
   unlock_your_nail_game_the_poly_extension_gel_kit_review,
   unlock_gorgeous_length_the_magic_of_the_grow_long_set_review,

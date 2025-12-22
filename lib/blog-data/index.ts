@@ -15,9 +15,11 @@ import { post as unlock_thicker_hair_why_the_ogx_biotin_set_is_a_game_changer } 
 import { post as unleash_your_inner_artist_nail_art_brush_set_for_stunning_de } from './unleash-your-inner-artist-nail-art-brush-set-for-stunning-de.data'
 import { post as unleash_salon_quality_nails_our_nail_drill_kit_review_reveal } from './unleash-salon-quality-nails-our-nail-drill-kit-review-reveal.data'
 import { post as unlock_salon_quality_nails_at_home_acrylic_nail_kit_review } from './unlock-salon-quality-nails-at-home-acrylic-nail-kit-review.data'
+import { post as unlock_gorgeous_length_the_magic_of_the_grow_long_set_review } from './unlock-gorgeous-length-the-magic-of-the-grow-long-set-review.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_gorgeous_length_the_magic_of_the_grow_long_set_review,
   unlock_salon_quality_nails_at_home_acrylic_nail_kit_review,
   unleash_salon_quality_nails_our_nail_drill_kit_review_reveal,
   unleash_your_inner_artist_nail_art_brush_set_for_stunning_de,

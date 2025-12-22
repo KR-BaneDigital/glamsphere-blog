@@ -22,9 +22,11 @@ import { post as unlock_effortless_elegance_retractable_gel_eyeliner_review } fr
 import { post as unlock_luxurious_locks_why_pantene_shampoo_set_is_a_game_cha } from './unlock-luxurious-locks-why-pantene-shampoo-set-is-a-game-cha.data'
 import { post as unlock_your_nail_art_potential_the_ultimate_acrylic_powder_s } from './unlock-your-nail-art-potential-the-ultimate-acrylic-powder-s.data'
 import { post as stila_liquid_liner_unleash_your_eye_artistry_with_precision_ } from './stila-liquid-liner-unleash-your-eye-artistry-with-precision-.data'
+import { post as unlock_strong_gorgeous_nails_ibd_hard_gel_review_secrets } from './unlock-strong-gorgeous-nails-ibd-hard-gel-review-secrets.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_strong_gorgeous_nails_ibd_hard_gel_review_secrets,
   stila_liquid_liner_unleash_your_eye_artistry_with_precision_,
   unlock_your_nail_art_potential_the_ultimate_acrylic_powder_s,
   unlock_luxurious_locks_why_pantene_shampoo_set_is_a_game_cha,

@@ -7,9 +7,11 @@ import { post as nyx_epic_ink_liner_review_the_best_waterproof_vegan_eyeliner } 
 import { post as una_gella_almond_nail_tips_review_216pcs_medium_press_on_per } from './una-gella-almond-nail-tips-review-216pcs-medium-press-on-per.data'
 import { post as bareminerals_original_mineral_veil_the_ultimate_talc_free_se } from './bareminerals-original-mineral-veil-the-ultimate-talc-free-se.data'
 import { post as nail_prep_set_unlock_salon_quality_manicures_at_home } from './nail-prep-set-unlock-salon-quality-manicures-at-home.data'
+import { post as unlock_radiant_hair_herbal_essences_set_for_lush_transformat } from './unlock-radiant-hair-herbal-essences-set-for-lush-transformat.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_radiant_hair_herbal_essences_set_for_lush_transformat,
   nail_prep_set_unlock_salon_quality_manicures_at_home,
   bareminerals_original_mineral_veil_the_ultimate_talc_free_se,
   una_gella_almond_nail_tips_review_216pcs_medium_press_on_per,

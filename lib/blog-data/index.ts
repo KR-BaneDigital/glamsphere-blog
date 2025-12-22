@@ -25,9 +25,11 @@ import { post as stila_liquid_liner_unleash_your_eye_artistry_with_precision_ } 
 import { post as unlock_strong_gorgeous_nails_ibd_hard_gel_review_secrets } from './unlock-strong-gorgeous-nails-ibd-hard-gel-review-secrets.data'
 import { post as unlock_all_day_glam_no_budge_eyeliner_that_stays_in_place } from './unlock-all-day-glam-no-budge-eyeliner-that-stays-in-place.data'
 import { post as unlock_your_eye_game_the_palette_that_elevates_every_look } from './unlock-your-eye-game-the-palette-that-elevates-every-look.data'
+import { post as unleash_your_inner_champion_the_power_of_old_spice_swagger } from './unleash-your-inner-champion-the-power-of-old-spice-swagger.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unleash_your_inner_champion_the_power_of_old_spice_swagger,
   unlock_your_eye_game_the_palette_that_elevates_every_look,
   unlock_all_day_glam_no_budge_eyeliner_that_stays_in_place,
   unlock_strong_gorgeous_nails_ibd_hard_gel_review_secrets,

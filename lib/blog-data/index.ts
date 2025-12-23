@@ -49,9 +49,11 @@ import { post as ocean_timber_set_elevate_your_outdoor_space_with_coastal_cha } 
 import { post as unlock_nail_art_mastery_the_ultimate_acrylic_nail_brush_set_ } from './unlock-nail-art-mastery-the-ultimate-acrylic-nail-brush-set-.data'
 import { post as cat_eye_nails_unlock_the_secret_to_stunning_daring_manicures } from './cat-eye-nails-unlock-the-secret-to-stunning-daring-manicures.data'
 import { post as unleash_your_inner_artist_ucanbe_eyeshadow_palette_review } from './unleash-your-inner-artist-ucanbe-eyeshadow-palette-review.data'
+import { post as short_almond_tips_the_secret_to_effortlessly_chic_nail_perfe } from './short-almond-tips-the-secret-to-effortlessly-chic-nail-perfe.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  short_almond_tips_the_secret_to_effortlessly_chic_nail_perfe,
   unleash_your_inner_artist_ucanbe_eyeshadow_palette_review,
   cat_eye_nails_unlock_the_secret_to_stunning_daring_manicures,
   unlock_nail_art_mastery_the_ultimate_acrylic_nail_brush_set_,

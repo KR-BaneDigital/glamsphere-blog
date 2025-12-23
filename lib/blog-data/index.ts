@@ -37,9 +37,11 @@ import { post as short_almond_tips_elevate_your_nail_game_with_effortless_ele } 
 import { post as press_on_nails_instant_glam_for_effortless_stunning_manicure } from './press-on-nails-instant-glam-for-effortless-stunning-manicure.data'
 import { post as unlock_silky_hair_why_aussie_miracle_moist_is_your_secret_we } from './unlock-silky-hair-why-aussie-miracle-moist-is-your-secret-we.data'
 import { post as long_straight_nails_unlock_the_secret_to_effortlessly_chic_m } from './long-straight-nails-unlock-the-secret-to-effortlessly-chic-m.data'
+import { post as elevate_your_style_the_french_tip_nails_that_redefine_elegan } from './elevate-your-style-the-french-tip-nails-that-redefine-elegan.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  elevate_your_style_the_french_tip_nails_that_redefine_elegan,
   long_straight_nails_unlock_the_secret_to_effortlessly_chic_m,
   unlock_silky_hair_why_aussie_miracle_moist_is_your_secret_we,
   press_on_nails_instant_glam_for_effortless_stunning_manicure,

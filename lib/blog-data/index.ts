@@ -30,9 +30,11 @@ import { post as elevate_your_manicure_the_nail_tips_that_transform_your_look } 
 import { post as unlock_stunning_eyes_covergirl_eyeliner_that_stays_all_day } from './unlock-stunning-eyes-covergirl-eyeliner-that-stays-all-day.data'
 import { post as unlock_relaxation_how_3_in_1_chamomile_transforms_your_self_ } from './unlock-relaxation-how-3-in-1-chamomile-transforms-your-self-.data'
 import { post as brighten_your_gaze_unveiling_the_magic_of_under_eye_brighten } from './brighten-your-gaze-unveiling-the-magic-of-under-eye-brighten.data'
+import { post as unveiling_radiance_why_rose_garden_gel_is_your_skin_s_new_be } from './unveiling-radiance-why-rose-garden-gel-is-your-skin-s-new-be.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unveiling_radiance_why_rose_garden_gel_is_your_skin_s_new_be,
   brighten_your_gaze_unveiling_the_magic_of_under_eye_brighten,
   unlock_relaxation_how_3_in_1_chamomile_transforms_your_self_,
   unlock_stunning_eyes_covergirl_eyeliner_that_stays_all_day,

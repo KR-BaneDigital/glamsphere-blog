@@ -29,9 +29,11 @@ import { post as unleash_your_inner_champion_the_power_of_old_spice_swagger } fr
 import { post as elevate_your_manicure_the_nail_tips_that_transform_your_look } from './elevate-your-manicure-the-nail-tips-that-transform-your-look.data'
 import { post as unlock_stunning_eyes_covergirl_eyeliner_that_stays_all_day } from './unlock-stunning-eyes-covergirl-eyeliner-that-stays-all-day.data'
 import { post as unlock_relaxation_how_3_in_1_chamomile_transforms_your_self_ } from './unlock-relaxation-how-3-in-1-chamomile-transforms-your-self-.data'
+import { post as brighten_your_gaze_unveiling_the_magic_of_under_eye_brighten } from './brighten-your-gaze-unveiling-the-magic-of-under-eye-brighten.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  brighten_your_gaze_unveiling_the_magic_of_under_eye_brighten,
   unlock_relaxation_how_3_in_1_chamomile_transforms_your_self_,
   unlock_stunning_eyes_covergirl_eyeliner_that_stays_all_day,
   elevate_your_manicure_the_nail_tips_that_transform_your_look,

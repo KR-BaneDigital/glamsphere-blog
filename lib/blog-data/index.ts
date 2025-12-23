@@ -46,9 +46,11 @@ import { post as medium_almond_tips_elevate_your_nail_game_with_effortless_el } 
 import { post as instant_nail_art_how_nail_strips_turn_your_tips_into_masterp } from './instant-nail-art-how-nail-strips-turn-your-tips-into-masterp.data'
 import { post as unleash_your_inner_artist_bestland_eyeshadow_palette_review } from './unleash-your-inner-artist-bestland-eyeshadow-palette-review.data'
 import { post as ocean_timber_set_elevate_your_outdoor_space_with_coastal_cha } from './ocean-timber-set-elevate-your-outdoor-space-with-coastal-cha.data'
+import { post as unlock_nail_art_mastery_the_ultimate_acrylic_nail_brush_set_ } from './unlock-nail-art-mastery-the-ultimate-acrylic-nail-brush-set-.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_nail_art_mastery_the_ultimate_acrylic_nail_brush_set_,
   ocean_timber_set_elevate_your_outdoor_space_with_coastal_cha,
   unleash_your_inner_artist_bestland_eyeshadow_palette_review,
   instant_nail_art_how_nail_strips_turn_your_tips_into_masterp,

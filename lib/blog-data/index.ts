@@ -43,9 +43,11 @@ import { post as speed_up_your_nail_game_the_acrylic_powders_speed_review } from
 import { post as primelash_mascara_unlock_the_secret_to_effortlessly_bold_las } from './primelash-mascara-unlock-the-secret-to-effortlessly-bold-las.data'
 import { post as unleash_sleek_perfection_a_review_of_matrix_mega_sleek_shamp } from './unleash-sleek-perfection-a-review-of-matrix-mega-sleek-shamp.data'
 import { post as medium_almond_tips_elevate_your_nail_game_with_effortless_el } from './medium-almond-tips-elevate-your-nail-game-with-effortless-el.data'
+import { post as instant_nail_art_how_nail_strips_turn_your_tips_into_masterp } from './instant-nail-art-how-nail-strips-turn-your-tips-into-masterp.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  instant_nail_art_how_nail_strips_turn_your_tips_into_masterp,
   medium_almond_tips_elevate_your_nail_game_with_effortless_el,
   unleash_sleek_perfection_a_review_of_matrix_mega_sleek_shamp,
   primelash_mascara_unlock_the_secret_to_effortlessly_bold_las,

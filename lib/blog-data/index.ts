@@ -35,9 +35,11 @@ import { post as glamermaid_nails_unlock_the_secret_to_stunning_salon_quality } 
 import { post as unlock_silky_hair_the_biosilk_duo_set_that_transforms_your_r } from './unlock-silky-hair-the-biosilk-duo-set-that-transforms-your-r.data'
 import { post as short_almond_tips_elevate_your_nail_game_with_effortless_ele } from './short-almond-tips-elevate-your-nail-game-with-effortless-ele.data'
 import { post as press_on_nails_instant_glam_for_effortless_stunning_manicure } from './press-on-nails-instant-glam-for-effortless-stunning-manicure.data'
+import { post as unlock_silky_hair_why_aussie_miracle_moist_is_your_secret_we } from './unlock-silky-hair-why-aussie-miracle-moist-is-your-secret-we.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_silky_hair_why_aussie_miracle_moist_is_your_secret_we,
   press_on_nails_instant_glam_for_effortless_stunning_manicure,
   short_almond_tips_elevate_your_nail_game_with_effortless_ele,
   unlock_silky_hair_the_biosilk_duo_set_that_transforms_your_r,

@@ -41,9 +41,11 @@ import { post as elevate_your_style_the_french_tip_nails_that_redefine_elegan } 
 import { post as unlock_luscious_locks_the_hair_bundle_that_transforms_your_t } from './unlock-luscious-locks-the-hair-bundle-that-transforms-your-t.data'
 import { post as speed_up_your_nail_game_the_acrylic_powders_speed_review } from './speed-up-your-nail-game-the-acrylic-powders-speed-review.data'
 import { post as primelash_mascara_unlock_the_secret_to_effortlessly_bold_las } from './primelash-mascara-unlock-the-secret-to-effortlessly-bold-las.data'
+import { post as unleash_sleek_perfection_a_review_of_matrix_mega_sleek_shamp } from './unleash-sleek-perfection-a-review-of-matrix-mega-sleek-shamp.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unleash_sleek_perfection_a_review_of_matrix_mega_sleek_shamp,
   primelash_mascara_unlock_the_secret_to_effortlessly_bold_las,
   speed_up_your_nail_game_the_acrylic_powders_speed_review,
   unlock_luscious_locks_the_hair_bundle_that_transforms_your_t,

@@ -27,9 +27,11 @@ import { post as unlock_all_day_glam_no_budge_eyeliner_that_stays_in_place } fro
 import { post as unlock_your_eye_game_the_palette_that_elevates_every_look } from './unlock-your-eye-game-the-palette-that-elevates-every-look.data'
 import { post as unleash_your_inner_champion_the_power_of_old_spice_swagger } from './unleash-your-inner-champion-the-power-of-old-spice-swagger.data'
 import { post as elevate_your_manicure_the_nail_tips_that_transform_your_look } from './elevate-your-manicure-the-nail-tips-that-transform-your-look.data'
+import { post as unlock_stunning_eyes_covergirl_eyeliner_that_stays_all_day } from './unlock-stunning-eyes-covergirl-eyeliner-that-stays-all-day.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_stunning_eyes_covergirl_eyeliner_that_stays_all_day,
   elevate_your_manicure_the_nail_tips_that_transform_your_look,
   unleash_your_inner_champion_the_power_of_old_spice_swagger,
   unlock_your_eye_game_the_palette_that_elevates_every_look,

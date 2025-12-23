@@ -48,9 +48,11 @@ import { post as unleash_your_inner_artist_bestland_eyeshadow_palette_review } f
 import { post as ocean_timber_set_elevate_your_outdoor_space_with_coastal_cha } from './ocean-timber-set-elevate-your-outdoor-space-with-coastal-cha.data'
 import { post as unlock_nail_art_mastery_the_ultimate_acrylic_nail_brush_set_ } from './unlock-nail-art-mastery-the-ultimate-acrylic-nail-brush-set-.data'
 import { post as cat_eye_nails_unlock_the_secret_to_stunning_daring_manicures } from './cat-eye-nails-unlock-the-secret-to-stunning-daring-manicures.data'
+import { post as unleash_your_inner_artist_ucanbe_eyeshadow_palette_review } from './unleash-your-inner-artist-ucanbe-eyeshadow-palette-review.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unleash_your_inner_artist_ucanbe_eyeshadow_palette_review,
   cat_eye_nails_unlock_the_secret_to_stunning_daring_manicures,
   unlock_nail_art_mastery_the_ultimate_acrylic_nail_brush_set_,
   ocean_timber_set_elevate_your_outdoor_space_with_coastal_cha,

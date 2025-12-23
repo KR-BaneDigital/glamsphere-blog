@@ -32,9 +32,11 @@ import { post as unlock_relaxation_how_3_in_1_chamomile_transforms_your_self_ } 
 import { post as brighten_your_gaze_unveiling_the_magic_of_under_eye_brighten } from './brighten-your-gaze-unveiling-the-magic-of-under-eye-brighten.data'
 import { post as unveiling_radiance_why_rose_garden_gel_is_your_skin_s_new_be } from './unveiling-radiance-why-rose-garden-gel-is-your-skin-s-new-be.data'
 import { post as glamermaid_nails_unlock_the_secret_to_stunning_salon_quality } from './glamermaid-nails-unlock-the-secret-to-stunning-salon-quality.data'
+import { post as unlock_silky_hair_the_biosilk_duo_set_that_transforms_your_r } from './unlock-silky-hair-the-biosilk-duo-set-that-transforms-your-r.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_silky_hair_the_biosilk_duo_set_that_transforms_your_r,
   glamermaid_nails_unlock_the_secret_to_stunning_salon_quality,
   unveiling_radiance_why_rose_garden_gel_is_your_skin_s_new_be,
   brighten_your_gaze_unveiling_the_magic_of_under_eye_brighten,

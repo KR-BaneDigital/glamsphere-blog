@@ -26,7 +26,7 @@ const robotoSlab = Roboto_Slab({
 
 export const metadata: Metadata = {
   verification: {
-    google: '<meta name="google-site-verification" content="x4_CRmoaRuXW5q1kmc_I2GMPar5J2aHAdD2J6pqhC0Y" />'
+    google: ''
   },,
   // Google Search Console Verification,
   title: `${siteConfig.brand.name} | Trusted Insights and Expert Content`,
@@ -82,6 +82,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${montserrat.variable} ${openSans.variable} ${robotoSlab.variable}`}>
       <head>
+        <meta name="google-site-verification" content="x4_CRmoaRuXW5q1kmc_I2GMPar5J2aHAdD2J6pqhC0Y" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

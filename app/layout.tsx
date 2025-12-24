@@ -24,10 +24,7 @@ const robotoSlab = Roboto_Slab({
   display: "swap",
 })
 
-export const metadata: Metadata = {
-  verification: {
-    google: ''
-  },,
+export const metadata: Metadata = {,
   // Google Search Console Verification,
   title: `${siteConfig.brand.name} | Trusted Insights and Expert Content`,
   description: siteConfig.brand.description,

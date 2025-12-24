@@ -50,9 +50,11 @@ import { post as unlock_nail_art_mastery_the_ultimate_acrylic_nail_brush_set_ } 
 import { post as cat_eye_nails_unlock_the_secret_to_stunning_daring_manicures } from './cat-eye-nails-unlock-the-secret-to-stunning-daring-manicures.data'
 import { post as unleash_your_inner_artist_ucanbe_eyeshadow_palette_review } from './unleash-your-inner-artist-ucanbe-eyeshadow-palette-review.data'
 import { post as short_almond_tips_the_secret_to_effortlessly_chic_nail_perfe } from './short-almond-tips-the-secret-to-effortlessly-chic-nail-perfe.data'
+import { post as unlock_effortless_elegance_naked_2_basics_palette_review } from './unlock-effortless-elegance-naked-2-basics-palette-review.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_effortless_elegance_naked_2_basics_palette_review,
   short_almond_tips_the_secret_to_effortlessly_chic_nail_perfe,
   unleash_your_inner_artist_ucanbe_eyeshadow_palette_review,
   cat_eye_nails_unlock_the_secret_to_stunning_daring_manicures,

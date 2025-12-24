@@ -60,9 +60,11 @@ import { post as unlock_radiant_skin_the_rich_moisture_duo_you_can_t_live_wit } 
 import { post as unlock_your_eye_game_wonderskin_eyeliner_for_flawless_flicks } from './unlock-your-eye-game-wonderskin-eyeliner-for-flawless-flicks.data'
 import { post as get_salon_quality_nails_at_home_gel_nail_polish_kit_review } from './get-salon-quality-nails-at-home-gel-nail-polish-kit-review.data'
 import { post as square_nail_tips_elevate_your_manicure_game_in_minutes } from './square-nail-tips-elevate-your-manicure-game-in-minutes.data'
+import { post as say_goodbye_to_salon_visits_electric_nail_drill_unleashed } from './say-goodbye-to-salon-visits-electric-nail-drill-unleashed.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  say_goodbye_to_salon_visits_electric_nail_drill_unleashed,
   square_nail_tips_elevate_your_manicure_game_in_minutes,
   get_salon_quality_nails_at_home_gel_nail_polish_kit_review,
   unlock_your_eye_game_wonderskin_eyeliner_for_flawless_flicks,

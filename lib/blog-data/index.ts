@@ -65,9 +65,11 @@ import { post as unlock_your_inner_artist_the_eye_shadow_set_that_transforms_ } 
 import { post as ouai_fine_set_unlock_silky_salon_quality_hair_at_home } from './ouai-fine-set-unlock-silky-salon-quality-hair-at-home.data'
 import { post as unlock_salon_quality_nails_at_home_gel_nail_strips_review } from './unlock-salon-quality-nails-at-home-gel-nail-strips-review.data'
 import { post as press_on_nails_the_secret_to_salon_quality_manicures_at_home } from './press-on-nails-the-secret-to-salon-quality-manicures-at-home.data'
+import { post as unlock_eye_catching_lashes_the_buxom_mascara_game_changer } from './unlock-eye-catching-lashes-the-buxom-mascara-game-changer.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_eye_catching_lashes_the_buxom_mascara_game_changer,
   press_on_nails_the_secret_to_salon_quality_manicures_at_home,
   unlock_salon_quality_nails_at_home_gel_nail_strips_review,
   ouai_fine_set_unlock_silky_salon_quality_hair_at_home,

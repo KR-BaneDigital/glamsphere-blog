@@ -57,9 +57,11 @@ import { post as unlock_stunning_lashes_high_impact_mascara_that_delivers_dra } 
 import { post as unleash_your_inner_glam_coffin_fake_nails_for_stunning_trans } from './unleash-your-inner-glam-coffin-fake-nails-for-stunning-trans.data'
 import { post as unlock_stunning_lashes_the_magic_of_lash_id_le_mascara_revie } from './unlock-stunning-lashes-the-magic-of-lash-id-le-mascara-revie.data'
 import { post as unlock_radiant_skin_the_rich_moisture_duo_you_can_t_live_wit } from './unlock-radiant-skin-the-rich-moisture-duo-you-can-t-live-wit.data'
+import { post as unlock_your_eye_game_wonderskin_eyeliner_for_flawless_flicks } from './unlock-your-eye-game-wonderskin-eyeliner-for-flawless-flicks.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_your_eye_game_wonderskin_eyeliner_for_flawless_flicks,
   unlock_radiant_skin_the_rich_moisture_duo_you_can_t_live_wit,
   unlock_stunning_lashes_the_magic_of_lash_id_le_mascara_revie,
   unleash_your_inner_glam_coffin_fake_nails_for_stunning_trans,

@@ -53,9 +53,11 @@ import { post as short_almond_tips_the_secret_to_effortlessly_chic_nail_perfe } 
 import { post as unlock_effortless_elegance_naked_2_basics_palette_review } from './unlock-effortless-elegance-naked-2-basics-palette-review.data'
 import { post as unlock_lush_lashes_the_eyelash_conditioner_that_changes_ever } from './unlock-lush-lashes-the-eyelash-conditioner-that-changes-ever.data'
 import { post as revive_your_locks_discover_the_anti_thinning_set_transformat } from './revive-your-locks-discover-the-anti-thinning-set-transformat.data'
+import { post as unlock_stunning_lashes_high_impact_mascara_that_delivers_dra } from './unlock-stunning-lashes-high-impact-mascara-that-delivers-dra.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_stunning_lashes_high_impact_mascara_that_delivers_dra,
   revive_your_locks_discover_the_anti_thinning_set_transformat,
   unlock_lush_lashes_the_eyelash_conditioner_that_changes_ever,
   unlock_effortless_elegance_naked_2_basics_palette_review,

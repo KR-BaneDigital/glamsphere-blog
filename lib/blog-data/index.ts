@@ -52,9 +52,11 @@ import { post as unleash_your_inner_artist_ucanbe_eyeshadow_palette_review } fro
 import { post as short_almond_tips_the_secret_to_effortlessly_chic_nail_perfe } from './short-almond-tips-the-secret-to-effortlessly-chic-nail-perfe.data'
 import { post as unlock_effortless_elegance_naked_2_basics_palette_review } from './unlock-effortless-elegance-naked-2-basics-palette-review.data'
 import { post as unlock_lush_lashes_the_eyelash_conditioner_that_changes_ever } from './unlock-lush-lashes-the-eyelash-conditioner-that-changes-ever.data'
+import { post as revive_your_locks_discover_the_anti_thinning_set_transformat } from './revive-your-locks-discover-the-anti-thinning-set-transformat.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  revive_your_locks_discover_the_anti_thinning_set_transformat,
   unlock_lush_lashes_the_eyelash_conditioner_that_changes_ever,
   unlock_effortless_elegance_naked_2_basics_palette_review,
   short_almond_tips_the_secret_to_effortlessly_chic_nail_perfe,

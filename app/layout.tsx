@@ -1,4 +1,5 @@
 import type React from "react"
+import Script from 'next/script'
 import type { Metadata, Viewport } from "next"
 import { Montserrat, Open_Sans, Roboto_Slab } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
@@ -118,6 +119,21 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         {children}
         <Analytics />
+      
+      {/* Google Analytics 4 */}
+      <Script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=G-TEESW03ZL4`}
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TEESW03ZL4');
+        `}
+      </Script>
       </body>
     </html>
   )

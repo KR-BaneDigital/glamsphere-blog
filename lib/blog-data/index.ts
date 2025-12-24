@@ -61,9 +61,11 @@ import { post as unlock_your_eye_game_wonderskin_eyeliner_for_flawless_flicks } 
 import { post as get_salon_quality_nails_at_home_gel_nail_polish_kit_review } from './get-salon-quality-nails-at-home-gel-nail-polish-kit-review.data'
 import { post as square_nail_tips_elevate_your_manicure_game_in_minutes } from './square-nail-tips-elevate-your-manicure-game-in-minutes.data'
 import { post as say_goodbye_to_salon_visits_electric_nail_drill_unleashed } from './say-goodbye-to-salon-visits-electric-nail-drill-unleashed.data'
+import { post as unlock_your_inner_artist_the_eye_shadow_set_that_transforms_ } from './unlock-your-inner-artist-the-eye-shadow-set-that-transforms-.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_your_inner_artist_the_eye_shadow_set_that_transforms_,
   say_goodbye_to_salon_visits_electric_nail_drill_unleashed,
   square_nail_tips_elevate_your_manicure_game_in_minutes,
   get_salon_quality_nails_at_home_gel_nail_polish_kit_review,

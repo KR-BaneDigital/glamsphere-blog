@@ -63,9 +63,11 @@ import { post as square_nail_tips_elevate_your_manicure_game_in_minutes } from '
 import { post as say_goodbye_to_salon_visits_electric_nail_drill_unleashed } from './say-goodbye-to-salon-visits-electric-nail-drill-unleashed.data'
 import { post as unlock_your_inner_artist_the_eye_shadow_set_that_transforms_ } from './unlock-your-inner-artist-the-eye-shadow-set-that-transforms-.data'
 import { post as ouai_fine_set_unlock_silky_salon_quality_hair_at_home } from './ouai-fine-set-unlock-silky-salon-quality-hair-at-home.data'
+import { post as unlock_salon_quality_nails_at_home_gel_nail_strips_review } from './unlock-salon-quality-nails-at-home-gel-nail-strips-review.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_salon_quality_nails_at_home_gel_nail_strips_review,
   ouai_fine_set_unlock_silky_salon_quality_hair_at_home,
   unlock_your_inner_artist_the_eye_shadow_set_that_transforms_,
   say_goodbye_to_salon_visits_electric_nail_drill_unleashed,

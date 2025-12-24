@@ -69,9 +69,11 @@ import { post as unlock_eye_catching_lashes_the_buxom_mascara_game_changer } fro
 import { post as unlock_silky_smooth_locks_the_magic_of_redken_all_soft_revie } from './unlock-silky-smooth-locks-the-magic-of-redken-all-soft-revie.data'
 import { post as teenitor_nail_glue_unlock_salon_quality_nails_at_home } from './teenitor-nail-glue-unlock-salon-quality-nails-at-home.data'
 import { post as bright_eyes_ahead_unveiling_the_magic_of_luminous_eye_correc } from './bright-eyes-ahead-unveiling-the-magic-of-luminous-eye-correc.data'
+import { post as elevate_your_everyday_look_the_magic_of_the_neutral_nude_pal } from './elevate-your-everyday-look-the-magic-of-the-neutral-nude-pal.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  elevate_your_everyday_look_the_magic_of_the_neutral_nude_pal,
   bright_eyes_ahead_unveiling_the_magic_of_luminous_eye_correc,
   teenitor_nail_glue_unlock_salon_quality_nails_at_home,
   unlock_silky_smooth_locks_the_magic_of_redken_all_soft_revie,

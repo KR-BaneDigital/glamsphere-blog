@@ -55,9 +55,11 @@ import { post as unlock_lush_lashes_the_eyelash_conditioner_that_changes_ever } 
 import { post as revive_your_locks_discover_the_anti_thinning_set_transformat } from './revive-your-locks-discover-the-anti-thinning-set-transformat.data'
 import { post as unlock_stunning_lashes_high_impact_mascara_that_delivers_dra } from './unlock-stunning-lashes-high-impact-mascara-that-delivers-dra.data'
 import { post as unleash_your_inner_glam_coffin_fake_nails_for_stunning_trans } from './unleash-your-inner-glam-coffin-fake-nails-for-stunning-trans.data'
+import { post as unlock_stunning_lashes_the_magic_of_lash_id_le_mascara_revie } from './unlock-stunning-lashes-the-magic-of-lash-id-le-mascara-revie.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_stunning_lashes_the_magic_of_lash_id_le_mascara_revie,
   unleash_your_inner_glam_coffin_fake_nails_for_stunning_trans,
   unlock_stunning_lashes_high_impact_mascara_that_delivers_dra,
   revive_your_locks_discover_the_anti_thinning_set_transformat,

@@ -66,9 +66,11 @@ import { post as ouai_fine_set_unlock_silky_salon_quality_hair_at_home } from '.
 import { post as unlock_salon_quality_nails_at_home_gel_nail_strips_review } from './unlock-salon-quality-nails-at-home-gel-nail-strips-review.data'
 import { post as press_on_nails_the_secret_to_salon_quality_manicures_at_home } from './press-on-nails-the-secret-to-salon-quality-manicures-at-home.data'
 import { post as unlock_eye_catching_lashes_the_buxom_mascara_game_changer } from './unlock-eye-catching-lashes-the-buxom-mascara-game-changer.data'
+import { post as unlock_silky_smooth_locks_the_magic_of_redken_all_soft_revie } from './unlock-silky-smooth-locks-the-magic-of-redken-all-soft-revie.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_silky_smooth_locks_the_magic_of_redken_all_soft_revie,
   unlock_eye_catching_lashes_the_buxom_mascara_game_changer,
   press_on_nails_the_secret_to_salon_quality_manicures_at_home,
   unlock_salon_quality_nails_at_home_gel_nail_strips_review,

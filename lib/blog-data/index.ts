@@ -81,9 +81,11 @@ import { post as olaplex_hair_kit_unlock_your_hair_s_true_potential_for_gorge } 
 import { post as unlock_endless_looks_why_la_palette_nude_is_your_beauty_game } from './unlock-endless-looks-why-la-palette-nude-is-your-beauty-game.data'
 import { post as unlock_luxurious_locks_hempz_shampoo_set_transforms_your_hai } from './unlock-luxurious-locks-hempz-shampoo-set-transforms-your-hai.data'
 import { post as bright_eyes_ahead_unveiling_the_magic_of_under_eye_concealer } from './bright-eyes-ahead-unveiling-the-magic-of-under-eye-concealer.data'
+import { post as unlock_silky_smooth_skin_the_magic_of_moisture_smoothie_duo } from './unlock-silky-smooth-skin-the-magic-of-moisture-smoothie-duo.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_silky_smooth_skin_the_magic_of_moisture_smoothie_duo,
   bright_eyes_ahead_unveiling_the_magic_of_under_eye_concealer,
   unlock_luxurious_locks_hempz_shampoo_set_transforms_your_hai,
   unlock_endless_looks_why_la_palette_nude_is_your_beauty_game,

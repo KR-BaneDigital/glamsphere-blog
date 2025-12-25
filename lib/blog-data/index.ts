@@ -79,9 +79,11 @@ import { post as lilash_serum_the_secret_to_luscious_lashes_you_can_t_ignore } f
 import { post as unlock_luxurious_locks_kristin_ess_shampoo_review_for_shiny_ } from './unlock-luxurious-locks-kristin-ess-shampoo-review-for-shiny-.data'
 import { post as olaplex_hair_kit_unlock_your_hair_s_true_potential_for_gorge } from './olaplex-hair-kit-unlock-your-hair-s-true-potential-for-gorge.data'
 import { post as unlock_endless_looks_why_la_palette_nude_is_your_beauty_game } from './unlock-endless-looks-why-la-palette-nude-is-your-beauty-game.data'
+import { post as unlock_luxurious_locks_hempz_shampoo_set_transforms_your_hai } from './unlock-luxurious-locks-hempz-shampoo-set-transforms-your-hai.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_luxurious_locks_hempz_shampoo_set_transforms_your_hai,
   unlock_endless_looks_why_la_palette_nude_is_your_beauty_game,
   olaplex_hair_kit_unlock_your_hair_s_true_potential_for_gorge,
   unlock_luxurious_locks_kristin_ess_shampoo_review_for_shiny_,

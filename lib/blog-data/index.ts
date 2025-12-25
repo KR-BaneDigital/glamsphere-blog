@@ -76,9 +76,11 @@ import { post as unleash_your_creativity_nail_art_pens_set_for_stunning_maste } 
 import { post as unleash_your_inner_artist_soft_glam_palette_for_effortless_b } from './unleash-your-inner-artist-soft-glam-palette-for-effortless-b.data'
 import { post as unlock_luxurious_locks_the_kundal_shampoo_set_you_can_t_miss } from './unlock-luxurious-locks-the-kundal-shampoo-set-you-can-t-miss.data'
 import { post as lilash_serum_the_secret_to_luscious_lashes_you_can_t_ignore } from './lilash-serum-the-secret-to-luscious-lashes-you-can-t-ignore.data'
+import { post as unlock_luxurious_locks_kristin_ess_shampoo_review_for_shiny_ } from './unlock-luxurious-locks-kristin-ess-shampoo-review-for-shiny-.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_luxurious_locks_kristin_ess_shampoo_review_for_shiny_,
   lilash_serum_the_secret_to_luscious_lashes_you_can_t_ignore,
   unlock_luxurious_locks_the_kundal_shampoo_set_you_can_t_miss,
   unleash_your_inner_artist_soft_glam_palette_for_effortless_b,

@@ -73,9 +73,11 @@ import { post as elevate_your_everyday_look_the_magic_of_the_neutral_nude_pal } 
 import { post as unlock_ultimate_hydration_the_moisture_shampoo_set_that_tran } from './unlock-ultimate-hydration-the-moisture-shampoo-set-that-tran.data'
 import { post as unlock_stunning_length_liquid_lash_mascara_that_delivers_dra } from './unlock-stunning-length-liquid-lash-mascara-that-delivers-dra.data'
 import { post as unleash_your_creativity_nail_art_pens_set_for_stunning_maste } from './unleash-your-creativity-nail-art-pens-set-for-stunning-maste.data'
+import { post as unleash_your_inner_artist_soft_glam_palette_for_effortless_b } from './unleash-your-inner-artist-soft-glam-palette-for-effortless-b.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unleash_your_inner_artist_soft_glam_palette_for_effortless_b,
   unleash_your_creativity_nail_art_pens_set_for_stunning_maste,
   unlock_stunning_length_liquid_lash_mascara_that_delivers_dra,
   unlock_ultimate_hydration_the_moisture_shampoo_set_that_tran,

@@ -90,9 +90,11 @@ import { post as unlock_luxurious_locks_the_rosemary_hair_duo_you_can_t_miss } f
 import { post as dual_ended_eyeshadow_unlock_double_the_glam_with_one_product } from './dual-ended-eyeshadow-unlock-double-the-glam-with-one-product.data'
 import { post as revive_your_locks_unleash_radiance_with_biotin_hair_conditio } from './revive-your-locks-unleash-radiance-with-biotin-hair-conditio.data'
 import { post as unlock_radiant_hair_the_wella_brilliance_set_review_you_can_ } from './unlock-radiant-hair-the-wella-brilliance-set-review-you-can-.data'
+import { post as achieve_salon_quality_nails_at_home_sunuv_uv_light_review } from './achieve-salon-quality-nails-at-home-sunuv-uv-light-review.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  achieve_salon_quality_nails_at_home_sunuv_uv_light_review,
   unlock_radiant_hair_the_wella_brilliance_set_review_you_can_,
   revive_your_locks_unleash_radiance_with_biotin_hair_conditio,
   dual_ended_eyeshadow_unlock_double_the_glam_with_one_product,

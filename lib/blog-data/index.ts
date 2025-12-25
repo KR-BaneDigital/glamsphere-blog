@@ -74,9 +74,11 @@ import { post as unlock_ultimate_hydration_the_moisture_shampoo_set_that_tran } 
 import { post as unlock_stunning_length_liquid_lash_mascara_that_delivers_dra } from './unlock-stunning-length-liquid-lash-mascara-that-delivers-dra.data'
 import { post as unleash_your_creativity_nail_art_pens_set_for_stunning_maste } from './unleash-your-creativity-nail-art-pens-set-for-stunning-maste.data'
 import { post as unleash_your_inner_artist_soft_glam_palette_for_effortless_b } from './unleash-your-inner-artist-soft-glam-palette-for-effortless-b.data'
+import { post as unlock_luxurious_locks_the_kundal_shampoo_set_you_can_t_miss } from './unlock-luxurious-locks-the-kundal-shampoo-set-you-can-t-miss.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_luxurious_locks_the_kundal_shampoo_set_you_can_t_miss,
   unleash_your_inner_artist_soft_glam_palette_for_effortless_b,
   unleash_your_creativity_nail_art_pens_set_for_stunning_maste,
   unlock_stunning_length_liquid_lash_mascara_that_delivers_dra,

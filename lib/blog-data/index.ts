@@ -96,9 +96,11 @@ import { post as wunderbrow_gel_the_secret_to_effortlessly_perfect_brows } from 
 import { post as unlock_radiant_hair_the_chi_moisturize_duo_revolutionizes_hy } from './unlock-radiant-hair-the-chi-moisturize-duo-revolutionizes-hy.data'
 import { post as unlock_radiant_skin_why_neutrogena_moisturizer_is_a_game_cha } from './unlock-radiant-skin-why-neutrogena-moisturizer-is-a-game-cha.data'
 import { post as unlock_all_day_drama_why_extreme_length_mascara_is_your_new_ } from './unlock-all-day-drama-why-extreme-length-mascara-is-your-new-.data'
+import { post as unlock_radiance_why_mineral_face_powder_is_your_skin_s_best_ } from './unlock-radiance-why-mineral-face-powder-is-your-skin-s-best-.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_radiance_why_mineral_face_powder_is_your_skin_s_best_,
   unlock_all_day_drama_why_extreme_length_mascara_is_your_new_,
   unlock_radiant_skin_why_neutrogena_moisturizer_is_a_game_cha,
   unlock_radiant_hair_the_chi_moisturize_duo_revolutionizes_hy,

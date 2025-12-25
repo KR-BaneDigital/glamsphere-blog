@@ -87,9 +87,11 @@ import { post as unlock_your_radiance_the_ultimate_makeup_set_for_flawless_be } 
 import { post as unlock_tropical_radiance_the_coconut_shampoo_set_you_can_t_m } from './unlock-tropical-radiance-the-coconut-shampoo-set-you-can-t-m.data'
 import { post as unlock_your_inner_artist_with_the_rich_foiled_palette_magic } from './unlock-your-inner-artist-with-the-rich-foiled-palette-magic.data'
 import { post as unlock_luxurious_locks_the_rosemary_hair_duo_you_can_t_miss } from './unlock-luxurious-locks-the-rosemary-hair-duo-you-can-t-miss.data'
+import { post as dual_ended_eyeshadow_unlock_double_the_glam_with_one_product } from './dual-ended-eyeshadow-unlock-double-the-glam-with-one-product.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  dual_ended_eyeshadow_unlock_double_the_glam_with_one_product,
   unlock_luxurious_locks_the_rosemary_hair_duo_you_can_t_miss,
   unlock_your_inner_artist_with_the_rich_foiled_palette_magic,
   unlock_tropical_radiance_the_coconut_shampoo_set_you_can_t_m,

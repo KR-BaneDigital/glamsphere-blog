@@ -94,9 +94,11 @@ import { post as achieve_salon_quality_nails_at_home_sunuv_uv_light_review } fro
 import { post as unlock_luxurious_locks_pura_d_or_shampoo_set_review_transfor } from './unlock-luxurious-locks-pura-d-or-shampoo-set-review-transfor.data'
 import { post as wunderbrow_gel_the_secret_to_effortlessly_perfect_brows } from './wunderbrow-gel-the-secret-to-effortlessly-perfect-brows.data'
 import { post as unlock_radiant_hair_the_chi_moisturize_duo_revolutionizes_hy } from './unlock-radiant-hair-the-chi-moisturize-duo-revolutionizes-hy.data'
+import { post as unlock_radiant_skin_why_neutrogena_moisturizer_is_a_game_cha } from './unlock-radiant-skin-why-neutrogena-moisturizer-is-a-game-cha.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_radiant_skin_why_neutrogena_moisturizer_is_a_game_cha,
   unlock_radiant_hair_the_chi_moisturize_duo_revolutionizes_hy,
   wunderbrow_gel_the_secret_to_effortlessly_perfect_brows,
   unlock_luxurious_locks_pura_d_or_shampoo_set_review_transfor,

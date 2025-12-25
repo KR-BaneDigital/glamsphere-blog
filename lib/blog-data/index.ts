@@ -84,9 +84,11 @@ import { post as bright_eyes_ahead_unveiling_the_magic_of_under_eye_concealer } 
 import { post as unlock_silky_smooth_skin_the_magic_of_moisture_smoothie_duo } from './unlock-silky-smooth-skin-the-magic-of-moisture-smoothie-duo.data'
 import { post as unlock_your_eye_glam_the_must_have_cream_eye_shadow_palette_ } from './unlock-your-eye-glam-the-must-have-cream-eye-shadow-palette-.data'
 import { post as unlock_your_radiance_the_ultimate_makeup_set_for_flawless_be } from './unlock-your-radiance-the-ultimate-makeup-set-for-flawless-be.data'
+import { post as unlock_tropical_radiance_the_coconut_shampoo_set_you_can_t_m } from './unlock-tropical-radiance-the-coconut-shampoo-set-you-can-t-m.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_tropical_radiance_the_coconut_shampoo_set_you_can_t_m,
   unlock_your_radiance_the_ultimate_makeup_set_for_flawless_be,
   unlock_your_eye_glam_the_must_have_cream_eye_shadow_palette_,
   unlock_silky_smooth_skin_the_magic_of_moisture_smoothie_duo,

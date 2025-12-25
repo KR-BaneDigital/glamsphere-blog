@@ -80,9 +80,11 @@ import { post as unlock_luxurious_locks_kristin_ess_shampoo_review_for_shiny_ } 
 import { post as olaplex_hair_kit_unlock_your_hair_s_true_potential_for_gorge } from './olaplex-hair-kit-unlock-your-hair-s-true-potential-for-gorge.data'
 import { post as unlock_endless_looks_why_la_palette_nude_is_your_beauty_game } from './unlock-endless-looks-why-la-palette-nude-is-your-beauty-game.data'
 import { post as unlock_luxurious_locks_hempz_shampoo_set_transforms_your_hai } from './unlock-luxurious-locks-hempz-shampoo-set-transforms-your-hai.data'
+import { post as bright_eyes_ahead_unveiling_the_magic_of_under_eye_concealer } from './bright-eyes-ahead-unveiling-the-magic-of-under-eye-concealer.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  bright_eyes_ahead_unveiling_the_magic_of_under_eye_concealer,
   unlock_luxurious_locks_hempz_shampoo_set_transforms_your_hai,
   unlock_endless_looks_why_la_palette_nude_is_your_beauty_game,
   olaplex_hair_kit_unlock_your_hair_s_true_potential_for_gorge,

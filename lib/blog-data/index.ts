@@ -102,9 +102,11 @@ import { post as unlock_your_beauty_potential_the_perfect_10_palette_review } fr
 import { post as revitalize_your_locks_the_hydrating_shampoo_set_that_transfo } from './revitalize-your-locks-the-hydrating-shampoo-set-that-transfo.data'
 import { post as unlock_luxurious_locks_my_bondiboost_shampoo_set_experience } from './unlock-luxurious-locks-my-bondiboost-shampoo-set-experience.data'
 import { post as unlock_luscious_locks_how_plumping_rinse_transforms_your_hai } from './unlock-luscious-locks-how-plumping-rinse-transforms-your-hai.data'
+import { post as revitalize_your_hair_unleash_the_power_of_aveda_shampure_set } from './revitalize-your-hair-unleash-the-power-of-aveda-shampure-set.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  revitalize_your_hair_unleash_the_power_of_aveda_shampure_set,
   unlock_luscious_locks_how_plumping_rinse_transforms_your_hai,
   unlock_luxurious_locks_my_bondiboost_shampoo_set_experience,
   revitalize_your_locks_the_hydrating_shampoo_set_that_transfo,

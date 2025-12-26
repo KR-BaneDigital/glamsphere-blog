@@ -107,9 +107,11 @@ import { post as stay_flawless_all_day_the_ultimate_waterproof_liquid_eyeline } 
 import { post as kerastase_shampoo_unlock_silky_salon_worthy_locks_at_home } from './kerastase-shampoo-unlock-silky-salon-worthy-locks-at-home.data'
 import { post as unlock_perfect_arches_the_ultimate_brow_care_kit_review } from './unlock-perfect-arches-the-ultimate-brow-care-kit-review.data'
 import { post as glow_up_instantly_unveiling_the_magic_of_bronzing_drops } from './glow-up-instantly-unveiling-the-magic-of-bronzing-drops.data'
+import { post as travel_shampoo_set_your_ultimate_solution_for_effortless_hai } from './travel-shampoo-set-your-ultimate-solution-for-effortless-hai.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  travel_shampoo_set_your_ultimate_solution_for_effortless_hai,
   glow_up_instantly_unveiling_the_magic_of_bronzing_drops,
   unlock_perfect_arches_the_ultimate_brow_care_kit_review,
   kerastase_shampoo_unlock_silky_salon_worthy_locks_at_home,

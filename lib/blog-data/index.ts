@@ -118,9 +118,11 @@ import { post as curvlife_glue_kit_elevate_your_craft_with_unstoppable_bondin } 
 import { post as kur_gel_genius_unlock_your_best_skin_with_effortless_hydrati } from './kur-gel-genius-unlock-your-best-skin-with-effortless-hydrati.data'
 import { post as unleash_your_creativity_builder_in_a_bottle_for_effortless_p } from './unleash-your-creativity-builder-in-a-bottle-for-effortless-p.data'
 import { post as indulge_in_luxury_why_the_black_vanilla_set_will_elevate_you } from './indulge-in-luxury-why-the-black-vanilla-set-will-elevate-you.data'
+import { post as get_salon_quality_nails_at_home_gel_x_nail_tips_reviewed } from './get-salon-quality-nails-at-home-gel-x-nail-tips-reviewed.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  get_salon_quality_nails_at_home_gel_x_nail_tips_reviewed,
   indulge_in_luxury_why_the_black_vanilla_set_will_elevate_you,
   unleash_your_creativity_builder_in_a_bottle_for_effortless_p,
   kur_gel_genius_unlock_your_best_skin_with_effortless_hydrati,

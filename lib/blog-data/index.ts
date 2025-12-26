@@ -122,9 +122,11 @@ import { post as get_salon_quality_nails_at_home_gel_x_nail_tips_reviewed } from
 import { post as unlock_stunning_volume_my_game_changing_review_of_volumecare } from './unlock-stunning-volume-my-game-changing-review-of-volumecare.data'
 import { post as glow_on_unveiling_the_magic_of_cc_cream_illumination } from './glow-on-unveiling-the-magic-of-cc-cream-illumination.data'
 import { post as unlock_flake_free_scalps_my_nizoral_bundle_game_changer_revi } from './unlock-flake-free-scalps-my-nizoral-bundle-game-changer-revi.data'
+import { post as unlock_luxurious_locks_the_cerave_shampoo_set_you_ll_love } from './unlock-luxurious-locks-the-cerave-shampoo-set-you-ll-love.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_luxurious_locks_the_cerave_shampoo_set_you_ll_love,
   unlock_flake_free_scalps_my_nizoral_bundle_game_changer_revi,
   glow_on_unveiling_the_magic_of_cc_cream_illumination,
   unlock_stunning_volume_my_game_changing_review_of_volumecare,

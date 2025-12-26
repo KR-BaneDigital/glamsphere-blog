@@ -105,9 +105,11 @@ import { post as unlock_luscious_locks_how_plumping_rinse_transforms_your_hai } 
 import { post as revitalize_your_hair_unleash_the_power_of_aveda_shampure_set } from './revitalize-your-hair-unleash-the-power-of-aveda-shampure-set.data'
 import { post as stay_flawless_all_day_the_ultimate_waterproof_liquid_eyeline } from './stay-flawless-all-day-the-ultimate-waterproof-liquid-eyeline.data'
 import { post as kerastase_shampoo_unlock_silky_salon_worthy_locks_at_home } from './kerastase-shampoo-unlock-silky-salon-worthy-locks-at-home.data'
+import { post as unlock_perfect_arches_the_ultimate_brow_care_kit_review } from './unlock-perfect-arches-the-ultimate-brow-care-kit-review.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_perfect_arches_the_ultimate_brow_care_kit_review,
   kerastase_shampoo_unlock_silky_salon_worthy_locks_at_home,
   stay_flawless_all_day_the_ultimate_waterproof_liquid_eyeline,
   revitalize_your_hair_unleash_the_power_of_aveda_shampure_set,

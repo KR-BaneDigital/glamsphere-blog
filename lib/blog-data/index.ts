@@ -98,9 +98,11 @@ import { post as unlock_radiant_skin_why_neutrogena_moisturizer_is_a_game_cha } 
 import { post as unlock_all_day_drama_why_extreme_length_mascara_is_your_new_ } from './unlock-all-day-drama-why-extreme-length-mascara-is-your-new-.data'
 import { post as unlock_radiance_why_mineral_face_powder_is_your_skin_s_best_ } from './unlock-radiance-why-mineral-face-powder-is-your-skin-s-best-.data'
 import { post as unlock_effortless_shine_the_dream_clean_duo_that_transforms_ } from './unlock-effortless-shine-the-dream-clean-duo-that-transforms-.data'
+import { post as unlock_your_beauty_potential_the_perfect_10_palette_review } from './unlock-your-beauty-potential-the-perfect-10-palette-review.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_your_beauty_potential_the_perfect_10_palette_review,
   unlock_effortless_shine_the_dream_clean_duo_that_transforms_,
   unlock_radiance_why_mineral_face_powder_is_your_skin_s_best_,
   unlock_all_day_drama_why_extreme_length_mascara_is_your_new_,

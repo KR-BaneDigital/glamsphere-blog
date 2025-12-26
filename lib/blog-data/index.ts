@@ -100,9 +100,11 @@ import { post as unlock_radiance_why_mineral_face_powder_is_your_skin_s_best_ } 
 import { post as unlock_effortless_shine_the_dream_clean_duo_that_transforms_ } from './unlock-effortless-shine-the-dream-clean-duo-that-transforms-.data'
 import { post as unlock_your_beauty_potential_the_perfect_10_palette_review } from './unlock-your-beauty-potential-the-perfect-10-palette-review.data'
 import { post as revitalize_your_locks_the_hydrating_shampoo_set_that_transfo } from './revitalize-your-locks-the-hydrating-shampoo-set-that-transfo.data'
+import { post as unlock_luxurious_locks_my_bondiboost_shampoo_set_experience } from './unlock-luxurious-locks-my-bondiboost-shampoo-set-experience.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_luxurious_locks_my_bondiboost_shampoo_set_experience,
   revitalize_your_locks_the_hydrating_shampoo_set_that_transfo,
   unlock_your_beauty_potential_the_perfect_10_palette_review,
   unlock_effortless_shine_the_dream_clean_duo_that_transforms_,

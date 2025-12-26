@@ -116,9 +116,11 @@ import { post as unlock_luxurious_locks_oribe_supershine_set_review_for_radia } 
 import { post as revitalize_your_skin_the_virtue_recovery_set_for_ultimate_re } from './revitalize-your-skin-the-virtue-recovery-set-for-ultimate-re.data'
 import { post as curvlife_glue_kit_elevate_your_craft_with_unstoppable_bondin } from './curvlife-glue-kit-elevate-your-craft-with-unstoppable-bondin.data'
 import { post as kur_gel_genius_unlock_your_best_skin_with_effortless_hydrati } from './kur-gel-genius-unlock-your-best-skin-with-effortless-hydrati.data'
+import { post as unleash_your_creativity_builder_in_a_bottle_for_effortless_p } from './unleash-your-creativity-builder-in-a-bottle-for-effortless-p.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unleash_your_creativity_builder_in_a_bottle_for_effortless_p,
   kur_gel_genius_unlock_your_best_skin_with_effortless_hydrati,
   curvlife_glue_kit_elevate_your_craft_with_unstoppable_bondin,
   revitalize_your_skin_the_virtue_recovery_set_for_ultimate_re,

@@ -103,9 +103,11 @@ import { post as revitalize_your_locks_the_hydrating_shampoo_set_that_transfo } 
 import { post as unlock_luxurious_locks_my_bondiboost_shampoo_set_experience } from './unlock-luxurious-locks-my-bondiboost-shampoo-set-experience.data'
 import { post as unlock_luscious_locks_how_plumping_rinse_transforms_your_hai } from './unlock-luscious-locks-how-plumping-rinse-transforms-your-hai.data'
 import { post as revitalize_your_hair_unleash_the_power_of_aveda_shampure_set } from './revitalize-your-hair-unleash-the-power-of-aveda-shampure-set.data'
+import { post as stay_flawless_all_day_the_ultimate_waterproof_liquid_eyeline } from './stay-flawless-all-day-the-ultimate-waterproof-liquid-eyeline.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  stay_flawless_all_day_the_ultimate_waterproof_liquid_eyeline,
   revitalize_your_hair_unleash_the_power_of_aveda_shampure_set,
   unlock_luscious_locks_how_plumping_rinse_transforms_your_hai,
   unlock_luxurious_locks_my_bondiboost_shampoo_set_experience,

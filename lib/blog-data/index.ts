@@ -120,9 +120,11 @@ import { post as unleash_your_creativity_builder_in_a_bottle_for_effortless_p } 
 import { post as indulge_in_luxury_why_the_black_vanilla_set_will_elevate_you } from './indulge-in-luxury-why-the-black-vanilla-set-will-elevate-you.data'
 import { post as get_salon_quality_nails_at_home_gel_x_nail_tips_reviewed } from './get-salon-quality-nails-at-home-gel-x-nail-tips-reviewed.data'
 import { post as unlock_stunning_volume_my_game_changing_review_of_volumecare } from './unlock-stunning-volume-my-game-changing-review-of-volumecare.data'
+import { post as glow_on_unveiling_the_magic_of_cc_cream_illumination } from './glow-on-unveiling-the-magic-of-cc-cream-illumination.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  glow_on_unveiling_the_magic_of_cc_cream_illumination,
   unlock_stunning_volume_my_game_changing_review_of_volumecare,
   get_salon_quality_nails_at_home_gel_x_nail_tips_reviewed,
   indulge_in_luxury_why_the_black_vanilla_set_will_elevate_you,

@@ -121,9 +121,11 @@ import { post as indulge_in_luxury_why_the_black_vanilla_set_will_elevate_you } 
 import { post as get_salon_quality_nails_at_home_gel_x_nail_tips_reviewed } from './get-salon-quality-nails-at-home-gel-x-nail-tips-reviewed.data'
 import { post as unlock_stunning_volume_my_game_changing_review_of_volumecare } from './unlock-stunning-volume-my-game-changing-review-of-volumecare.data'
 import { post as glow_on_unveiling_the_magic_of_cc_cream_illumination } from './glow-on-unveiling-the-magic-of-cc-cream-illumination.data'
+import { post as unlock_flake_free_scalps_my_nizoral_bundle_game_changer_revi } from './unlock-flake-free-scalps-my-nizoral-bundle-game-changer-revi.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_flake_free_scalps_my_nizoral_bundle_game_changer_revi,
   glow_on_unveiling_the_magic_of_cc_cream_illumination,
   unlock_stunning_volume_my_game_changing_review_of_volumecare,
   get_salon_quality_nails_at_home_gel_x_nail_tips_reviewed,

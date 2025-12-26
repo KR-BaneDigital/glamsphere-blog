@@ -114,9 +114,11 @@ import { post as unlock_gorgeous_curls_the_curl_stretch_pack_that_delivers } fro
 import { post as unlock_stunning_lashes_the_lash_serum_that_transforms_your_l } from './unlock-stunning-lashes-the-lash-serum-that-transforms-your-l.data'
 import { post as unlock_luxurious_locks_oribe_supershine_set_review_for_radia } from './unlock-luxurious-locks-oribe-supershine-set-review-for-radia.data'
 import { post as revitalize_your_skin_the_virtue_recovery_set_for_ultimate_re } from './revitalize-your-skin-the-virtue-recovery-set-for-ultimate-re.data'
+import { post as curvlife_glue_kit_elevate_your_craft_with_unstoppable_bondin } from './curvlife-glue-kit-elevate-your-craft-with-unstoppable-bondin.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  curvlife_glue_kit_elevate_your_craft_with_unstoppable_bondin,
   revitalize_your_skin_the_virtue_recovery_set_for_ultimate_re,
   unlock_luxurious_locks_oribe_supershine_set_review_for_radia,
   unlock_stunning_lashes_the_lash_serum_that_transforms_your_l,

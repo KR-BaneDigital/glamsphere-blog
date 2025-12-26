@@ -111,9 +111,11 @@ import { post as travel_shampoo_set_your_ultimate_solution_for_effortless_hai } 
 import { post as unlock_your_hair_s_hydration_the_magic_of_biolage_hydra_sour } from './unlock-your-hair-s-hydration-the-magic-of-biolage-hydra-sour.data'
 import { post as unlock_luscious_locks_a_deep_dive_into_the_hair_growth_set } from './unlock-luscious-locks-a-deep-dive-into-the-hair-growth-set.data'
 import { post as unlock_gorgeous_curls_the_curl_stretch_pack_that_delivers } from './unlock-gorgeous-curls-the-curl-stretch-pack-that-delivers.data'
+import { post as unlock_stunning_lashes_the_lash_serum_that_transforms_your_l } from './unlock-stunning-lashes-the-lash-serum-that-transforms-your-l.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_stunning_lashes_the_lash_serum_that_transforms_your_l,
   unlock_gorgeous_curls_the_curl_stretch_pack_that_delivers,
   unlock_luscious_locks_a_deep_dive_into_the_hair_growth_set,
   unlock_your_hair_s_hydration_the_magic_of_biolage_hydra_sour,

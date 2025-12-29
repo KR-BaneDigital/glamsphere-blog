@@ -21,7 +21,7 @@ export const siteContent: SiteConfigSchema = {
     id: "512a985e-e13e-4200-8dbd-075390b7b092",
     name: "GlamSphere",
     description: "GlamSphere delivers cutting-edge beauty insights and personalized style solutions through expert-driven content, product innovations, and trendsetting inspiration.",
-    url: "https://glamsphere-blog.vercel.app",
+    url: "https://glamsphere.org",
     logoPath: "/logo.jpg",
     faviconPath: "/logo.jpg",
     ogImagePath: "/logo.jpg",

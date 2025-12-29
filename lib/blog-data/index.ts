@@ -126,9 +126,11 @@ import { post as unlock_luxurious_locks_the_cerave_shampoo_set_you_ll_love } fro
 import { post as discover_olive_june_gel_your_secret_to_salon_worthy_nails_at } from './discover-olive-june-gel-your-secret-to-salon-worthy-nails-at.data'
 import { post as unleash_your_best_hair_days_dove_men_care_shampoo_review } from './unleash-your-best-hair-days-dove-men-care-shampoo-review.data'
 import { post as unlock_your_hair_s_potential_cantu_shampoo_for_luxurious_loc } from './unlock-your-hair-s-potential-cantu-shampoo-for-luxurious-loc.data'
+import { post as unlock_radiant_skin_the_superfood_cleanser_you_can_t_live_wi } from './unlock-radiant-skin-the-superfood-cleanser-you-can-t-live-wi.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  unlock_radiant_skin_the_superfood_cleanser_you_can_t_live_wi,
   unlock_your_hair_s_potential_cantu_shampoo_for_luxurious_loc,
   unleash_your_best_hair_days_dove_men_care_shampoo_review,
   discover_olive_june_gel_your_secret_to_salon_worthy_nails_at,

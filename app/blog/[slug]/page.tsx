@@ -42,6 +42,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     }
   }
 
+  const imageUrl = post.image || "/logo.jpg"
+
   return {
     title: `${post.title} | ${siteConfig.brand.name}`,
     description: post.excerpt,
@@ -51,18 +53,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       type: "article",
       publishedTime: post.date,
       authors: [post.author.name],
-      images: [{
-        url: post.image,
-        width: 1200,
-        height: 630,
-        alt: post.title,
-      }],
+      images: [imageUrl],
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.excerpt,
-      images: [post.image],
+      images: [imageUrl],
     },
   }
 }

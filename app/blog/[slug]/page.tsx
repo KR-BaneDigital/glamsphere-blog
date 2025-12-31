@@ -42,11 +42,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     }
   }
 
-  // Construct absolute image URL
-  const absoluteImageUrl = post.image?.startsWith('http') 
-    ? post.image 
-    : `${siteConfig.brand.url}${post.image}`
-
+  // Images are handled via manual <head> tags in component
   return {
     title: `${post.title} | ${siteConfig.brand.name}`,
     description: post.excerpt,
@@ -56,18 +52,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       type: "article",
       publishedTime: post.date,
       authors: [post.author.name],
-      images: post.image ? [{
-        url: absoluteImageUrl,
-        width: 1200,
-        height: 630,
-        alt: post.title,
-      }] : [],
+      // Images removed - handled manually below
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.excerpt,
-      images: post.image ? [absoluteImageUrl] : [],
+      // Images removed - handled manually below
     },
   }
 }
@@ -80,164 +71,313 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     notFound()
   }
 
+  // Construct absolute image URL for manual meta tags
+  const imageUrl = post.image.startsWith('http')
+    ? post.image
+    : `${siteConfig.brand.url}${post.image}`
+
   // Route to appropriate template based on contentType
   if (post.contentType === 'listicle') {
     return (
-      <div className="min-h-screen">
-        <BlogHeader />
-        <ListicleTemplate post={post} />
-        <BlogFooter />
-      </div>
+      <>
+        <head>
+          <meta property="og:image" content={imageUrl} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:alt" content={post.title} />
+          <meta name="twitter:image" content={imageUrl} />
+        </head>
+        <div className="min-h-screen">
+          <BlogHeader />
+          <ListicleTemplate post={post} />
+          <BlogFooter />
+        </div>
+      </>
     )
   }
 
   if (post.contentType === 'faq') {
     return (
-      <div className="min-h-screen">
-        <BlogHeader />
-        <FAQTemplate post={post} />
-        <BlogFooter />
-      </div>
+      <>
+        <head>
+          <meta property="og:image" content={imageUrl} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:alt" content={post.title} />
+          <meta name="twitter:image" content={imageUrl} />
+        </head>
+        <div className="min-h-screen">
+          <BlogHeader />
+          <FAQTemplate post={post} />
+          <BlogFooter />
+        </div>
+      </>
     )
   }
 
   if (post.contentType === 'how-to-guide') {
     return (
-      <div className="min-h-screen">
-        <BlogHeader />
-        <HowToGuideTemplate post={post} />
-        <BlogFooter />
-      </div>
+      <>
+        <head>
+          <meta property="og:image" content={imageUrl} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:alt" content={post.title} />
+          <meta name="twitter:image" content={imageUrl} />
+        </head>
+        <div className="min-h-screen">
+          <BlogHeader />
+          <HowToGuideTemplate post={post} />
+          <BlogFooter />
+        </div>
+      </>
     )
   }
 
   if (post.contentType === 'case-study') {
     return (
-      <div className="min-h-screen">
-        <BlogHeader />
-        <CaseStudyTemplate post={post} />
-        <BlogFooter />
-      </div>
+      <>
+        <head>
+          <meta property="og:image" content={imageUrl} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:alt" content={post.title} />
+          <meta name="twitter:image" content={imageUrl} />
+        </head>
+        <div className="min-h-screen">
+          <BlogHeader />
+          <CaseStudyTemplate post={post} />
+          <BlogFooter />
+        </div>
+      </>
     )
   }
 
   if (post.contentType === 'tutorial') {
     return (
-      <div className="min-h-screen">
-        <BlogHeader />
-        <TutorialTemplate post={post} />
-        <BlogFooter />
-      </div>
+      <>
+        <head>
+          <meta property="og:image" content={imageUrl} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:alt" content={post.title} />
+          <meta name="twitter:image" content={imageUrl} />
+        </head>
+        <div className="min-h-screen">
+          <BlogHeader />
+          <TutorialTemplate post={post} />
+          <BlogFooter />
+        </div>
+      </>
     )
   }
 
   if (post.contentType === 'thought-leadership') {
     return (
-      <div className="min-h-screen">
-        <BlogHeader />
-        <ThoughtLeadershipTemplate post={post} />
-        <BlogFooter />
-      </div>
+      <>
+        <head>
+          <meta property="og:image" content={imageUrl} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:alt" content={post.title} />
+          <meta name="twitter:image" content={imageUrl} />
+        </head>
+        <div className="min-h-screen">
+          <BlogHeader />
+          <ThoughtLeadershipTemplate post={post} />
+          <BlogFooter />
+        </div>
+      </>
     )
   }
 
   if (post.contentType === 'news-trend') {
     return (
-      <div className="min-h-screen">
-        <BlogHeader />
-        <NewsTrendTemplate post={post} />
-        <BlogFooter />
-      </div>
+      <>
+        <head>
+          <meta property="og:image" content={imageUrl} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:alt" content={post.title} />
+          <meta name="twitter:image" content={imageUrl} />
+        </head>
+        <div className="min-h-screen">
+          <BlogHeader />
+          <NewsTrendTemplate post={post} />
+          <BlogFooter />
+        </div>
+      </>
     )
   }
 
   if (post.contentType === 'product-review') {
     return (
-      <div className="min-h-screen">
-        <BlogHeader />
-        <ProductReviewTemplate post={post} />
-        <BlogFooter />
-      </div>
+      <>
+        <head>
+          <meta property="og:image" content={imageUrl} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:alt" content={post.title} />
+          <meta name="twitter:image" content={imageUrl} />
+        </head>
+        <div className="min-h-screen">
+          <BlogHeader />
+          <ProductReviewTemplate post={post} />
+          <BlogFooter />
+        </div>
+      </>
     )
   }
 
   if (post.contentType === 'product-comparison') {
     return (
-      <div className="min-h-screen">
-        <BlogHeader />
-        <ProductComparisonTemplate post={post} />
-        <BlogFooter />
-      </div>
+      <>
+        <head>
+          <meta property="og:image" content={imageUrl} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:alt" content={post.title} />
+          <meta name="twitter:image" content={imageUrl} />
+        </head>
+        <div className="min-h-screen">
+          <BlogHeader />
+          <ProductComparisonTemplate post={post} />
+          <BlogFooter />
+        </div>
+      </>
     )
   }
 
   if (post.contentType === 'industry-analysis') {
     return (
-      <div className="min-h-screen">
-        <BlogHeader />
-        <IndustryAnalysisTemplate post={post} />
-        <BlogFooter />
-      </div>
+      <>
+        <head>
+          <meta property="og:image" content={imageUrl} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:alt" content={post.title} />
+          <meta name="twitter:image" content={imageUrl} />
+        </head>
+        <div className="min-h-screen">
+          <BlogHeader />
+          <IndustryAnalysisTemplate post={post} />
+          <BlogFooter />
+        </div>
+      </>
     )
   }
 
   if (post.contentType === 'competitor-ranking') {
     return (
-      <div className="min-h-screen">
-        <BlogHeader />
-        <CompetitorRankingTemplate post={post} />
-        <BlogFooter />
-      </div>
+      <>
+        <head>
+          <meta property="og:image" content={imageUrl} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:alt" content={post.title} />
+          <meta name="twitter:image" content={imageUrl} />
+        </head>
+        <div className="min-h-screen">
+          <BlogHeader />
+          <CompetitorRankingTemplate post={post} />
+          <BlogFooter />
+        </div>
+      </>
     )
   }
 
   if (post.contentType === 'debate') {
     return (
-      <div className="min-h-screen">
-        <BlogHeader />
-        <DebateTemplate post={post} />
-        <BlogFooter />
-      </div>
+      <>
+        <head>
+          <meta property="og:image" content={imageUrl} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:alt" content={post.title} />
+          <meta name="twitter:image" content={imageUrl} />
+        </head>
+        <div className="min-h-screen">
+          <BlogHeader />
+          <DebateTemplate post={post} />
+          <BlogFooter />
+        </div>
+      </>
     )
   }
 
   if (post.contentType === 'minimal-essay') {
     return (
-      <div className="min-h-screen">
-        <BlogHeader />
-        <MinimalEssayTemplate post={post} />
-        <BlogFooter />
-      </div>
+      <>
+        <head>
+          <meta property="og:image" content={imageUrl} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:alt" content={post.title} />
+          <meta name="twitter:image" content={imageUrl} />
+        </head>
+        <div className="min-h-screen">
+          <BlogHeader />
+          <MinimalEssayTemplate post={post} />
+          <BlogFooter />
+        </div>
+      </>
     )
   }
 
   if (post.contentType === 'scorecard') {
     return (
-      <div className="min-h-screen">
-        <BlogHeader />
-        <ScorecardTemplate post={post} />
-        <BlogFooter />
-      </div>
+      <>
+        <head>
+          <meta property="og:image" content={imageUrl} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:alt" content={post.title} />
+          <meta name="twitter:image" content={imageUrl} />
+        </head>
+        <div className="min-h-screen">
+          <BlogHeader />
+          <ScorecardTemplate post={post} />
+          <BlogFooter />
+        </div>
+      </>
     )
   }
 
   if (post.contentType === 'commentary') {
     return (
-      <div className="min-h-screen">
-        <BlogHeader />
-        <CommentaryTemplate post={post} />
-        <BlogFooter />
-      </div>
+      <>
+        <head>
+          <meta property="og:image" content={imageUrl} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:alt" content={post.title} />
+          <meta name="twitter:image" content={imageUrl} />
+        </head>
+        <div className="min-h-screen">
+          <BlogHeader />
+          <CommentaryTemplate post={post} />
+          <BlogFooter />
+        </div>
+      </>
     )
   }
 
   if (post.contentType === 'affiliate-product-review') {
     return (
-      <div className="min-h-screen">
-        <BlogHeader />
-        <AffiliateProductReviewTemplate post={post} />
-        <BlogFooter />
-      </div>
+      <>
+        <head>
+          <meta property="og:image" content={imageUrl} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:alt" content={post.title} />
+          <meta name="twitter:image" content={imageUrl} />
+        </head>
+        <div className="min-h-screen">
+          <BlogHeader />
+          <AffiliateProductReviewTemplate post={post} />
+          <BlogFooter />
+        </div>
+      </>
     )
   }
 
@@ -248,8 +388,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const nextPost = currentIndex < blogPosts.length - 1 ? blogPosts[currentIndex + 1] : null
 
   return (
-    <div className="min-h-screen">
-      <BlogHeader />
+    <>
+      <head>
+        <meta property="og:image" content={imageUrl} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={post.title} />
+        <meta name="twitter:image" content={imageUrl} />
+      </head>
+      <div className="min-h-screen">
+        <BlogHeader />
 
       {/* Hero Banner */}
       <section className="border-b border-border bg-background py-12">
@@ -452,5 +600,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
       <BlogFooter />
     </div>
+    </>
   )
 }

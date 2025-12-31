@@ -25,6 +25,7 @@ const robotoSlab = Roboto_Slab({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.brand.url),
   // Google Search Console Verification
   verification: {
     google: "x4_CRmoaRuXW5q1kmc_I2GMPar5J2aHAdD2J6pqhC0Y",

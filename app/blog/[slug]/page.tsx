@@ -62,7 +62,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       card: "summary_large_image",
       title: post.title,
       description: post.excerpt,
-      images: post.image ? [`${siteConfig.brand.url}${post.image}`] : undefined,
+      images: post.image ? [post.image] : undefined,
     },
   }
 }

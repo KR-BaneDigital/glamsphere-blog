@@ -289,7 +289,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/6100m-v7caL._SL1500_.jpg",
+  "image": "/hero-images/unlock-effortless-elegance-naked-2-basics-palette-review.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

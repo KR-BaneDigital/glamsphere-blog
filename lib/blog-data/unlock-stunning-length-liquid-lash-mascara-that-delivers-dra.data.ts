@@ -289,7 +289,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61XEyq3FZ3L._SL1500_.jpg",
+  "image": "/hero-images/unlock-stunning-length-liquid-lash-mascara-that-delivers-dra.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

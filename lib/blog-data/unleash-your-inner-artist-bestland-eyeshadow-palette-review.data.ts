@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61j6kx0t-BL._SL1500_.jpg",
+  "image": "/hero-images/unleash-your-inner-artist-bestland-eyeshadow-palette-review.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

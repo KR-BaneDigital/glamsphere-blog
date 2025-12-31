@@ -289,7 +289,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71vJ+2+remL._SL1500_.jpg",
+  "image": "/hero-images/short-almond-tips-elevate-your-nail-game-with-effortless-ele.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Gel Nails",

@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/81hzyGMV0fL._SL1500_.jpg",
+  "image": "/hero-images/teenitor-nail-glue-unlock-salon-quality-nails-at-home.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Acrylic Nails",

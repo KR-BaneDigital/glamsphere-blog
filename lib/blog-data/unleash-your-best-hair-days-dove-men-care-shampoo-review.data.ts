@@ -289,7 +289,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71Wo3O+idPL.jpg",
+  "image": "/hero-images/unleash-your-best-hair-days-dove-men-care-shampoo-review.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

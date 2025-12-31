@@ -288,7 +288,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/81LB7JZzqLL._SL1500_.jpg",
+  "image": "/hero-images/unlock-thicker-hair-why-the-ogx-biotin-set-is-a-game-changer.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

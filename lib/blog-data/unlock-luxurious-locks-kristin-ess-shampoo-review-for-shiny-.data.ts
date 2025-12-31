@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/610KlIy0BFL._SL1500_.jpg",
+  "image": "/hero-images/unlock-luxurious-locks-kristin-ess-shampoo-review-for-shiny-.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

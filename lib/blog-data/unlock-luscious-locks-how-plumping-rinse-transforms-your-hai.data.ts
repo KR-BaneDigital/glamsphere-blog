@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61PjPqKmLHL.jpg",
+  "image": "/hero-images/unlock-luscious-locks-how-plumping-rinse-transforms-your-hai.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

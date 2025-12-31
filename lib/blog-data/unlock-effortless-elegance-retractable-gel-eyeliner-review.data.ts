@@ -288,7 +288,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61JLhiKMnJL._SL1500_.jpg",
+  "image": "/hero-images/unlock-effortless-elegance-retractable-gel-eyeliner-review.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

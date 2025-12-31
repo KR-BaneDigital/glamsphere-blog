@@ -293,7 +293,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61xdGtF3gCL.jpg",
+  "image": "/hero-images/unlock-radiant-skin-why-neutrogena-moisturizer-is-a-game-cha.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Face Makeup",

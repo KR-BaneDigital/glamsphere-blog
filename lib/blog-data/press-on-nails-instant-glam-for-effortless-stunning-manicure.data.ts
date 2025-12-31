@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/81M-JMfrD1L._SL1500_.jpg",
+  "image": "/hero-images/press-on-nails-instant-glam-for-effortless-stunning-manicure.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Acrylic Nails",

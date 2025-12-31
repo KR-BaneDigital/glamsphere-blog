@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71GeuQlQecL._SL1500_.jpg",
+  "image": "/hero-images/unlock-silky-smooth-skin-the-magic-of-moisture-smoothie-duo.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

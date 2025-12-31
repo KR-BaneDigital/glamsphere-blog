@@ -282,7 +282,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61rr-5jbuxL._SL1000_.jpg",
+  "image": "/hero-images/unlock-strong-gorgeous-nails-ibd-hard-gel-review-secrets.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Gel Nails",

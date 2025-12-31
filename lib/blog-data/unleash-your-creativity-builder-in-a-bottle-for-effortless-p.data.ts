@@ -289,7 +289,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/41oI+G5SGBL.jpg",
+  "image": "/hero-images/unleash-your-creativity-builder-in-a-bottle-for-effortless-p.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Gel Nails",

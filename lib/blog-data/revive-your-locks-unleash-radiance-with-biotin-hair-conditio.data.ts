@@ -288,7 +288,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71JrMXLsDPL._SL1500_.jpg",
+  "image": "/hero-images/revive-your-locks-unleash-radiance-with-biotin-hair-conditio.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

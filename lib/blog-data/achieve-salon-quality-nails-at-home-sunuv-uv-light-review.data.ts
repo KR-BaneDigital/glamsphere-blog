@@ -289,7 +289,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/51inODC-+vL.jpg",
+  "image": "/hero-images/achieve-salon-quality-nails-at-home-sunuv-uv-light-review.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Gel Nails",

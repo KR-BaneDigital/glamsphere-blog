@@ -286,7 +286,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71GHLG2CmzL.jpg",
+  "image": "/hero-images/revitalize-your-hair-unleash-the-power-of-aveda-shampure-set.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

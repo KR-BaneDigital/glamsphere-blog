@@ -289,7 +289,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61VmQbmfD5L._SL1500_.jpg",
+  "image": "/hero-images/ocean-timber-set-elevate-your-outdoor-space-with-coastal-cha.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

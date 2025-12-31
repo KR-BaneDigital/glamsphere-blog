@@ -293,7 +293,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71Li93t8dZL.jpg",
+  "image": "/hero-images/unlock-flake-free-scalps-my-nizoral-bundle-game-changer-revi.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

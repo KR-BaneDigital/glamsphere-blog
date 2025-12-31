@@ -286,7 +286,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71sh9P-6UYL.jpg",
+  "image": "/hero-images/unlock-your-beauty-potential-the-perfect-10-palette-review.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

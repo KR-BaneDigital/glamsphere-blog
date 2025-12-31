@@ -286,7 +286,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71AX6Ib2rmL._SL1500_.jpg",
+  "image": "/hero-images/say-goodbye-to-salon-visits-electric-nail-drill-unleashed.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Acrylic Nails",

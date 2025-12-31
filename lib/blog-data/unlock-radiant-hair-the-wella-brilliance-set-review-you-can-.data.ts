@@ -289,7 +289,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/51vI3TdvZiL._SL1500_.jpg",
+  "image": "/hero-images/unlock-radiant-hair-the-wella-brilliance-set-review-you-can-.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

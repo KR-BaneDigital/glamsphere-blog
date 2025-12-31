@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71m1w8vIlVL._SL1500_.jpg",
+  "image": "/hero-images/unlock-relaxation-how-3-in-1-chamomile-transforms-your-self-.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

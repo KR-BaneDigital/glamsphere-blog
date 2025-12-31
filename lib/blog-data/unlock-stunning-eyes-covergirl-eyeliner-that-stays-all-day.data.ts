@@ -281,7 +281,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61Q76cNVtVL._SL1500_.jpg",
+  "image": "/hero-images/unlock-stunning-eyes-covergirl-eyeliner-that-stays-all-day.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

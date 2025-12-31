@@ -286,7 +286,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71XloDb-ssL._SL1500_.jpg",
+  "image": "/hero-images/unlock-stunning-lashes-high-impact-mascara-that-delivers-dra.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

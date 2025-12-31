@@ -288,7 +288,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71l0RSD6odL._SL1000_.jpg",
+  "image": "/hero-images/unlock-your-eye-glam-the-must-have-cream-eye-shadow-palette-.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

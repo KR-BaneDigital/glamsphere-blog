@@ -288,7 +288,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/51rjD1DyfpL._SL1200_.jpg",
+  "image": "/hero-images/primelash-mascara-unlock-the-secret-to-effortlessly-bold-las.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

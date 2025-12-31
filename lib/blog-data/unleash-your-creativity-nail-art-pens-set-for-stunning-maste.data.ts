@@ -286,7 +286,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/610H24rzA2L._SL1000_.jpg",
+  "image": "/hero-images/unleash-your-creativity-nail-art-pens-set-for-stunning-maste.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Acrylic Nails",

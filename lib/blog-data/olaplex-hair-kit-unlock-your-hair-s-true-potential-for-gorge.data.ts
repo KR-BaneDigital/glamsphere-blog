@@ -283,7 +283,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61e2-jaRmtL._SL1440_.jpg",
+  "image": "/hero-images/olaplex-hair-kit-unlock-your-hair-s-true-potential-for-gorge.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

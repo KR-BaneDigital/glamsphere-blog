@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/719nIKHOAIL._SL1500_.jpg",
+  "image": "/hero-images/unlock-nail-art-mastery-the-ultimate-acrylic-nail-brush-set-.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Acrylic Nails",

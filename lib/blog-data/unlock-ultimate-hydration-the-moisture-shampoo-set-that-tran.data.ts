@@ -288,7 +288,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61eMEaazkiL._SL1500_.jpg",
+  "image": "/hero-images/unlock-ultimate-hydration-the-moisture-shampoo-set-that-tran.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

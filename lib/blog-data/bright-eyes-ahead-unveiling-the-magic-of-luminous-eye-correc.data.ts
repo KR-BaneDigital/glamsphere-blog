@@ -289,7 +289,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61f+2yILldL._SL1500_.jpg",
+  "image": "/hero-images/bright-eyes-ahead-unveiling-the-magic-of-luminous-eye-correc.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

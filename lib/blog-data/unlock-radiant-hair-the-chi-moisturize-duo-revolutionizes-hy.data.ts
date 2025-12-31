@@ -288,7 +288,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/51StfL+ayYL.jpg",
+  "image": "/hero-images/unlock-radiant-hair-the-chi-moisturize-duo-revolutionizes-hy.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

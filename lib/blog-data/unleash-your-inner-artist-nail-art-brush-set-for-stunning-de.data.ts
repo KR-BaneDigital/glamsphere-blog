@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/81Ca4T6Uh9L._SL1500_.jpg",
+  "image": "/hero-images/unleash-your-inner-artist-nail-art-brush-set-for-stunning-de.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Gel Nails",

@@ -281,7 +281,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71y1pB1OUhL._SL1500_.jpg",
+  "image": "/hero-images/unlock-your-nail-art-potential-the-ultimate-acrylic-powder-s.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Acrylic Nails",

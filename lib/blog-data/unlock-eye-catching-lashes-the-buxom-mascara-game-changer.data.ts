@@ -285,7 +285,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61zS0XeyFSL._SL1500_.jpg",
+  "image": "/hero-images/unlock-eye-catching-lashes-the-buxom-mascara-game-changer.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

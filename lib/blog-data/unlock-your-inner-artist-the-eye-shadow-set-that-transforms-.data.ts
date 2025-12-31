@@ -286,7 +286,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71JjfZLvkIL._SL1000_.jpg",
+  "image": "/hero-images/unlock-your-inner-artist-the-eye-shadow-set-that-transforms-.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

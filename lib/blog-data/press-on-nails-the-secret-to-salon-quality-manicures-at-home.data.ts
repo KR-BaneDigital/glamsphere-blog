@@ -288,7 +288,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/81rY-ikYaWL._SL1500_.jpg",
+  "image": "/hero-images/press-on-nails-the-secret-to-salon-quality-manicures-at-home.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Acrylic Nails",

@@ -288,7 +288,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/51wAQHdFG-L._SL1001_.jpg",
+  "image": "/hero-images/unleash-your-inner-glam-coffin-fake-nails-for-stunning-trans.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Acrylic Nails",

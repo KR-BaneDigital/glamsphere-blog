@@ -284,7 +284,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/816EAJXGUNL._SL1500_.jpg",
+  "image": "/hero-images/bareminerals-original-mineral-veil-the-ultimate-talc-free-se.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Face Makeup",

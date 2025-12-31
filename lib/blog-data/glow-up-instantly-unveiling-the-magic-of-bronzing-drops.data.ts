@@ -289,7 +289,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/612LnF4ktDL.jpg",
+  "image": "/hero-images/glow-up-instantly-unveiling-the-magic-of-bronzing-drops.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Face Makeup",

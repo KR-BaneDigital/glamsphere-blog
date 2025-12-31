@@ -286,7 +286,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71UKhp9Lf+L.jpg",
+  "image": "/hero-images/unlock-luscious-locks-a-deep-dive-into-the-hair-growth-set.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

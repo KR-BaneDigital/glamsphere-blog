@@ -290,7 +290,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71wusCTU-bL.jpg",
+  "image": "/hero-images/unlock-luxurious-locks-my-bondiboost-shampoo-set-experience.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

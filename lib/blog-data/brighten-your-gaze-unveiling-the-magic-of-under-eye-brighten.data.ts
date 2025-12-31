@@ -290,7 +290,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61EFwUap2wL._SL1500_.jpg",
+  "image": "/hero-images/brighten-your-gaze-unveiling-the-magic-of-under-eye-brighten.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

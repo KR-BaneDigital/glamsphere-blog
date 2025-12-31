@@ -292,7 +292,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71NrksH227L.jpg",
+  "image": "/hero-images/unlock-all-day-drama-why-extreme-length-mascara-is-your-new-.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

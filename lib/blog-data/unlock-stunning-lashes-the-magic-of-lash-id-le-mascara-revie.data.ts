@@ -289,7 +289,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61jh-r2MLkL._SL1500_.jpg",
+  "image": "/hero-images/unlock-stunning-lashes-the-magic-of-lash-id-le-mascara-revie.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

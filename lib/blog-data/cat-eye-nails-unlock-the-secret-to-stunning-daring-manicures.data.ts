@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/91cMo9mauJL._SL1500_.jpg",
+  "image": "/hero-images/cat-eye-nails-unlock-the-secret-to-stunning-daring-manicures.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Acrylic Nails",

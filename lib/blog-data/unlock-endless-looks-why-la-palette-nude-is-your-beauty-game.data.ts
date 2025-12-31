@@ -286,7 +286,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/610jJsVDBCL._SL1125_.jpg",
+  "image": "/hero-images/unlock-endless-looks-why-la-palette-nude-is-your-beauty-game.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

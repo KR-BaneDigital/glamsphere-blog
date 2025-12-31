@@ -289,7 +289,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71jKmMtvsZL._SL1500_.jpg",
+  "image": "/hero-images/unleash-salon-quality-nails-our-nail-drill-kit-review-reveal.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Gel Nails",

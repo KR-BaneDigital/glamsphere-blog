@@ -286,7 +286,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/81gW1UNL07L._SL1500_.jpg",
+  "image": "/hero-images/long-straight-nails-unlock-the-secret-to-effortlessly-chic-m.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Gel Nails",

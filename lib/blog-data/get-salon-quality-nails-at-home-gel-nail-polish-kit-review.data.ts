@@ -289,7 +289,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/81gzeVn+OlL._SL1500_.jpg",
+  "image": "/hero-images/get-salon-quality-nails-at-home-gel-nail-polish-kit-review.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Gel Nails",

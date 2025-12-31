@@ -289,7 +289,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/81wRX97Rx2L._SL1500_.jpg",
+  "image": "/hero-images/dual-ended-eyeshadow-unlock-double-the-glam-with-one-product.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/81XOjAXoJFL.jpg",
+  "image": "/hero-images/unlock-luxurious-locks-pura-d-or-shampoo-set-review-transfor.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

@@ -289,7 +289,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71kkdbcV86L.jpg",
+  "image": "/hero-images/unlock-radiant-skin-the-coconut-milk-set-you-can-t-live-with.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

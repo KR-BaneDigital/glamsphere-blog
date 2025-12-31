@@ -284,7 +284,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71I1LFea2-L._SL1500_.jpg",
+  "image": "/hero-images/revitalize-your-skin-the-virtue-recovery-set-for-ultimate-re.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

@@ -288,7 +288,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61qpdqv5UcL.jpg",
+  "image": "/hero-images/curvlife-glue-kit-elevate-your-craft-with-unstoppable-bondin.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Gel Nails",

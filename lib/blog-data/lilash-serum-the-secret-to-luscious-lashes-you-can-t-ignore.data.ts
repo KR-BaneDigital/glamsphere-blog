@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/613NSqvO3OL._SL1481_.jpg",
+  "image": "/hero-images/lilash-serum-the-secret-to-luscious-lashes-you-can-t-ignore.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

@@ -288,7 +288,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/816lRCaVecL._SL1500_.jpg",
+  "image": "/hero-images/short-almond-tips-the-secret-to-effortlessly-chic-nail-perfe.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Gel Nails",

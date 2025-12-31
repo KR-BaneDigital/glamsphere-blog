@@ -289,7 +289,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71nmX1zQ4XL._SL1500_.jpg",
+  "image": "/hero-images/medium-almond-tips-elevate-your-nail-game-with-effortless-el.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Acrylic Nails",

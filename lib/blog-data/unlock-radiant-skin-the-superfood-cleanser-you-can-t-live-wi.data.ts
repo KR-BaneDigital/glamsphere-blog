@@ -291,7 +291,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61XDEMjJlML.jpg",
+  "image": "/hero-images/unlock-radiant-skin-the-superfood-cleanser-you-can-t-live-wi.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Face Makeup",

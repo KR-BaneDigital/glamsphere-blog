@@ -286,7 +286,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71elGZjqoGL.jpg",
+  "image": "/hero-images/unlock-effortless-shine-the-dream-clean-duo-that-transforms-.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

@@ -288,7 +288,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/81VXFMkfg-L.jpg",
+  "image": "/hero-images/unlock-your-hair-s-potential-cantu-shampoo-for-luxurious-loc.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

@@ -284,7 +284,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61ujba9aL9L._SL1500_.jpg",
+  "image": "/hero-images/bright-eyes-ahead-unveiling-the-magic-of-under-eye-concealer.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

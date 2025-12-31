@@ -291,7 +291,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61jCPnzmPjL._SL1000_.jpg",
+  "image": "/hero-images/unlock-radiant-hair-herbal-essences-set-for-lush-transformat.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

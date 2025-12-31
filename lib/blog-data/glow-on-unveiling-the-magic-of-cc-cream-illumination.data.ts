@@ -290,7 +290,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61mKtngf0jL.jpg",
+  "image": "/hero-images/glow-on-unveiling-the-magic-of-cc-cream-illumination.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Face Makeup",

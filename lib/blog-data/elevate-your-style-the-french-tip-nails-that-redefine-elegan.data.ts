@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71oqWKgAuKL._SL1500_.jpg",
+  "image": "/hero-images/elevate-your-style-the-french-tip-nails-that-redefine-elegan.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Acrylic Nails",

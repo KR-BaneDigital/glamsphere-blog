@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71cbayWUpjL._SL1500_.jpg",
+  "image": "/hero-images/elevate-your-elegance-french-tip-nails-review-for-effortless.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Acrylic Nails",

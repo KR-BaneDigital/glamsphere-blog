@@ -288,7 +288,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71hpM5VAPZL._SL1500_.jpg",
+  "image": "/hero-images/square-nail-tips-elevate-your-manicure-game-in-minutes.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Gel Nails",

@@ -344,7 +344,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/617F0F8N5UL._SL1500_.jpg",
+  "image": "/hero-images/nyx-epic-ink-liner-review-the-best-waterproof-vegan-eyeliner.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

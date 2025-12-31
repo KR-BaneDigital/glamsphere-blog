@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/81yDA3hbyyL._SL1500_.jpg",
+  "image": "/hero-images/unlock-your-eye-game-wonderskin-eyeliner-for-flawless-flicks.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

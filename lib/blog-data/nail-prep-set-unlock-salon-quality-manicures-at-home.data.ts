@@ -289,7 +289,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71LMqzpQ-4L._SL1500_.jpg",
+  "image": "/hero-images/nail-prep-set-unlock-salon-quality-manicures-at-home.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Gel Nails",

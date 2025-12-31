@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71fl06hn7OL.jpg",
+  "image": "/hero-images/travel-shampoo-set-your-ultimate-solution-for-effortless-hai.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

@@ -289,7 +289,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71oVrg94nnL._SL1000_.jpg",
+  "image": "/hero-images/unleash-your-inner-champion-the-power-of-old-spice-swagger.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

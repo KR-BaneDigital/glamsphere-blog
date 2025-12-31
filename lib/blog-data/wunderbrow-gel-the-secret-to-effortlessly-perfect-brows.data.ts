@@ -288,7 +288,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71EmoC9My2L.jpg",
+  "image": "/hero-images/wunderbrow-gel-the-secret-to-effortlessly-perfect-brows.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

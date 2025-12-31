@@ -283,7 +283,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/81Un4u57qJL._SL1500_.jpg",
+  "image": "/hero-images/unlock-gorgeous-length-the-magic-of-the-grow-long-set-review.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

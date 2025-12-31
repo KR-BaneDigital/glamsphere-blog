@@ -288,7 +288,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/4123gBlWe+L.jpg",
+  "image": "/hero-images/kerastase-shampoo-unlock-silky-salon-worthy-locks-at-home.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

@@ -284,7 +284,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/516q20ROi0L._SL1500_.jpg",
+  "image": "/hero-images/stila-liquid-liner-unleash-your-eye-artistry-with-precision-.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

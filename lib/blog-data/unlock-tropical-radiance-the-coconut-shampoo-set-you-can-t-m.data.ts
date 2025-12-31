@@ -286,7 +286,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71wIyx95zvL._SL1500_.jpg",
+  "image": "/hero-images/unlock-tropical-radiance-the-coconut-shampoo-set-you-can-t-m.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

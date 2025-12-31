@@ -290,7 +290,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71oOcagcP1L.jpg",
+  "image": "/hero-images/unlock-stunning-volume-my-game-changing-review-of-volumecare.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

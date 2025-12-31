@@ -289,7 +289,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61a7IgvXWcL._SL1000_.jpg",
+  "image": "/hero-images/unlock-silky-hair-why-aussie-miracle-moist-is-your-secret-we.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71ryZl23VLL._SL1500_.jpg",
+  "image": "/hero-images/unlock-silky-smooth-locks-the-magic-of-redken-all-soft-revie.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

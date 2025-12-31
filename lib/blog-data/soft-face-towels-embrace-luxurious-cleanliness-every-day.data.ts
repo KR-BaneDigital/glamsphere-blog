@@ -289,7 +289,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71vgil0luIL.jpg",
+  "image": "/hero-images/soft-face-towels-embrace-luxurious-cleanliness-every-day.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Face Makeup",

@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71Q52dIT4IL._SL1500_.jpg",
+  "image": "/hero-images/unlock-your-nail-game-the-poly-extension-gel-kit-review.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Gel Nails",

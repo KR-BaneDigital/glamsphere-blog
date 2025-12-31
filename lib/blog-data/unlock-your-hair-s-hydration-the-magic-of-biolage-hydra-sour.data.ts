@@ -291,7 +291,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71RwoYWN2ML.jpg",
+  "image": "/hero-images/unlock-your-hair-s-hydration-the-magic-of-biolage-hydra-sour.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

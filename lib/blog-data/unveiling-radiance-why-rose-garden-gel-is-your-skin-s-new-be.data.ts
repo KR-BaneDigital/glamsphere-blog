@@ -286,7 +286,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71PF+XUX+UL._SL1500_.jpg",
+  "image": "/hero-images/unveiling-radiance-why-rose-garden-gel-is-your-skin-s-new-be.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Gel Nails",

@@ -290,7 +290,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61wpgofJADL.jpg",
+  "image": "/hero-images/unlock-stunning-lashes-the-lash-serum-that-transforms-your-l.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

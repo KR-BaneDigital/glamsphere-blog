@@ -284,7 +284,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71mq2rwOe2L.jpg",
+  "image": "/hero-images/unlock-perfect-arches-the-ultimate-brow-care-kit-review.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

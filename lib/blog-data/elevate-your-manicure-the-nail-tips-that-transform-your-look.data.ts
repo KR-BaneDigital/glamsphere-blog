@@ -288,7 +288,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71UAZTjBEmL._SL1500_.jpg",
+  "image": "/hero-images/elevate-your-manicure-the-nail-tips-that-transform-your-look.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Acrylic Nails",

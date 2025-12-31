@@ -281,7 +281,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71g0fUmWSUL.jpg",
+  "image": "/hero-images/kur-gel-genius-unlock-your-best-skin-with-effortless-hydrati.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Gel Nails",

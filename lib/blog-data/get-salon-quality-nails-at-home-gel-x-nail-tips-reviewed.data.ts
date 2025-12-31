@@ -286,7 +286,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61WlYGWHyvL.jpg",
+  "image": "/hero-images/get-salon-quality-nails-at-home-gel-x-nail-tips-reviewed.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Gel Nails",

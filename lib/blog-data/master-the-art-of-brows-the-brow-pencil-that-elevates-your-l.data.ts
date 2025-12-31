@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/51nnm3xrl9L._AC_SL1500_.jpg",
+  "image": "/hero-images/master-the-art-of-brows-the-brow-pencil-that-elevates-your-l.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

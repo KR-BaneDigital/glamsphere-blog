@@ -285,7 +285,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61J0VYoTdeL._SL1500_.jpg",
+  "image": "/hero-images/unlock-silky-hair-the-biosilk-duo-set-that-transforms-your-r.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

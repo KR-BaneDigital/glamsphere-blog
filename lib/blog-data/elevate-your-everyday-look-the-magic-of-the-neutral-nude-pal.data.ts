@@ -286,7 +286,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61Kjdk50X0L._SL1000_.jpg",
+  "image": "/hero-images/elevate-your-everyday-look-the-magic-of-the-neutral-nude-pal.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

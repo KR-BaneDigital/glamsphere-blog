@@ -288,7 +288,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/51v7UHmGF8L.jpg",
+  "image": "/hero-images/discover-olive-june-gel-your-secret-to-salon-worthy-nails-at.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Gel Nails",

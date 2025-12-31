@@ -288,7 +288,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/81HVa7fMtaL.jpg",
+  "image": "/hero-images/unlock-radiance-why-mineral-face-powder-is-your-skin-s-best-.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Face Makeup",

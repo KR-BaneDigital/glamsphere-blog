@@ -285,7 +285,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/419-wp13UrL._SL1280_.jpg",
+  "image": "/hero-images/speed-up-your-nail-game-the-acrylic-powders-speed-review.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Acrylic Nails",

@@ -291,7 +291,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71XDJBp40EL.jpg",
+  "image": "/hero-images/unlock-luxurious-locks-the-cerave-shampoo-set-you-ll-love.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

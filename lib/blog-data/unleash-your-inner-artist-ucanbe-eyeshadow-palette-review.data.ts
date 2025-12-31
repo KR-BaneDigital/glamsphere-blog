@@ -286,7 +286,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/710YFHUujBL._SL1500_.jpg",
+  "image": "/hero-images/unleash-your-inner-artist-ucanbe-eyeshadow-palette-review.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

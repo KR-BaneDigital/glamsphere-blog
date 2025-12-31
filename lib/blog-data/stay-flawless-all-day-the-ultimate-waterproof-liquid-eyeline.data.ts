@@ -283,7 +283,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/51p-kSb56VL.jpg",
+  "image": "/hero-images/stay-flawless-all-day-the-ultimate-waterproof-liquid-eyeline.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

@@ -280,7 +280,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61qM+be5q8L._SL1500_.jpg",
+  "image": "/hero-images/unlock-lush-lashes-the-eyelash-conditioner-that-changes-ever.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

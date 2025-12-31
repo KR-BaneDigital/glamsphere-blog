@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61yxT4-WZnL._SL1500_.jpg",
+  "image": "/hero-images/revive-your-locks-discover-the-anti-thinning-set-transformat.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

@@ -285,7 +285,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61mmMNuHqOL._SL1500_.jpg",
+  "image": "/hero-images/revitalize-your-hair-the-rosemary-mint-shampoo-that-refreshe.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61-4iDzr0IL._SL1500_.jpg",
+  "image": "/hero-images/instant-nail-art-how-nail-strips-turn-your-tips-into-masterp.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Gel Nails",

@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61LBYslL2RL._SL1500_.jpg",
+  "image": "/hero-images/unleash-sleek-perfection-a-review-of-matrix-mega-sleek-shamp.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

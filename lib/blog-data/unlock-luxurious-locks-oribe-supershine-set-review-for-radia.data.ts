@@ -288,7 +288,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71-z5trgApL.jpg",
+  "image": "/hero-images/unlock-luxurious-locks-oribe-supershine-set-review-for-radia.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

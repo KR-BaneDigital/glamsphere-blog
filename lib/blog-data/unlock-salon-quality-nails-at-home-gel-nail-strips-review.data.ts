@@ -286,7 +286,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61yIJ9hBP-L._SL1500_.jpg",
+  "image": "/hero-images/unlock-salon-quality-nails-at-home-gel-nail-strips-review.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Gel Nails",

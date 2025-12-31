@@ -285,7 +285,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/51JflNWJu4L.jpg",
+  "image": "/hero-images/revitalize-your-locks-the-hydrating-shampoo-set-that-transfo.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

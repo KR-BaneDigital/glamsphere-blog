@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/61SpbQ9cN6L._SL1500_.jpg",
+  "image": "/hero-images/unlock-luxurious-locks-the-rosemary-hair-duo-you-can-t-miss.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

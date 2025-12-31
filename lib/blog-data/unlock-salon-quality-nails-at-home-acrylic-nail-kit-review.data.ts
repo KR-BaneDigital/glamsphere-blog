@@ -286,7 +286,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/71axgayqYRL._SL1500_.jpg",
+  "image": "/hero-images/unlock-salon-quality-nails-at-home-acrylic-nail-kit-review.jpg",
   "category": "Nail Art & Care",
   "categorySlug": "nail-art--care",
   "subcategory": "Acrylic Nails",

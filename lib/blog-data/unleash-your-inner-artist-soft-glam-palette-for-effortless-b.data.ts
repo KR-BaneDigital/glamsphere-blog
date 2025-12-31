@@ -286,7 +286,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/513MjN3KNjL._SL1376_.jpg",
+  "image": "/hero-images/unleash-your-inner-artist-soft-glam-palette-for-effortless-b.jpg",
   "category": "Makeup & Skincare",
   "categorySlug": "makeup--skincare",
   "subcategory": "Eye Makeup",

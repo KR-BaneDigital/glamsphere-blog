@@ -287,7 +287,7 @@ export const post: BlogPost = {
       }
     ]
   },
-  "image": "https://m.media-amazon.com/images/I/516QgZaFT2L.jpg",
+  "image": "/hero-images/double-your-style-unleashing-the-power-of-mitch-double-hitte.jpg",
   "category": "Hair Care & Styling",
   "categorySlug": "hair-care--styling",
   "subcategory": "Shampoos & Conditioners",

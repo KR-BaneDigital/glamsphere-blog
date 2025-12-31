@@ -128,9 +128,11 @@ import { post as unleash_your_best_hair_days_dove_men_care_shampoo_review } from
 import { post as unlock_your_hair_s_potential_cantu_shampoo_for_luxurious_loc } from './unlock-your-hair-s-potential-cantu-shampoo-for-luxurious-loc.data'
 import { post as unlock_radiant_skin_the_superfood_cleanser_you_can_t_live_wi } from './unlock-radiant-skin-the-superfood-cleanser-you-can-t-live-wi.data'
 import { post as double_your_style_unleashing_the_power_of_mitch_double_hitte } from './double-your-style-unleashing-the-power-of-mitch-double-hitte.data'
+import { post as soft_face_towels_embrace_luxurious_cleanliness_every_day } from './soft-face-towels-embrace-luxurious-cleanliness-every-day.data'
 
 // Export all posts (newest first)
 export const allPosts = [
+  soft_face_towels_embrace_luxurious_cleanliness_every_day,
   double_your_style_unleashing_the_power_of_mitch_double_hitte,
   unlock_radiant_skin_the_superfood_cleanser_you_can_t_live_wi,
   unlock_your_hair_s_potential_cantu_shampoo_for_luxurious_loc,

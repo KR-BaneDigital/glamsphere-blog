@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "\"NYX Epic Ink Liner Review: The Best Waterproof Vegan Eyeliner\"",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-21T22:23:03.131Z",
     "authors": [
       "Jasper Lee"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/nyx-epic-ink-liner-review-the-best-waterproof-vegan-eyeliner.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "\"NYX Epic Ink Liner Review: The Best Waterproof Vegan Eyeliner\"",
-    "description": "Final Verdict."
+    "description": "Final Verdict.",
+    "images": "https://glamsphere.org/hero-images/nyx-epic-ink-liner-review-the-best-waterproof-vegan-eyeliner.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "nyx-epic-ink-liner-review-the-best-waterproof-vegan-eyeliner",
   "title": "\"NYX Epic Ink Liner Review: The Best Waterproof Vegan Eyeliner\"",
   "excerpt": "Final Verdict.",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/617F0F8N5UL._SL1500_.jpg",
   "category": "Eye Makeup",
+  "categorySlug": "eye-makeup",
   "subcategory": "Makeup & Skincare",
+  "subcategorySlug": "makeup--skincare",
   "tags": [
     "Eye Makeup",
     "Makeup & Skincare"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -386,7 +398,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

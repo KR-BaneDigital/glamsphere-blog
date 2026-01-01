@@ -14,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-26T13:25:42.951Z",
     "authors": [
       "Jasper Lee"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/curvlife-glue-kit-elevate-your-craft-with-unstoppable-bondin.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Curvlife Glue Kit: Elevate Your Craft with Unstoppable Bonding Power",
-    "description": "Achieve flawless press-on nails effortlessly with Curvlife's quick-dry glue kit! Enjoy strong, long-lasting bonds and easy removal for stunning results."
+    "description": "Achieve flawless press-on nails effortlessly with Curvlife's quick-dry glue kit! Enjoy strong, long-lasting bonds and easy removal for stunning results.",
+    "images": "https://glamsphere.org/hero-images/curvlife-glue-kit-elevate-your-craft-with-unstoppable-bondin.jpg"
   }
 }
 

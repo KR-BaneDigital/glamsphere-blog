@@ -42,8 +42,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     }
   }
 
-  // Let opengraph-image.tsx handle the image metadata
-  // Removing images from here to avoid conflict with file-based route
+  // For affiliate product reviews, use Amazon image URL directly (this works!)
+  const imageUrl = post.contentType === 'affiliate-product-review' && 
+                   post.typeSpecificData?.affiliateProductReview?.affiliate?.images?.[0]
+    ? post.typeSpecificData.affiliateProductReview.affiliate.images[0]  // Amazon URL
+    : undefined  // Let opengraph-image.tsx handle other content types
+
   return {
     title: `${post.title} | ${siteConfig.brand.name}`,
     description: post.excerpt,
@@ -58,6 +62,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       card: "summary_large_image",
       title: post.title,
       description: post.excerpt,
+      ...(imageUrl && { images: [imageUrl] }),
     },
   }
 }

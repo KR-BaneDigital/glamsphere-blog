@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Elevate Your Manicure: The Nail Tips That Transform Your Look!",
     "description": "Elevate Your Manicure: The Nail Tips That Transform Your Look!"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/elevate-your-manicure-the-nail-tips-that-transform-your-look.jpg"}
 }
 
 export default function BlogPost() {

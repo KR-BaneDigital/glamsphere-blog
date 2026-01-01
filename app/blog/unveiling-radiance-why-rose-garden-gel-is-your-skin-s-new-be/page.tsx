@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Unveiling Radiance: Why Rose Garden Gel is Your Skin's New Best Friend",
     "description": "Unveiling Radiance: Why Rose Garden Gel is Your Skin's New Best Friend"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/unveiling-radiance-why-rose-garden-gel-is-your-skin-s-new-be.jpg"}
 }
 
 export default function BlogPost() {

@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Unlock Radiant Hair: Herbal Essences Set for Lush Transformation!",
     "description": "Unlock Radiant Hair: Herbal Essences Set for Lush Transformation!"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/unlock-radiant-hair-herbal-essences-set-for-lush-transformat.jpg"}
 }
 
 export default function BlogPost() {

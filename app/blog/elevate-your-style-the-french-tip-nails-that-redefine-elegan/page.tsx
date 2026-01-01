@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Elevate Your Style: The French Tip Nails That Redefine Elegance",
     "description": "Elevate Your Style: The French Tip Nails That Redefine Elegance"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/elevate-your-style-the-french-tip-nails-that-redefine-elegan.jpg"}
 }
 
 export default function BlogPost() {

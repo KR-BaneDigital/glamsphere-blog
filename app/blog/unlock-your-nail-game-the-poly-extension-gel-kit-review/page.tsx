@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Unlock Your Nail Game: The Poly Extension Gel Kit Review",
     "description": "Unlock Your Nail Game: The Poly Extension Gel Kit Review"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/unlock-your-nail-game-the-poly-extension-gel-kit-review.jpg"}
 }
 
 export default function BlogPost() {

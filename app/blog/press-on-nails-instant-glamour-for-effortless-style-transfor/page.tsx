@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Press On Nails: Instant Glamour for Effortless Style Transformations",
     "description": "Press On Nails: Instant Glamour for Effortless Style Transformations"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/press-on-nails-instant-glamour-for-effortless-style-transfor.jpg"}
 }
 
 export default function BlogPost() {

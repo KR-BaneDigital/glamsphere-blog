@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Unlock Stunning Eyes: COVERGIRL Eyeliner That Stays All Day!",
     "description": "Unlock Stunning Eyes: COVERGIRL Eyeliner That Stays All Day!"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/unlock-stunning-eyes-covergirl-eyeliner-that-stays-all-day.jpg"}
 }
 
 export default function BlogPost() {

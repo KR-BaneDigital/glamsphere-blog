@@ -89,13 +89,24 @@ directories.forEach(dir => {
     changed = true;
   }
 
-  // 3. Add images to twitter
-  if (content.includes('"twitter": {') && !content.includes('"images":', content.indexOf('"twitter":'))) {
-    content = content.replace(
-      /("twitter":\s*{\s*"card":\s*"[^"]+",\s*"title":\s*"[^"]+",\s*"description":\s*"[^"]+"\s*})/,
-      `"twitter": {\n    "card": "summary_large_image",\n    "title": "${title.replace(/"/g, '\\"')}",\n    "description": "${description.replace(/"/g, '\\"')}",\n    "images": "${imageUrl}"\n  }`
-    );
-    changed = true;
+  // 3. Add images to twitter - append before closing brace
+  if (content.includes('"twitter": {')) {
+    const twitterIndex = content.indexOf('"twitter": {');
+    const closingBraceIndex = content.indexOf('}', twitterIndex);
+    const twitterSection = content.slice(twitterIndex, closingBraceIndex + 1);
+
+    if (!twitterSection.includes('"images":')) {
+      console.log(`Adding twitter images to ${dir}`);
+      // Find the line before the closing brace (should be the last field)
+      const lastLineStart = content.lastIndexOf('\n', closingBraceIndex - 1) + 1;
+      const lastLine = content.slice(lastLineStart, closingBraceIndex).trim();
+      // Add comma if the last line doesn't end with comma
+      const needsComma = !lastLine.endsWith(',');
+      const commaStr = needsComma ? ',' : '';
+      content = content.slice(0, closingBraceIndex) + commaStr + '\n    "images": "' + imageUrl + '"' + content.slice(closingBraceIndex);
+      console.log(`Added twitter images to ${dir}`);
+      changed = true;
+    }
   }
 
   // 4. Add content field

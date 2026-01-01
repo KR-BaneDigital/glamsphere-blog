@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Unlock Relaxation: How 3-in-1 Chamomile Transforms Your Self-Care Routine",
     "description": "Unlock Relaxation: How 3-in-1 Chamomile Transforms Your Self-Care Routine"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/unlock-relaxation-how-3-in-1-chamomile-transforms-your-self-.jpg"}
 }
 
 export default function BlogPost() {

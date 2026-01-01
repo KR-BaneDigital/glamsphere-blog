@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Speed Up Your Nail Game: The Acrylic Powders Speed Review",
     "description": "Speed Up Your Nail Game: The Acrylic Powders Speed Review"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/speed-up-your-nail-game-the-acrylic-powders-speed-review.jpg"}
 }
 
 export default function BlogPost() {

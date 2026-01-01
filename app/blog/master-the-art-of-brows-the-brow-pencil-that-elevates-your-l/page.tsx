@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Master the Art of Brows: The Brow Pencil That Elevates Your Look",
     "description": "Master the Art of Brows: The Brow Pencil That Elevates Your Look"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/master-the-art-of-brows-the-brow-pencil-that-elevates-your-l.jpg"}
 }
 
 export default function BlogPost() {

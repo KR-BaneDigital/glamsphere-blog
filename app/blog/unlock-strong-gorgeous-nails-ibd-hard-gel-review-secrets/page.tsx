@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Unlock Strong, Gorgeous Nails: ibd Hard Gel Review & Secrets",
     "description": "Unlock Strong, Gorgeous Nails: ibd Hard Gel Review & Secrets"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/unlock-strong-gorgeous-nails-ibd-hard-gel-review-secrets.jpg"}
 }
 
 export default function BlogPost() {

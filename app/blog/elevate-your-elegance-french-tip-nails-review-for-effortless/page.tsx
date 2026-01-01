@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Elevate Your Elegance: French Tip Nails Review for Effortless Style",
     "description": "Elevate Your Elegance: French Tip Nails Review for Effortless Style"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/elevate-your-elegance-french-tip-nails-review-for-effortless.jpg"}
 }
 
 export default function BlogPost() {

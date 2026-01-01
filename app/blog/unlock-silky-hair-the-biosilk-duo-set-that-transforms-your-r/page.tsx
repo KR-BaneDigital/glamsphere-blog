@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Unlock Silky Hair: The BioSilk Duo Set That Transforms Your Routine",
     "description": "Unlock Silky Hair: The BioSilk Duo Set That Transforms Your Routine"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/unlock-silky-hair-the-biosilk-duo-set-that-transforms-your-r.jpg"}
 }
 
 export default function BlogPost() {

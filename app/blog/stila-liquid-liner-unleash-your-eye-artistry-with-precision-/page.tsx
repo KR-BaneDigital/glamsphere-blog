@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Stila Liquid Liner: Unleash Your Eye Artistry with Precision Perfection",
     "description": "Stila Liquid Liner: Unleash Your Eye Artistry with Precision Perfection"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/stila-liquid-liner-unleash-your-eye-artistry-with-precision-.jpg"}
 }
 
 export default function BlogPost() {

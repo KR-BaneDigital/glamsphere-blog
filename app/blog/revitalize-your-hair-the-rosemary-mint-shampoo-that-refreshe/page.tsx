@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Revitalize Your Hair: The Rosemary Mint Shampoo That Refreshes and Energizes",
     "description": "Revitalize Your Hair: The Rosemary Mint Shampoo That Refreshes and Energizes"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/revitalize-your-hair-the-rosemary-mint-shampoo-that-refreshe.jpg"}
 }
 
 export default function BlogPost() {

@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Short Almond Tips: Elevate Your Nail Game with Effortless Elegance!",
     "description": "Short Almond Tips: Elevate Your Nail Game with Effortless Elegance!"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/short-almond-tips-elevate-your-nail-game-with-effortless-ele.jpg"}
 }
 
 export default function BlogPost() {

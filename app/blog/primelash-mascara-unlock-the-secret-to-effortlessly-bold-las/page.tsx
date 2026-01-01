@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "PrimeLash Mascara: Unlock the Secret to Effortlessly Bold Lashes!",
     "description": "PrimeLash Mascara: Unlock the Secret to Effortlessly Bold Lashes!"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/primelash-mascara-unlock-the-secret-to-effortlessly-bold-las.jpg"}
 }
 
 export default function BlogPost() {

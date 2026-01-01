@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Unlock Your Eye Game: The Palette That Elevates Every Look",
     "description": "Unlock Your Eye Game: The Palette That Elevates Every Look"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/unlock-your-eye-game-the-palette-that-elevates-every-look.jpg"}
 }
 
 export default function BlogPost() {

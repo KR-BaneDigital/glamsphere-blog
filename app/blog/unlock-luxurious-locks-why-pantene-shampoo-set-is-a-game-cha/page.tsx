@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Unlock Luxurious Locks: Why Pantene Shampoo Set is a Game-Changer",
     "description": "Unlock Luxurious Locks: Why Pantene Shampoo Set is a Game-Changer"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/unlock-luxurious-locks-why-pantene-shampoo-set-is-a-game-cha.jpg"}
 }
 
 export default function BlogPost() {

@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "\"Nail Prep Set: Unlock Salon-Quality Manicures at Home!\"",
     "description": "\"Nail Prep Set: Unlock Salon-Quality Manicures at Home!\""
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/nail-prep-set-unlock-salon-quality-manicures-at-home.jpg"}
 }
 
 export default function BlogPost() {

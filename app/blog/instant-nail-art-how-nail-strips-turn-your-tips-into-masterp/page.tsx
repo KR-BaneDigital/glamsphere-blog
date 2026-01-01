@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Instant Nail Art: How Nail Strips Turn Your Tips into Masterpieces",
     "description": "Instant Nail Art: How Nail Strips Turn Your Tips into Masterpieces"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/instant-nail-art-how-nail-strips-turn-your-tips-into-masterp.jpg"}
 }
 
 export default function BlogPost() {

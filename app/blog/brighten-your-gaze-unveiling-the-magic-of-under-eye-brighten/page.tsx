@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Brighten Your Gaze: Unveiling the Magic of Under Eye Brightener",
     "description": "Brighten Your Gaze: Unveiling the Magic of Under Eye Brightener"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/brighten-your-gaze-unveiling-the-magic-of-under-eye-brighten.jpg"}
 }
 
 export default function BlogPost() {

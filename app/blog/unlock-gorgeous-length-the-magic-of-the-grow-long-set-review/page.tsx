@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Unlock Gorgeous Length: The Magic of the Grow Long Set Review",
     "description": "Unlock Gorgeous Length: The Magic of the Grow Long Set Review"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/unlock-gorgeous-length-the-magic-of-the-grow-long-set-review.jpg"}
 }
 
 export default function BlogPost() {

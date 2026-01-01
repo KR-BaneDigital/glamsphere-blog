@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Unlock All-Day Glam: No Budge Eyeliner That Stays in Place!",
     "description": "Unlock All-Day Glam: No Budge Eyeliner That Stays in Place!"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/unlock-all-day-glam-no-budge-eyeliner-that-stays-in-place.jpg"}
 }
 
 export default function BlogPost() {

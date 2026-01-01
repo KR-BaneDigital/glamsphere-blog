@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Unlock Silky Hair: Why Aussie Miracle Moist is Your Secret Weapon",
     "description": "Unlock Silky Hair: Why Aussie Miracle Moist is Your Secret Weapon"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/unlock-silky-hair-why-aussie-miracle-moist-is-your-secret-we.jpg"}
 }
 
 export default function BlogPost() {

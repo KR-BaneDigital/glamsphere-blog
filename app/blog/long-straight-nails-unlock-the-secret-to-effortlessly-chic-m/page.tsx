@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Long Straight Nails: Unlock the Secret to Effortlessly Chic Manicures",
     "description": "Long Straight Nails: Unlock the Secret to Effortlessly Chic Manicures"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/long-straight-nails-unlock-the-secret-to-effortlessly-chic-m.jpg"}
 }
 
 export default function BlogPost() {

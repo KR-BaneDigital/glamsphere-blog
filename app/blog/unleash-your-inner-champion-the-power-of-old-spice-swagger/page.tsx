@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Unleash Your Inner Champion: The Power of Old Spice Swagger",
     "description": "Unleash Your Inner Champion: The Power of Old Spice Swagger"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/unleash-your-inner-champion-the-power-of-old-spice-swagger.jpg"}
 }
 
 export default function BlogPost() {

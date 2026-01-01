@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Unlock Nail Art Mastery: The Ultimate Acrylic Nail Brush Set Review",
     "description": "Unlock Nail Art Mastery: The Ultimate Acrylic Nail Brush Set Review"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/unlock-nail-art-mastery-the-ultimate-acrylic-nail-brush-set-.jpg"}
 }
 
 export default function BlogPost() {

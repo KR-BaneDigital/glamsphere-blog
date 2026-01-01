@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Unleash Salon-Quality Nails: Our Nail Drill Kit Review Revealed",
     "description": "Unleash Salon-Quality Nails: Our Nail Drill Kit Review Revealed"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/unleash-salon-quality-nails-our-nail-drill-kit-review-reveal.jpg"}
 }
 
 export default function BlogPost() {

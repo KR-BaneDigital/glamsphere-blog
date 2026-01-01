@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Ocean Timber Set: Elevate Your Outdoor Space with Coastal Charm",
     "description": "Ocean Timber Set: Elevate Your Outdoor Space with Coastal Charm"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/ocean-timber-set-elevate-your-outdoor-space-with-coastal-cha.jpg"}
 }
 
 export default function BlogPost() {

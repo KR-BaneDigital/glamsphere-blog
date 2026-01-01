@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Unleash Your Inner Artist: BestLand Eyeshadow Palette Review",
     "description": "Unleash Your Inner Artist: BestLand Eyeshadow Palette Review"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/unleash-your-inner-artist-bestland-eyeshadow-palette-review.jpg"}
 }
 
 export default function BlogPost() {

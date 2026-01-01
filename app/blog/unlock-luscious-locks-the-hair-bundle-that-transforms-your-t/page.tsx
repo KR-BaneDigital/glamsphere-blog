@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Unlock Luscious Locks: The Hair Bundle That Transforms Your Tresses",
     "description": "Unlock Luscious Locks: The Hair Bundle That Transforms Your Tresses"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/unlock-luscious-locks-the-hair-bundle-that-transforms-your-t.jpg"}
 }
 
 export default function BlogPost() {

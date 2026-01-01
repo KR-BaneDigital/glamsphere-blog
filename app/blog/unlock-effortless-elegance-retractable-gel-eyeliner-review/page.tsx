@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Unlock Effortless Elegance: Retractable Gel Eyeliner Review",
     "description": "Unlock Effortless Elegance: Retractable Gel Eyeliner Review"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/unlock-effortless-elegance-retractable-gel-eyeliner-review.jpg"}
 }
 
 export default function BlogPost() {

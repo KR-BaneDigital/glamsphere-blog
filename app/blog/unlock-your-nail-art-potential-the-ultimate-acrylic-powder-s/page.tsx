@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Unlock Your Nail Art Potential: The Ultimate Acrylic Powder Set Review",
     "description": "Unlock Your Nail Art Potential: The Ultimate Acrylic Powder Set Review"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/unlock-your-nail-art-potential-the-ultimate-acrylic-powder-s.jpg"}
 }
 
 export default function BlogPost() {

@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Unlock Thicker Hair: Why the OGX Biotin Set is a Game Changer",
     "description": "Unlock Thicker Hair: Why the OGX Biotin Set is a Game Changer"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/unlock-thicker-hair-why-the-ogx-biotin-set-is-a-game-changer.jpg"}
 }
 
 export default function BlogPost() {

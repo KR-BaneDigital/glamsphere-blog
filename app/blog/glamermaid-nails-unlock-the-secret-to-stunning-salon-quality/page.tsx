@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "GLAMERMAID Nails: Unlock the Secret to Stunning, Salon-Quality Manis",
     "description": "GLAMERMAID Nails: Unlock the Secret to Stunning, Salon-Quality Manis"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/glamermaid-nails-unlock-the-secret-to-stunning-salon-quality.jpg"}
 }
 
 export default function BlogPost() {

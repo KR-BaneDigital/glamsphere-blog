@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Unleash Your Inner Artist: Nail Art Brush Set for Stunning Designs",
     "description": "Unleash Your Inner Artist: Nail Art Brush Set for Stunning Designs"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/unleash-your-inner-artist-nail-art-brush-set-for-stunning-de.jpg"}
 }
 
 export default function BlogPost() {

@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "Unleash Sleek Perfection: A Review of Matrix Mega Sleek Shampoo",
     "description": "Unleash Sleek Perfection: A Review of Matrix Mega Sleek Shampoo"
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/unleash-sleek-perfection-a-review-of-matrix-mega-sleek-shamp.jpg"}
 }
 
 export default function BlogPost() {

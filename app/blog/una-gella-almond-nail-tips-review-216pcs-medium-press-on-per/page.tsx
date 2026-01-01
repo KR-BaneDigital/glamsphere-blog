@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "card": "summary_large_image",
     "title": "\"UNA GELLA Almond Nail Tips Review: 216pcs Medium Press-On Perfection\"",
     "description": "\"UNA GELLA Almond Nail Tips Review: 216pcs Medium Press-On Perfection\""
-  }
+  ,
+    "images": "https://glamsphere.org/hero-images/una-gella-almond-nail-tips-review-216pcs-medium-press-on-per.jpg"}
 }
 
 export default function BlogPost() {

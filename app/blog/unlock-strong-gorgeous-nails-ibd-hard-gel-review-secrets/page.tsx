@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unlock Strong, Gorgeous Nails: ibd Hard Gel Review & Secrets",
@@ -13,6 +14,13 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-22T20:02:16.099Z",
     "authors": [
       "Amara Johnson"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unlock-strong-gorgeous-nails-ibd-hard-gel-review-secrets.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
@@ -31,7 +39,9 @@ export default function BlogPost() {
   "excerpt": "",
   "image": "https://m.media-amazon.com/images/I/61rr-5jbuxL._SL1000_.jpg",
   "category": "Gel Nails",
+  "categorySlug": "gel-nails",
   "subcategory": "Nail Art & Care",
+  "subcategorySlug": "nail-art--care",
   "tags": [
     "Gel Nails",
     "Nail Art & Care"
@@ -47,7 +57,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -324,7 +334,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

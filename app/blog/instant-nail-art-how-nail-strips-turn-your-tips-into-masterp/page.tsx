@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Instant Nail Art: How Nail Strips Turn Your Tips into Masterpieces",
@@ -13,6 +14,13 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-23T17:02:18.396Z",
     "authors": [
       "Amara Johnson"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/instant-nail-art-how-nail-strips-turn-your-tips-into-masterp.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
@@ -31,7 +39,9 @@ export default function BlogPost() {
   "excerpt": "",
   "image": "https://m.media-amazon.com/images/I/61-4iDzr0IL._SL1500_.jpg",
   "category": "Gel Nails",
+  "categorySlug": "gel-nails",
   "subcategory": "Nail Art & Care",
+  "subcategorySlug": "nail-art--care",
   "tags": [
     "Gel Nails",
     "Nail Art & Care"
@@ -47,7 +57,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -329,7 +339,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

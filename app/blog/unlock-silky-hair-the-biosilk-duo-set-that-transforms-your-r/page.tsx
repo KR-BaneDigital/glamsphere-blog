@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unlock Silky Hair: The BioSilk Duo Set That Transforms Your Routine",
@@ -13,6 +14,13 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-23T06:02:05.301Z",
     "authors": [
       "Sophia Ellis"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unlock-silky-hair-the-biosilk-duo-set-that-transforms-your-r.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
@@ -31,7 +39,9 @@ export default function BlogPost() {
   "excerpt": "",
   "image": "https://m.media-amazon.com/images/I/61J0VYoTdeL._SL1500_.jpg",
   "category": "Shampoos & Conditioners",
+  "categorySlug": "shampoos--conditioners",
   "subcategory": "Hair Care & Styling",
+  "subcategorySlug": "hair-care--styling",
   "tags": [
     "Shampoos & Conditioners",
     "Hair Care & Styling"
@@ -47,7 +57,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -327,7 +337,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

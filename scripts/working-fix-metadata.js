@@ -43,9 +43,11 @@ directories.forEach(dir => {
     return;
   }
 
-  // Extract data from post object
+  // Extract data from post object (handle variations)
   const titleMatch = content.match(/"title":\s*"([^"]+)"/);
-  const descriptionMatch = content.match(/"excerpt":\s*"([^"]+)"/);
+  const excerptMatch = content.match(/"excerpt":\s*"([^"]*)"/);
+  const contentMatch = content.match(/"content":\s*"([^"]*)"/);
+  const descriptionMatch = excerptMatch || contentMatch; // Use excerpt or content
   const slugMatch = content.match(/"slug":\s*"([^"]+)"/);
   const categoryMatch = content.match(/"category":\s*"([^"]+)"/);
   const subcategoryMatch = content.match(/"subcategory":\s*"([^"]+)"/);
@@ -88,11 +90,10 @@ directories.forEach(dir => {
   }
 
   // 3. Add images to twitter
-  const twitterSection = content.match(/"twitter":\s*{[^}]*}/s)?.[0] || '';
-  if (twitterSection && !twitterSection.includes('"images":')) {
+  if (content.includes('"twitter": {') && !content.includes('"images":', content.indexOf('"twitter":'))) {
     content = content.replace(
-      /("description":\s*"[^"]+")\s*}/,
-      '$1,\n    "images": "' + imageUrl + '"\n  }'
+      /("twitter":\s*{\s*"card":\s*"[^"]+",\s*"title":\s*"[^"]+",\s*"description":\s*"[^"]+"\s*})/,
+      `"twitter": {\n    "card": "summary_large_image",\n    "title": "${title.replace(/"/g, '\\"')}",\n    "description": "${description.replace(/"/g, '\\"')}",\n    "images": "${imageUrl}"\n  }`
     );
     changed = true;
   }

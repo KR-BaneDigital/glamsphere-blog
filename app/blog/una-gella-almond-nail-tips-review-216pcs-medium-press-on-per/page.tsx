@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "\"UNA GELLA Almond Nail Tips Review: 216pcs Medium Press-On Perfection\"",
@@ -13,6 +14,13 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-22T00:59:04.762Z",
     "authors": [
       "Amara Johnson"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/una-gella-almond-nail-tips-review-216pcs-medium-press-on-per.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
@@ -31,7 +39,9 @@ export default function BlogPost() {
   "excerpt": "",
   "image": "/placeholder.svg?height=800&width=1200",
   "category": "Acrylic Nails",
+  "categorySlug": "acrylic-nails",
   "subcategory": "Nail Art & Care",
+  "subcategorySlug": "nail-art--care",
   "tags": [
     "Acrylic Nails",
     "Nail Art & Care"
@@ -47,7 +57,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -323,7 +333,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

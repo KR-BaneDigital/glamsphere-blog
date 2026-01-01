@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Stila Liquid Liner: Unleash Your Eye Artistry with Precision Perfection",
@@ -13,6 +14,13 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-22T19:01:53.251Z",
     "authors": [
       "Jasper Lee"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/stila-liquid-liner-unleash-your-eye-artistry-with-precision-.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
@@ -31,7 +39,9 @@ export default function BlogPost() {
   "excerpt": "",
   "image": "https://m.media-amazon.com/images/I/516q20ROi0L._SL1500_.jpg",
   "category": "Eye Makeup",
+  "categorySlug": "eye-makeup",
   "subcategory": "Makeup & Skincare",
+  "subcategorySlug": "makeup--skincare",
   "tags": [
     "Eye Makeup",
     "Makeup & Skincare"
@@ -47,7 +57,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -326,7 +336,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

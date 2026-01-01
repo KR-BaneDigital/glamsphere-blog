@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unlock Tropical Radiance: The Coconut Shampoo Set You Can't Miss",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-25T11:06:54.637Z",
     "authors": [
       "Jasper Lee"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unlock-tropical-radiance-the-coconut-shampoo-set-you-can-t-m.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Unlock Tropical Radiance: The Coconut Shampoo Set You Can't Miss",
-    "description": "Revitalize your hair with California Naturals Coconut Shampoo Set! Experience vibrant, natural shine while enjoying a sulfate-free, vegan cleanse for all hai..."
+    "description": "Revitalize your hair with California Naturals Coconut Shampoo Set! Experience vibrant, natural shine while enjoying a sulfate-free, vegan cleanse for all hai...",
+    "images": "https://glamsphere.org/hero-images/unlock-tropical-radiance-the-coconut-shampoo-set-you-can-t-m.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "unlock-tropical-radiance-the-coconut-shampoo-set-you-can-t-m",
   "title": "Unlock Tropical Radiance: The Coconut Shampoo Set You Can't Miss",
   "excerpt": "Revitalize your hair with California Naturals Coconut Shampoo Set! Experience vibrant, natural shine while enjoying a sulfate-free, vegan cleanse for all hai...",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/71wIyx95zvL._SL1500_.jpg",
   "category": "Shampoos & Conditioners",
+  "categorySlug": "shampoos--conditioners",
   "subcategory": "Hair Care & Styling",
+  "subcategorySlug": "hair-care--styling",
   "tags": [
     "Shampoos & Conditioners",
     "Hair Care & Styling"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -328,7 +340,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

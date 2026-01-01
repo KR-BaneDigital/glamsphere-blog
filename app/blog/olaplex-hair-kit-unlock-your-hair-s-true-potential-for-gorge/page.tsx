@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Olaplex Hair Kit: Unlock Your Hair’s True Potential for Gorgeous Locks",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-25T05:03:15.490Z",
     "authors": [
       "Jasper Lee"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/olaplex-hair-kit-unlock-your-hair-s-true-potential-for-gorge.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Olaplex Hair Kit: Unlock Your Hair’s True Potential for Gorgeous Locks",
-    "description": "Unlock radiant, healthy hair with the Olaplex Wash and Shine Kit. Cleanse, hydrate, and tame frizz for up to 72 hours—perfect for all hair types!"
+    "description": "Unlock radiant, healthy hair with the Olaplex Wash and Shine Kit. Cleanse, hydrate, and tame frizz for up to 72 hours—perfect for all hair types!",
+    "images": "https://glamsphere.org/hero-images/olaplex-hair-kit-unlock-your-hair-s-true-potential-for-gorge.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "olaplex-hair-kit-unlock-your-hair-s-true-potential-for-gorge",
   "title": "Olaplex Hair Kit: Unlock Your Hair’s True Potential for Gorgeous Locks",
   "excerpt": "Unlock radiant, healthy hair with the Olaplex Wash and Shine Kit. Cleanse, hydrate, and tame frizz for up to 72 hours—perfect for all hair types!",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/61e2-jaRmtL._SL1440_.jpg",
   "category": "Shampoos & Conditioners",
+  "categorySlug": "shampoos--conditioners",
   "subcategory": "Hair Care & Styling",
+  "subcategorySlug": "hair-care--styling",
   "tags": [
     "Shampoos & Conditioners",
     "Hair Care & Styling"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -325,7 +337,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

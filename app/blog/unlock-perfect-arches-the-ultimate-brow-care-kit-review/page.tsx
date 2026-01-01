@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unlock Perfect Arches: The Ultimate Brow Care Kit Review",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-26T07:02:15.235Z",
     "authors": [
       "Jasper Lee"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unlock-perfect-arches-the-ultimate-brow-care-kit-review.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Unlock Perfect Arches: The Ultimate Brow Care Kit Review",
-    "description": "Achieve flawless brows effortlessly with the Amazon Basics 4 Piece Brow Kit. Sculpt, define, and elevate your look at home with salon-worthy precision!"
+    "description": "Achieve flawless brows effortlessly with the Amazon Basics 4 Piece Brow Kit. Sculpt, define, and elevate your look at home with salon-worthy precision!",
+    "images": "https://glamsphere.org/hero-images/unlock-perfect-arches-the-ultimate-brow-care-kit-review.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "unlock-perfect-arches-the-ultimate-brow-care-kit-review",
   "title": "Unlock Perfect Arches: The Ultimate Brow Care Kit Review",
   "excerpt": "Achieve flawless brows effortlessly with the Amazon Basics 4 Piece Brow Kit. Sculpt, define, and elevate your look at home with salon-worthy precision!",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/71mq2rwOe2L.jpg",
   "category": "Eye Makeup",
+  "categorySlug": "eye-makeup",
   "subcategory": "Makeup & Skincare",
+  "subcategorySlug": "makeup--skincare",
   "tags": [
     "Eye Makeup",
     "Makeup & Skincare"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -326,7 +338,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

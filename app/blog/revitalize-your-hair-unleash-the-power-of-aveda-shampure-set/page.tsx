@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Revitalize Your Hair: Unleash the Power of Aveda Shampure Set",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-26T05:02:10.994Z",
     "authors": [
       "Amara Johnson"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/revitalize-your-hair-unleash-the-power-of-aveda-shampure-set.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Revitalize Your Hair: Unleash the Power of Aveda Shampure Set",
-    "description": "Revitalize your hair with the Aveda Shampure Set. Experience nurturing daily care for normal, fine to medium hair—all with silicone-free, powerful ingredients!"
+    "description": "Revitalize your hair with the Aveda Shampure Set. Experience nurturing daily care for normal, fine to medium hair—all with silicone-free, powerful ingredients!",
+    "images": "https://glamsphere.org/hero-images/revitalize-your-hair-unleash-the-power-of-aveda-shampure-set.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "revitalize-your-hair-unleash-the-power-of-aveda-shampure-set",
   "title": "Revitalize Your Hair: Unleash the Power of Aveda Shampure Set",
   "excerpt": "Revitalize your hair with the Aveda Shampure Set. Experience nurturing daily care for normal, fine to medium hair—all with silicone-free, powerful ingredients!",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/71GHLG2CmzL.jpg",
   "category": "Shampoos & Conditioners",
+  "categorySlug": "shampoos--conditioners",
   "subcategory": "Hair Care & Styling",
+  "subcategorySlug": "hair-care--styling",
   "tags": [
     "Shampoos & Conditioners",
     "Hair Care & Styling"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -328,7 +340,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

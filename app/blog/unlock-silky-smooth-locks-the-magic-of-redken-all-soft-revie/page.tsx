@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unlock Silky Smooth Locks: The Magic of Redken All Soft Reviewed",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-24T18:02:34.839Z",
     "authors": [
       "Amara Johnson"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unlock-silky-smooth-locks-the-magic-of-redken-all-soft-revie.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Unlock Silky Smooth Locks: The Magic of Redken All Soft Reviewed",
-    "description": "Revitalize dry, brittle hair with Redken All Soft! Experience incredible softness and shine infused with nourishing argan oil for a luxurious transformation."
+    "description": "Revitalize dry, brittle hair with Redken All Soft! Experience incredible softness and shine infused with nourishing argan oil for a luxurious transformation.",
+    "images": "https://glamsphere.org/hero-images/unlock-silky-smooth-locks-the-magic-of-redken-all-soft-revie.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "unlock-silky-smooth-locks-the-magic-of-redken-all-soft-revie",
   "title": "Unlock Silky Smooth Locks: The Magic of Redken All Soft Reviewed",
   "excerpt": "Revitalize dry, brittle hair with Redken All Soft! Experience incredible softness and shine infused with nourishing argan oil for a luxurious transformation.",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/71ryZl23VLL._SL1500_.jpg",
   "category": "Shampoos & Conditioners",
+  "categorySlug": "shampoos--conditioners",
   "subcategory": "Hair Care & Styling",
+  "subcategorySlug": "hair-care--styling",
   "tags": [
     "Shampoos & Conditioners",
     "Hair Care & Styling"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -329,7 +341,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

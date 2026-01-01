@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Soft Face Towels: Embrace Luxurious Cleanliness Every Day!",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-31T17:04:42.526Z",
     "authors": [
       "Amara Johnson"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/soft-face-towels-embrace-luxurious-cleanliness-every-day.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Soft Face Towels: Embrace Luxurious Cleanliness Every Day!",
-    "description": "Experience the softness of Winner Soft Face Towels! Perfect for sensitive skin, these 100% biobased, unscented wipes offer luxurious cleanliness daily."
+    "description": "Experience the softness of Winner Soft Face Towels! Perfect for sensitive skin, these 100% biobased, unscented wipes offer luxurious cleanliness daily.",
+    "images": "https://glamsphere.org/hero-images/soft-face-towels-embrace-luxurious-cleanliness-every-day.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "soft-face-towels-embrace-luxurious-cleanliness-every-day",
   "title": "Soft Face Towels: Embrace Luxurious Cleanliness Every Day!",
   "excerpt": "Experience the softness of Winner Soft Face Towels! Perfect for sensitive skin, these 100% biobased, unscented wipes offer luxurious cleanliness daily.",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/71vgil0luIL.jpg",
   "category": "Face Makeup",
+  "categorySlug": "face-makeup",
   "subcategory": "Makeup & Skincare",
+  "subcategorySlug": "makeup--skincare",
   "tags": [
     "Face Makeup",
     "Makeup & Skincare"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -331,7 +343,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

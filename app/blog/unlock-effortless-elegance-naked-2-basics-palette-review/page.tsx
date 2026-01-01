@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unlock Effortless Elegance: Naked 2 Basics Palette Review",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-24T00:04:07.569Z",
     "authors": [
       "Sophia Ellis"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unlock-effortless-elegance-naked-2-basics-palette-review.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Unlock Effortless Elegance: Naked 2 Basics Palette Review",
-    "description": "Elevate your makeup game with Urban Decay's Naked 2 Basics Palette. Effortlessly blend cool-tone nudes for stunning eyes, contours, and brows on-the-go!"
+    "description": "Elevate your makeup game with Urban Decay's Naked 2 Basics Palette. Effortlessly blend cool-tone nudes for stunning eyes, contours, and brows on-the-go!",
+    "images": "https://glamsphere.org/hero-images/unlock-effortless-elegance-naked-2-basics-palette-review.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "unlock-effortless-elegance-naked-2-basics-palette-review",
   "title": "Unlock Effortless Elegance: Naked 2 Basics Palette Review",
   "excerpt": "Elevate your makeup game with Urban Decay's Naked 2 Basics Palette. Effortlessly blend cool-tone nudes for stunning eyes, contours, and brows on-the-go!",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/6100m-v7caL._SL1500_.jpg",
   "category": "Eye Makeup",
+  "categorySlug": "eye-makeup",
   "subcategory": "Makeup & Skincare",
+  "subcategorySlug": "makeup--skincare",
   "tags": [
     "Eye Makeup",
     "Makeup & Skincare"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -331,7 +343,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

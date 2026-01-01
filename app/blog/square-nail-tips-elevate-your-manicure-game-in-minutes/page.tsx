@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Square Nail Tips: Elevate Your Manicure Game in Minutes!",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-24T10:04:12.163Z",
     "authors": [
       "Jasper Lee"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/square-nail-tips-elevate-your-manicure-game-in-minutes.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Square Nail Tips: Elevate Your Manicure Game in Minutes!",
-    "description": "Elevate your nail art with AddFavor's 600 pcs square tips—achieve stunning, salon-quality manicures at home and unleash your creativity instantly!"
+    "description": "Elevate your nail art with AddFavor's 600 pcs square tips—achieve stunning, salon-quality manicures at home and unleash your creativity instantly!",
+    "images": "https://glamsphere.org/hero-images/square-nail-tips-elevate-your-manicure-game-in-minutes.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "square-nail-tips-elevate-your-manicure-game-in-minutes",
   "title": "Square Nail Tips: Elevate Your Manicure Game in Minutes!",
   "excerpt": "Elevate your nail art with AddFavor's 600 pcs square tips—achieve stunning, salon-quality manicures at home and unleash your creativity instantly!",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/71hpM5VAPZL._SL1500_.jpg",
   "category": "Gel Nails",
+  "categorySlug": "gel-nails",
   "subcategory": "Nail Art & Care",
+  "subcategorySlug": "nail-art--care",
   "tags": [
     "Gel Nails",
     "Nail Art & Care"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -330,7 +342,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

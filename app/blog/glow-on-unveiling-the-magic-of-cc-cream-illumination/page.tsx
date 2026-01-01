@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Glow On: Unveiling the Magic of CC+ Cream Illumination",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-26T17:02:12.916Z",
     "authors": [
       "Amara Johnson"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/glow-on-unveiling-the-magic-of-cc-cream-illumination.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Glow On: Unveiling the Magic of CC+ Cream Illumination",
-    "description": "Unleash your glow with IT Cosmetics CC+ Cream Illumination! Achieve radiant, full coverage while combating aging—SPF 50+ protection for perfect skin."
+    "description": "Unleash your glow with IT Cosmetics CC+ Cream Illumination! Achieve radiant, full coverage while combating aging—SPF 50+ protection for perfect skin.",
+    "images": "https://glamsphere.org/hero-images/glow-on-unveiling-the-magic-of-cc-cream-illumination.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "glow-on-unveiling-the-magic-of-cc-cream-illumination",
   "title": "Glow On: Unveiling the Magic of CC+ Cream Illumination",
   "excerpt": "Unleash your glow with IT Cosmetics CC+ Cream Illumination! Achieve radiant, full coverage while combating aging—SPF 50+ protection for perfect skin.",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/61mKtngf0jL.jpg",
   "category": "Face Makeup",
+  "categorySlug": "face-makeup",
   "subcategory": "Makeup & Skincare",
+  "subcategorySlug": "makeup--skincare",
   "tags": [
     "Face Makeup",
     "Makeup & Skincare"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -332,7 +344,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

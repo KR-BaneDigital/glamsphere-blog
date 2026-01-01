@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unlock Lush Lashes: The Eyelash Conditioner That Changes Everything!",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-24T01:03:37.259Z",
     "authors": [
       "Jasper Lee"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unlock-lush-lashes-the-eyelash-conditioner-that-changes-ever.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Unlock Lush Lashes: The Eyelash Conditioner That Changes Everything!",
-    "description": "Unlock your lash potential with RevitaLash Advanced! Experience fuller, healthier lashes with this physician-developed, cruelty-free conditioner in just weeks."
+    "description": "Unlock your lash potential with RevitaLash Advanced! Experience fuller, healthier lashes with this physician-developed, cruelty-free conditioner in just weeks.",
+    "images": "https://glamsphere.org/hero-images/unlock-lush-lashes-the-eyelash-conditioner-that-changes-ever.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "unlock-lush-lashes-the-eyelash-conditioner-that-changes-ever",
   "title": "Unlock Lush Lashes: The Eyelash Conditioner That Changes Everything!",
   "excerpt": "Unlock your lash potential with RevitaLash Advanced! Experience fuller, healthier lashes with this physician-developed, cruelty-free conditioner in just weeks.",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/61qM+be5q8L._SL1500_.jpg",
   "category": "Eye Makeup",
+  "categorySlug": "eye-makeup",
   "subcategory": "Makeup & Skincare",
+  "subcategorySlug": "makeup--skincare",
   "tags": [
     "Eye Makeup",
     "Makeup & Skincare"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -322,7 +334,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

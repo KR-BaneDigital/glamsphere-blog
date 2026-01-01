@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unlock All-Day Drama: Why Extreme Length Mascara Is Your New Must-Have",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-25T21:02:12.796Z",
     "authors": [
       "Jasper Lee"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unlock-all-day-drama-why-extreme-length-mascara-is-your-new-.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Unlock All-Day Drama: Why Extreme Length Mascara Is Your New Must-Have",
-    "description": "Unlock stunning lashes with Honest Beauty's 2-in-1 Extreme Length Mascara. Experience lengthening and volumizing power that’s safe for sensitive eyes!"
+    "description": "Unlock stunning lashes with Honest Beauty's 2-in-1 Extreme Length Mascara. Experience lengthening and volumizing power that’s safe for sensitive eyes!",
+    "images": "https://glamsphere.org/hero-images/unlock-all-day-drama-why-extreme-length-mascara-is-your-new-.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "unlock-all-day-drama-why-extreme-length-mascara-is-your-new-",
   "title": "Unlock All-Day Drama: Why Extreme Length Mascara Is Your New Must-Have",
   "excerpt": "Unlock stunning lashes with Honest Beauty's 2-in-1 Extreme Length Mascara. Experience lengthening and volumizing power that’s safe for sensitive eyes!",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/71NrksH227L.jpg",
   "category": "Eye Makeup",
+  "categorySlug": "eye-makeup",
   "subcategory": "Makeup & Skincare",
+  "subcategorySlug": "makeup--skincare",
   "tags": [
     "Eye Makeup",
     "Makeup & Skincare"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -334,7 +346,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

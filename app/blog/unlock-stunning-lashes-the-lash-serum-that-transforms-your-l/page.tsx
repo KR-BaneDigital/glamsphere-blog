@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unlock Stunning Lashes: The Lash Serum That Transforms Your Look",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-26T11:31:46.004Z",
     "authors": [
       "Amara Johnson"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unlock-stunning-lashes-the-lash-serum-that-transforms-your-l.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Unlock Stunning Lashes: The Lash Serum That Transforms Your Look",
-    "description": "Unlock breathtaking lashes with our vegan lash serum! Achieve longer, thicker, and fuller lashes while caring for your sensitive eyes. Transform your look to..."
+    "description": "Unlock breathtaking lashes with our vegan lash serum! Achieve longer, thicker, and fuller lashes while caring for your sensitive eyes. Transform your look to...",
+    "images": "https://glamsphere.org/hero-images/unlock-stunning-lashes-the-lash-serum-that-transforms-your-l.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "unlock-stunning-lashes-the-lash-serum-that-transforms-your-l",
   "title": "Unlock Stunning Lashes: The Lash Serum That Transforms Your Look",
   "excerpt": "Unlock breathtaking lashes with our vegan lash serum! Achieve longer, thicker, and fuller lashes while caring for your sensitive eyes. Transform your look to...",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/61wpgofJADL.jpg",
   "category": "Eye Makeup",
+  "categorySlug": "eye-makeup",
   "subcategory": "Makeup & Skincare",
+  "subcategorySlug": "makeup--skincare",
   "tags": [
     "Eye Makeup",
     "Makeup & Skincare"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -332,7 +344,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unlock Endless Looks: Why La Palette Nude is Your Beauty Game-Changer",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-25T06:03:47.929Z",
     "authors": [
       "Amara Johnson"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unlock-endless-looks-why-la-palette-nude-is-your-beauty-game.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Unlock Endless Looks: Why La Palette Nude is Your Beauty Game-Changer",
-    "description": "Elevate your beauty game with La Palette Nude. Unlock versatile looks with 12 stunning shades, perfect for any occasion. Transform your eye makeup today!"
+    "description": "Elevate your beauty game with La Palette Nude. Unlock versatile looks with 12 stunning shades, perfect for any occasion. Transform your eye makeup today!",
+    "images": "https://glamsphere.org/hero-images/unlock-endless-looks-why-la-palette-nude-is-your-beauty-game.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "unlock-endless-looks-why-la-palette-nude-is-your-beauty-game",
   "title": "Unlock Endless Looks: Why La Palette Nude is Your Beauty Game-Changer",
   "excerpt": "Elevate your beauty game with La Palette Nude. Unlock versatile looks with 12 stunning shades, perfect for any occasion. Transform your eye makeup today!",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/610jJsVDBCL._SL1125_.jpg",
   "category": "Eye Makeup",
+  "categorySlug": "eye-makeup",
   "subcategory": "Makeup & Skincare",
+  "subcategorySlug": "makeup--skincare",
   "tags": [
     "Eye Makeup",
     "Makeup & Skincare"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -328,7 +340,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unlock Your Eye Glam: The Must-Have Cream Eye Shadow Palette Review",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-25T09:22:35.417Z",
     "authors": [
       "Amara Johnson"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unlock-your-eye-glam-the-must-have-cream-eye-shadow-palette-.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Unlock Your Eye Glam: The Must-Have Cream Eye Shadow Palette Review",
-    "description": "Elevate your eye game with the versatile 8 Colors Cream Eye Shadow Palette. Achieve stunning looks—matte to shimmer—for a radiant, youthful glow!"
+    "description": "Elevate your eye game with the versatile 8 Colors Cream Eye Shadow Palette. Achieve stunning looks—matte to shimmer—for a radiant, youthful glow!",
+    "images": "https://glamsphere.org/hero-images/unlock-your-eye-glam-the-must-have-cream-eye-shadow-palette-.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "unlock-your-eye-glam-the-must-have-cream-eye-shadow-palette-",
   "title": "Unlock Your Eye Glam: The Must-Have Cream Eye Shadow Palette Review",
   "excerpt": "Elevate your eye game with the versatile 8 Colors Cream Eye Shadow Palette. Achieve stunning looks—matte to shimmer—for a radiant, youthful glow!",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/71l0RSD6odL._SL1000_.jpg",
   "category": "Eye Makeup",
+  "categorySlug": "eye-makeup",
   "subcategory": "Makeup & Skincare",
+  "subcategorySlug": "makeup--skincare",
   "tags": [
     "Eye Makeup",
     "Makeup & Skincare"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -330,7 +342,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

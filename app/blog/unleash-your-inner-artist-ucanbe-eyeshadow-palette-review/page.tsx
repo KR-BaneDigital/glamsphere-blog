@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unleash Your Inner Artist: UCANBE Eyeshadow Palette Review",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-23T22:04:09.406Z",
     "authors": [
       "Jasper Lee"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unleash-your-inner-artist-ucanbe-eyeshadow-palette-review.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Unleash Your Inner Artist: UCANBE Eyeshadow Palette Review",
-    "description": "Unleash your creativity with the UCANBE Eyeshadow Palette! Experience vibrant colors and versatile looks with 15 brushes for endless makeup magic."
+    "description": "Unleash your creativity with the UCANBE Eyeshadow Palette! Experience vibrant colors and versatile looks with 15 brushes for endless makeup magic.",
+    "images": "https://glamsphere.org/hero-images/unleash-your-inner-artist-ucanbe-eyeshadow-palette-review.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "unleash-your-inner-artist-ucanbe-eyeshadow-palette-review",
   "title": "Unleash Your Inner Artist: UCANBE Eyeshadow Palette Review",
   "excerpt": "Unleash your creativity with the UCANBE Eyeshadow Palette! Experience vibrant colors and versatile looks with 15 brushes for endless makeup magic.",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/710YFHUujBL._SL1500_.jpg",
   "category": "Eye Makeup",
+  "categorySlug": "eye-makeup",
   "subcategory": "Makeup & Skincare",
+  "subcategorySlug": "makeup--skincare",
   "tags": [
     "Eye Makeup",
     "Makeup & Skincare"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -328,7 +340,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

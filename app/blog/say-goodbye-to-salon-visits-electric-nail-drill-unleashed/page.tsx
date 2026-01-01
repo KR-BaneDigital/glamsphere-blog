@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Say Goodbye to Salon Visits: Electric Nail Drill Unleashed!",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-24T11:02:00.675Z",
     "authors": [
       "Amara Johnson"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/say-goodbye-to-salon-visits-electric-nail-drill-unleashed.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Say Goodbye to Salon Visits: Electric Nail Drill Unleashed!",
-    "description": "Unleash salon-quality nails at home with our electric nail drill kit! Enjoy low noise and precision for perfect acrylics, gel, and polished perfection."
+    "description": "Unleash salon-quality nails at home with our electric nail drill kit! Enjoy low noise and precision for perfect acrylics, gel, and polished perfection.",
+    "images": "https://glamsphere.org/hero-images/say-goodbye-to-salon-visits-electric-nail-drill-unleashed.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "say-goodbye-to-salon-visits-electric-nail-drill-unleashed",
   "title": "Say Goodbye to Salon Visits: Electric Nail Drill Unleashed!",
   "excerpt": "Unleash salon-quality nails at home with our electric nail drill kit! Enjoy low noise and precision for perfect acrylics, gel, and polished perfection.",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/71AX6Ib2rmL._SL1500_.jpg",
   "category": "Acrylic Nails",
+  "categorySlug": "acrylic-nails",
   "subcategory": "Nail Art & Care",
+  "subcategorySlug": "nail-art--care",
   "tags": [
     "Acrylic Nails",
     "Nail Art & Care"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -328,7 +340,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

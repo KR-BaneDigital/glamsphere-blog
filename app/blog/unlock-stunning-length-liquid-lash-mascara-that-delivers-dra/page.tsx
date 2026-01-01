@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unlock Stunning Length: Liquid Lash Mascara That Delivers Drama!",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-24T23:01:34.554Z",
     "authors": [
       "Jasper Lee"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unlock-stunning-length-liquid-lash-mascara-that-delivers-dra.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Unlock Stunning Length: Liquid Lash Mascara That Delivers Drama!",
-    "description": "Experience dramatic length and volume with Thrive Causemetics Liquid Lash Mascara. Smudge-proof, clump-free, and vegan—your lashes will thank you!"
+    "description": "Experience dramatic length and volume with Thrive Causemetics Liquid Lash Mascara. Smudge-proof, clump-free, and vegan—your lashes will thank you!",
+    "images": "https://glamsphere.org/hero-images/unlock-stunning-length-liquid-lash-mascara-that-delivers-dra.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "unlock-stunning-length-liquid-lash-mascara-that-delivers-dra",
   "title": "Unlock Stunning Length: Liquid Lash Mascara That Delivers Drama!",
   "excerpt": "Experience dramatic length and volume with Thrive Causemetics Liquid Lash Mascara. Smudge-proof, clump-free, and vegan—your lashes will thank you!",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/61XEyq3FZ3L._SL1500_.jpg",
   "category": "Eye Makeup",
+  "categorySlug": "eye-makeup",
   "subcategory": "Makeup & Skincare",
+  "subcategorySlug": "makeup--skincare",
   "tags": [
     "Eye Makeup",
     "Makeup & Skincare"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -331,7 +343,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

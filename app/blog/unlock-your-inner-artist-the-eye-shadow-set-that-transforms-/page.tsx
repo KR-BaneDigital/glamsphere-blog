@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unlock Your Inner Artist: The Eye Shadow Set That Transforms Your Look",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-24T12:04:16.192Z",
     "authors": [
       "Sophia Ellis"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unlock-your-inner-artist-the-eye-shadow-set-that-transforms-.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Unlock Your Inner Artist: The Eye Shadow Set That Transforms Your Look",
-    "description": "Unleash your creativity with the 8Pcs Cream Eye Shadow Set! Effortlessly elevate your makeup game with stunning shades designed for timeless beauty."
+    "description": "Unleash your creativity with the 8Pcs Cream Eye Shadow Set! Effortlessly elevate your makeup game with stunning shades designed for timeless beauty.",
+    "images": "https://glamsphere.org/hero-images/unlock-your-inner-artist-the-eye-shadow-set-that-transforms-.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "unlock-your-inner-artist-the-eye-shadow-set-that-transforms-",
   "title": "Unlock Your Inner Artist: The Eye Shadow Set That Transforms Your Look",
   "excerpt": "Unleash your creativity with the 8Pcs Cream Eye Shadow Set! Effortlessly elevate your makeup game with stunning shades designed for timeless beauty.",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/71JjfZLvkIL._SL1000_.jpg",
   "category": "Eye Makeup",
+  "categorySlug": "eye-makeup",
   "subcategory": "Makeup & Skincare",
+  "subcategorySlug": "makeup--skincare",
   "tags": [
     "Eye Makeup",
     "Makeup & Skincare"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -328,7 +340,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

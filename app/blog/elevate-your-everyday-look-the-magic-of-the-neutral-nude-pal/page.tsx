@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Elevate Your Everyday Look: The Magic of the Neutral Nude Palette",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-24T21:02:09.341Z",
     "authors": [
       "Amara Johnson"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/elevate-your-everyday-look-the-magic-of-the-neutral-nude-pal.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Elevate Your Everyday Look: The Magic of the Neutral Nude Palette",
-    "description": "Elevate your makeup game with a neutral nude palette! Achieve a stunning, natural smokey eye that lasts all day for a flawless, effortless look."
+    "description": "Elevate your makeup game with a neutral nude palette! Achieve a stunning, natural smokey eye that lasts all day for a flawless, effortless look.",
+    "images": "https://glamsphere.org/hero-images/elevate-your-everyday-look-the-magic-of-the-neutral-nude-pal.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "elevate-your-everyday-look-the-magic-of-the-neutral-nude-pal",
   "title": "Elevate Your Everyday Look: The Magic of the Neutral Nude Palette",
   "excerpt": "Elevate your makeup game with a neutral nude palette! Achieve a stunning, natural smokey eye that lasts all day for a flawless, effortless look.",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/61Kjdk50X0L._SL1000_.jpg",
   "category": "Eye Makeup",
+  "categorySlug": "eye-makeup",
   "subcategory": "Makeup & Skincare",
+  "subcategorySlug": "makeup--skincare",
   "tags": [
     "Eye Makeup",
     "Makeup & Skincare"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -328,7 +340,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Get Salon-Quality Nails at Home: Gel Nail Polish Kit Review",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-24T09:02:22.952Z",
     "authors": [
       "Sophia Ellis"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/get-salon-quality-nails-at-home-gel-nail-polish-kit-review.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Get Salon-Quality Nails at Home: Gel Nail Polish Kit Review",
-    "description": "Achieve stunning salon-quality nails at home with the COSCELIA Gel Nail Polish Kit! Enjoy 35 vibrant colors and a UV light for perfect manicures anytime."
+    "description": "Achieve stunning salon-quality nails at home with the COSCELIA Gel Nail Polish Kit! Enjoy 35 vibrant colors and a UV light for perfect manicures anytime.",
+    "images": "https://glamsphere.org/hero-images/get-salon-quality-nails-at-home-gel-nail-polish-kit-review.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "get-salon-quality-nails-at-home-gel-nail-polish-kit-review",
   "title": "Get Salon-Quality Nails at Home: Gel Nail Polish Kit Review",
   "excerpt": "Achieve stunning salon-quality nails at home with the COSCELIA Gel Nail Polish Kit! Enjoy 35 vibrant colors and a UV light for perfect manicures anytime.",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/81gzeVn+OlL._SL1500_.jpg",
   "category": "Gel Nails",
+  "categorySlug": "gel-nails",
   "subcategory": "Nail Art & Care",
+  "subcategorySlug": "nail-art--care",
   "tags": [
     "Gel Nails",
     "Nail Art & Care"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -331,7 +343,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

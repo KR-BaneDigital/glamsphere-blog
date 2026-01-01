@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unleash Your Inner Glam: Coffin Fake Nails for Stunning Transformations",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-24T04:03:35.751Z",
     "authors": [
       "Jasper Lee"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unleash-your-inner-glam-coffin-fake-nails-for-stunning-trans.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Unleash Your Inner Glam: Coffin Fake Nails for Stunning Transformations",
-    "description": "Elevate your style instantly with coffin fake nails! Enjoy stunning pink-white ombre designs and a touch of glitter for eye-catching transformations."
+    "description": "Elevate your style instantly with coffin fake nails! Enjoy stunning pink-white ombre designs and a touch of glitter for eye-catching transformations.",
+    "images": "https://glamsphere.org/hero-images/unleash-your-inner-glam-coffin-fake-nails-for-stunning-trans.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "unleash-your-inner-glam-coffin-fake-nails-for-stunning-trans",
   "title": "Unleash Your Inner Glam: Coffin Fake Nails for Stunning Transformations",
   "excerpt": "Elevate your style instantly with coffin fake nails! Enjoy stunning pink-white ombre designs and a touch of glitter for eye-catching transformations.",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/51wAQHdFG-L._SL1001_.jpg",
   "category": "Acrylic Nails",
+  "categorySlug": "acrylic-nails",
   "subcategory": "Nail Art & Care",
+  "subcategorySlug": "nail-art--care",
   "tags": [
     "Acrylic Nails",
     "Nail Art & Care"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -330,7 +342,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

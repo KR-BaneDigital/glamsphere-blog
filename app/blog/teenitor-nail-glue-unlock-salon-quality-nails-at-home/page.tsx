@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Teenitor Nail Glue: Unlock Salon-Quality Nails at Home!",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-24T19:04:35.303Z",
     "authors": [
       "Sophia Ellis"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/teenitor-nail-glue-unlock-salon-quality-nails-at-home.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Teenitor Nail Glue: Unlock Salon-Quality Nails at Home!",
-    "description": "Achieve salon-quality nails at home with Teenitor Pink Nail Glue! Fast-drying, water-resistant, and easy to use for stunning press-ons and acrylics."
+    "description": "Achieve salon-quality nails at home with Teenitor Pink Nail Glue! Fast-drying, water-resistant, and easy to use for stunning press-ons and acrylics.",
+    "images": "https://glamsphere.org/hero-images/teenitor-nail-glue-unlock-salon-quality-nails-at-home.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "teenitor-nail-glue-unlock-salon-quality-nails-at-home",
   "title": "Teenitor Nail Glue: Unlock Salon-Quality Nails at Home!",
   "excerpt": "Achieve salon-quality nails at home with Teenitor Pink Nail Glue! Fast-drying, water-resistant, and easy to use for stunning press-ons and acrylics.",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/81hzyGMV0fL._SL1500_.jpg",
   "category": "Acrylic Nails",
+  "categorySlug": "acrylic-nails",
   "subcategory": "Nail Art & Care",
+  "subcategorySlug": "nail-art--care",
   "tags": [
     "Acrylic Nails",
     "Nail Art & Care"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -329,7 +341,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

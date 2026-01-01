@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Short Almond Tips: The Secret to Effortlessly Chic Nail Perfection",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-23T23:03:39.376Z",
     "authors": [
       "Amara Johnson"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/short-almond-tips-the-secret-to-effortlessly-chic-nail-perfe.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Short Almond Tips: The Secret to Effortlessly Chic Nail Perfection",
-    "description": "Achieve salon-perfect nails at home with our pre-shaped short almond gel tips. Effortlessly chic and versatile, perfect for a stylish DIY manicure!"
+    "description": "Achieve salon-perfect nails at home with our pre-shaped short almond gel tips. Effortlessly chic and versatile, perfect for a stylish DIY manicure!",
+    "images": "https://glamsphere.org/hero-images/short-almond-tips-the-secret-to-effortlessly-chic-nail-perfe.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "short-almond-tips-the-secret-to-effortlessly-chic-nail-perfe",
   "title": "Short Almond Tips: The Secret to Effortlessly Chic Nail Perfection",
   "excerpt": "Achieve salon-perfect nails at home with our pre-shaped short almond gel tips. Effortlessly chic and versatile, perfect for a stylish DIY manicure!",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/816lRCaVecL._SL1500_.jpg",
   "category": "Gel Nails",
+  "categorySlug": "gel-nails",
   "subcategory": "Nail Art & Care",
+  "subcategorySlug": "nail-art--care",
   "tags": [
     "Gel Nails",
     "Nail Art & Care"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -330,7 +342,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

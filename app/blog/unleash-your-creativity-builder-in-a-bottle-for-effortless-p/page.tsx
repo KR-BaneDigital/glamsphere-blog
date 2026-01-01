@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unleash Your Creativity: Builder In A Bottle for Effortless Projects",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-26T15:26:39.018Z",
     "authors": [
       "Sophia Ellis"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unleash-your-creativity-builder-in-a-bottle-for-effortless-p.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Unleash Your Creativity: Builder In A Bottle for Effortless Projects",
-    "description": "Elevate your nail game effortlessly with Orly Builder In A Bottle! Achieve salon-quality extensions and repairs at home for stunning, long-lasting results."
+    "description": "Elevate your nail game effortlessly with Orly Builder In A Bottle! Achieve salon-quality extensions and repairs at home for stunning, long-lasting results.",
+    "images": "https://glamsphere.org/hero-images/unleash-your-creativity-builder-in-a-bottle-for-effortless-p.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "unleash-your-creativity-builder-in-a-bottle-for-effortless-p",
   "title": "Unleash Your Creativity: Builder In A Bottle for Effortless Projects",
   "excerpt": "Elevate your nail game effortlessly with Orly Builder In A Bottle! Achieve salon-quality extensions and repairs at home for stunning, long-lasting results.",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/41oI+G5SGBL.jpg",
   "category": "Gel Nails",
+  "categorySlug": "gel-nails",
   "subcategory": "Nail Art & Care",
+  "subcategorySlug": "nail-art--care",
   "tags": [
     "Gel Nails",
     "Nail Art & Care"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -331,7 +343,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

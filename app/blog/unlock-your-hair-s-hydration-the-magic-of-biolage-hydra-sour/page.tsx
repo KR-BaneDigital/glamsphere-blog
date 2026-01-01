@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unlock Your Hair's Hydration: The Magic of Biolage Hydra Source",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-26T10:02:19.870Z",
     "authors": [
       "Jasper Lee"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unlock-your-hair-s-hydration-the-magic-of-biolage-hydra-sour.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Unlock Your Hair's Hydration: The Magic of Biolage Hydra Source",
-    "description": "Revitalize your dry hair with Biolage Hydra Source Shampoo & Conditioning Balm, packed with fermented aloe and hyaluronic acid for deep hydration."
+    "description": "Revitalize your dry hair with Biolage Hydra Source Shampoo & Conditioning Balm, packed with fermented aloe and hyaluronic acid for deep hydration.",
+    "images": "https://glamsphere.org/hero-images/unlock-your-hair-s-hydration-the-magic-of-biolage-hydra-sour.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "unlock-your-hair-s-hydration-the-magic-of-biolage-hydra-sour",
   "title": "Unlock Your Hair's Hydration: The Magic of Biolage Hydra Source",
   "excerpt": "Revitalize your dry hair with Biolage Hydra Source Shampoo & Conditioning Balm, packed with fermented aloe and hyaluronic acid for deep hydration.",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/71RwoYWN2ML.jpg",
   "category": "Shampoos & Conditioners",
+  "categorySlug": "shampoos--conditioners",
   "subcategory": "Hair Care & Styling",
+  "subcategorySlug": "hair-care--styling",
   "tags": [
     "Shampoos & Conditioners",
     "Hair Care & Styling"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -333,7 +345,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

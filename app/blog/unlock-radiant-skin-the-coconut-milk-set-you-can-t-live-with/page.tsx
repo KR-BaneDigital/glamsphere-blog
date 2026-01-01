@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unlock Radiant Skin: The Coconut Milk Set You Can’t Live Without!",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-31T17:36:58.064Z",
     "authors": [
       "Sophia Ellis"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unlock-radiant-skin-the-coconut-milk-set-you-can-t-live-with.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Unlock Radiant Skin: The Coconut Milk Set You Can’t Live Without!",
-    "description": "Unlock luminous skin with the Purezero Coconut Milk Shampoo & Conditioner. Hydrate, shine, and combat frizz with this vegan, cruelty-free duo!"
+    "description": "Unlock luminous skin with the Purezero Coconut Milk Shampoo & Conditioner. Hydrate, shine, and combat frizz with this vegan, cruelty-free duo!",
+    "images": "https://glamsphere.org/hero-images/unlock-radiant-skin-the-coconut-milk-set-you-can-t-live-with.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "unlock-radiant-skin-the-coconut-milk-set-you-can-t-live-with",
   "title": "Unlock Radiant Skin: The Coconut Milk Set You Can’t Live Without!",
   "excerpt": "Unlock luminous skin with the Purezero Coconut Milk Shampoo & Conditioner. Hydrate, shine, and combat frizz with this vegan, cruelty-free duo!",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/71kkdbcV86L.jpg",
   "category": "Shampoos & Conditioners",
+  "categorySlug": "shampoos--conditioners",
   "subcategory": "Hair Care & Styling",
+  "subcategorySlug": "hair-care--styling",
   "tags": [
     "Shampoos & Conditioners",
     "Hair Care & Styling"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -331,7 +343,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

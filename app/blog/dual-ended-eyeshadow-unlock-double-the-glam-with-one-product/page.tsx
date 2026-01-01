@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Dual-Ended Eyeshadow: Unlock Double the Glam with One Product!",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-25T13:01:51.264Z",
     "authors": [
       "Sophia Ellis"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/dual-ended-eyeshadow-unlock-double-the-glam-with-one-product.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Dual-Ended Eyeshadow: Unlock Double the Glam with One Product!",
-    "description": "Unlock vibrant, long-lasting eye looks with LANGMANNI’s dual-ended eyeshadow sticks! Enjoy silky smooth application and versatile matte/shimmer finishes all ..."
+    "description": "Unlock vibrant, long-lasting eye looks with LANGMANNI’s dual-ended eyeshadow sticks! Enjoy silky smooth application and versatile matte/shimmer finishes all ...",
+    "images": "https://glamsphere.org/hero-images/dual-ended-eyeshadow-unlock-double-the-glam-with-one-product.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "dual-ended-eyeshadow-unlock-double-the-glam-with-one-product",
   "title": "Dual-Ended Eyeshadow: Unlock Double the Glam with One Product!",
   "excerpt": "Unlock vibrant, long-lasting eye looks with LANGMANNI’s dual-ended eyeshadow sticks! Enjoy silky smooth application and versatile matte/shimmer finishes all ...",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/81wRX97Rx2L._SL1500_.jpg",
   "category": "Eye Makeup",
+  "categorySlug": "eye-makeup",
   "subcategory": "Makeup & Skincare",
+  "subcategorySlug": "makeup--skincare",
   "tags": [
     "Eye Makeup",
     "Makeup & Skincare"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -331,7 +343,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

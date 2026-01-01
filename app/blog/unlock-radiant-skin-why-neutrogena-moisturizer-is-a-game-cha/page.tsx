@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unlock Radiant Skin: Why Neutrogena Moisturizer is a Game-Changer",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-25T20:23:41.360Z",
     "authors": [
       "Sophia Ellis"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unlock-radiant-skin-why-neutrogena-moisturizer-is-a-game-cha.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Unlock Radiant Skin: Why Neutrogena Moisturizer is a Game-Changer",
-    "description": "Unlock your glow with Neutrogena's retinol moisturizer! Achieve youthful, radiant skin while enjoying sheer coverage and sun protection in one step."
+    "description": "Unlock your glow with Neutrogena's retinol moisturizer! Achieve youthful, radiant skin while enjoying sheer coverage and sun protection in one step.",
+    "images": "https://glamsphere.org/hero-images/unlock-radiant-skin-why-neutrogena-moisturizer-is-a-game-cha.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "unlock-radiant-skin-why-neutrogena-moisturizer-is-a-game-cha",
   "title": "Unlock Radiant Skin: Why Neutrogena Moisturizer is a Game-Changer",
   "excerpt": "Unlock your glow with Neutrogena's retinol moisturizer! Achieve youthful, radiant skin while enjoying sheer coverage and sun protection in one step.",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/61xdGtF3gCL.jpg",
   "category": "Face Makeup",
+  "categorySlug": "face-makeup",
   "subcategory": "Makeup & Skincare",
+  "subcategorySlug": "makeup--skincare",
   "tags": [
     "Face Makeup",
     "Makeup & Skincare"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -335,7 +347,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Double Your Style: Unleashing the Power of Mitch Double Hitter",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-30T17:36:38.234Z",
     "authors": [
       "Jasper Lee"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/double-your-style-unleashing-the-power-of-mitch-double-hitte.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Double Your Style: Unleashing the Power of Mitch Double Hitter",
-    "description": "Elevate your grooming game with MITCH Double Hitter. This 2-in-1 shampoo and conditioner cleanses and nourishes, perfect for any man’s hair care routine!"
+    "description": "Elevate your grooming game with MITCH Double Hitter. This 2-in-1 shampoo and conditioner cleanses and nourishes, perfect for any man’s hair care routine!",
+    "images": "https://glamsphere.org/hero-images/double-your-style-unleashing-the-power-of-mitch-double-hitte.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "double-your-style-unleashing-the-power-of-mitch-double-hitte",
   "title": "Double Your Style: Unleashing the Power of Mitch Double Hitter",
   "excerpt": "Elevate your grooming game with MITCH Double Hitter. This 2-in-1 shampoo and conditioner cleanses and nourishes, perfect for any man’s hair care routine!",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/516QgZaFT2L.jpg",
   "category": "Shampoos & Conditioners",
+  "categorySlug": "shampoos--conditioners",
   "subcategory": "Hair Care & Styling",
+  "subcategorySlug": "hair-care--styling",
   "tags": [
     "Shampoos & Conditioners",
     "Hair Care & Styling"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -329,7 +341,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

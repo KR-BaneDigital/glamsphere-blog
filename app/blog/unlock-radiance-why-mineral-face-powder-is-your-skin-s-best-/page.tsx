@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unlock Radiance: Why Mineral Face Powder is Your Skin's Best Friend",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-25T22:01:44.430Z",
     "authors": [
       "Amara Johnson"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unlock-radiance-why-mineral-face-powder-is-your-skin-s-best-.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Unlock Radiance: Why Mineral Face Powder is Your Skin's Best Friend",
-    "description": "Unveil your skin's natural glow with Physicians Formula Mineral Wear. Enjoy breathable, light coverage that's perfect for sensitive skin. Radiate confidence!"
+    "description": "Unveil your skin's natural glow with Physicians Formula Mineral Wear. Enjoy breathable, light coverage that's perfect for sensitive skin. Radiate confidence!",
+    "images": "https://glamsphere.org/hero-images/unlock-radiance-why-mineral-face-powder-is-your-skin-s-best-.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "unlock-radiance-why-mineral-face-powder-is-your-skin-s-best-",
   "title": "Unlock Radiance: Why Mineral Face Powder is Your Skin's Best Friend",
   "excerpt": "Unveil your skin's natural glow with Physicians Formula Mineral Wear. Enjoy breathable, light coverage that's perfect for sensitive skin. Radiate confidence!",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/81HVa7fMtaL.jpg",
   "category": "Face Makeup",
+  "categorySlug": "face-makeup",
   "subcategory": "Makeup & Skincare",
+  "subcategorySlug": "makeup--skincare",
   "tags": [
     "Face Makeup",
     "Makeup & Skincare"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -330,7 +342,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

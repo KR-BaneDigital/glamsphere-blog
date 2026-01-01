@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Revive Your Locks: Discover the Anti-Thinning Set Transformation!",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-24T02:04:15.292Z",
     "authors": [
       "Amara Johnson"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/revive-your-locks-discover-the-anti-thinning-set-transformat.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Revive Your Locks: Discover the Anti-Thinning Set Transformation!",
-    "description": "Revitalize thinning hair with our Anti-Thinning Set! Experience fuller, healthier locks with biotin-powered, unscented shampoo and conditioner for all."
+    "description": "Revitalize thinning hair with our Anti-Thinning Set! Experience fuller, healthier locks with biotin-powered, unscented shampoo and conditioner for all.",
+    "images": "https://glamsphere.org/hero-images/revive-your-locks-discover-the-anti-thinning-set-transformat.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "revive-your-locks-discover-the-anti-thinning-set-transformat",
   "title": "Revive Your Locks: Discover the Anti-Thinning Set Transformation!",
   "excerpt": "Revitalize thinning hair with our Anti-Thinning Set! Experience fuller, healthier locks with biotin-powered, unscented shampoo and conditioner for all.",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/61yxT4-WZnL._SL1500_.jpg",
   "category": "Shampoos & Conditioners",
+  "categorySlug": "shampoos--conditioners",
   "subcategory": "Hair Care & Styling",
+  "subcategorySlug": "hair-care--styling",
   "tags": [
     "Shampoos & Conditioners",
     "Hair Care & Styling"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -329,7 +341,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

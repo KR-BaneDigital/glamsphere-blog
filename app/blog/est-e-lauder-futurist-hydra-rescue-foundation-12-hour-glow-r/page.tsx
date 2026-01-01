@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "\"Estée Lauder Futurist Hydra Rescue Foundation: 12-Hour Glow Review\"",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-21T20:39:26.667Z",
     "authors": [
       "Sophia Ellis"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/est-e-lauder-futurist-hydra-rescue-foundation-12-hour-glow-r.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "\"Estée Lauder Futurist Hydra Rescue Foundation: 12-Hour Glow Review\"",
-    "description": "Final Verdict."
+    "description": "Final Verdict.",
+    "images": "https://glamsphere.org/hero-images/est-e-lauder-futurist-hydra-rescue-foundation-12-hour-glow-r.jpg"
   }
 }
 
@@ -31,7 +40,9 @@ export default function BlogPost() {
   "excerpt": "Final Verdict.",
   "image": "/placeholder.svg?height=800&width=1200",
   "category": "Face Makeup",
+  "categorySlug": "face-makeup",
   "subcategory": "Makeup & Skincare",
+  "subcategorySlug": "makeup--skincare",
   "tags": [
     "Face Makeup",
     "Makeup & Skincare"
@@ -47,7 +58,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -367,7 +378,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

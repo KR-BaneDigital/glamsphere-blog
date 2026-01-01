@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unlock Luxurious Locks: PURA D'OR Shampoo Set Review & Transformation",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-25T17:03:06.870Z",
     "authors": [
       "Jasper Lee"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unlock-luxurious-locks-pura-d-or-shampoo-set-review-transfor.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Unlock Luxurious Locks: PURA D'OR Shampoo Set Review & Transformation",
-    "description": "Unlock thicker, stronger hair with PURA D'OR’s Anti-Thinning Shampoo & Conditioner! Experience reduced breakage and luxurious locks with every wash."
+    "description": "Unlock thicker, stronger hair with PURA D'OR’s Anti-Thinning Shampoo & Conditioner! Experience reduced breakage and luxurious locks with every wash.",
+    "images": "https://glamsphere.org/hero-images/unlock-luxurious-locks-pura-d-or-shampoo-set-review-transfor.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "unlock-luxurious-locks-pura-d-or-shampoo-set-review-transfor",
   "title": "Unlock Luxurious Locks: PURA D'OR Shampoo Set Review & Transformation",
   "excerpt": "Unlock thicker, stronger hair with PURA D'OR’s Anti-Thinning Shampoo & Conditioner! Experience reduced breakage and luxurious locks with every wash.",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/81XOjAXoJFL.jpg",
   "category": "Shampoos & Conditioners",
+  "categorySlug": "shampoos--conditioners",
   "subcategory": "Hair Care & Styling",
+  "subcategorySlug": "hair-care--styling",
   "tags": [
     "Shampoos & Conditioners",
     "Hair Care & Styling"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -329,7 +341,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

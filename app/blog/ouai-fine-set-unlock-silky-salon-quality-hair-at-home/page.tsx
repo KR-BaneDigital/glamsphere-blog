@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "OUAI Fine Set: Unlock Silky, Salon-Quality Hair at Home!",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-24T13:04:16.749Z",
     "authors": [
       "Jasper Lee"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/ouai-fine-set-unlock-silky-salon-quality-hair-at-home.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "OUAI Fine Set: Unlock Silky, Salon-Quality Hair at Home!",
-    "description": "Unlock silky, salon-quality hair at home with OUAI's Fine Set. Nourish fine hair with keratin and shea butter for a luxurious, vibrant finish!"
+    "description": "Unlock silky, salon-quality hair at home with OUAI's Fine Set. Nourish fine hair with keratin and shea butter for a luxurious, vibrant finish!",
+    "images": "https://glamsphere.org/hero-images/ouai-fine-set-unlock-silky-salon-quality-hair-at-home.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "ouai-fine-set-unlock-silky-salon-quality-hair-at-home",
   "title": "OUAI Fine Set: Unlock Silky, Salon-Quality Hair at Home!",
   "excerpt": "Unlock silky, salon-quality hair at home with OUAI's Fine Set. Nourish fine hair with keratin and shea butter for a luxurious, vibrant finish!",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/51WHZwmLr1L._SL1500_.jpg",
   "category": "Shampoos & Conditioners",
+  "categorySlug": "shampoos--conditioners",
   "subcategory": "Hair Care & Styling",
+  "subcategorySlug": "hair-care--styling",
   "tags": [
     "Shampoos & Conditioners",
     "Hair Care & Styling"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -330,7 +342,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

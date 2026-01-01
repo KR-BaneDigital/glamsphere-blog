@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unlock Your Inner Artist with the Rich & Foiled Palette Magic!",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-25T11:41:00.383Z",
     "authors": [
       "Jasper Lee"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unlock-your-inner-artist-with-the-rich-foiled-palette-magic.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Unlock Your Inner Artist with the Rich & Foiled Palette Magic!",
-    "description": "Unleash your creativity with the Morphe Rich & Foiled Palette! Achieve stunning metallic eye looks with luxe mattes, shimmers, and foils in mauve and pink."
+    "description": "Unleash your creativity with the Morphe Rich & Foiled Palette! Achieve stunning metallic eye looks with luxe mattes, shimmers, and foils in mauve and pink.",
+    "images": "https://glamsphere.org/hero-images/unlock-your-inner-artist-with-the-rich-foiled-palette-magic.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "unlock-your-inner-artist-with-the-rich-foiled-palette-magic",
   "title": "Unlock Your Inner Artist with the Rich & Foiled Palette Magic!",
   "excerpt": "Unleash your creativity with the Morphe Rich & Foiled Palette! Achieve stunning metallic eye looks with luxe mattes, shimmers, and foils in mauve and pink.",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/713ds4-FnFL._SL1500_.jpg",
   "category": "Eye Makeup",
+  "categorySlug": "eye-makeup",
   "subcategory": "Makeup & Skincare",
+  "subcategorySlug": "makeup--skincare",
   "tags": [
     "Eye Makeup",
     "Makeup & Skincare"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -328,7 +340,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

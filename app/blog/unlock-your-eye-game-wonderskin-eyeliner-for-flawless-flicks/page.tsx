@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unlock Your Eye Game: Wonderskin Eyeliner for Flawless Flicks",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-24T08:03:34.517Z",
     "authors": [
       "Amara Johnson"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unlock-your-eye-game-wonderskin-eyeliner-for-flawless-flicks.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Unlock Your Eye Game: Wonderskin Eyeliner for Flawless Flicks",
-    "description": "Achieve flawless eyeliner flicks with Wonderskin's 1440 Longwear Deep Black Eyeliner. Waterproof, sharpenable, and smudge-proof for all-day perfection!"
+    "description": "Achieve flawless eyeliner flicks with Wonderskin's 1440 Longwear Deep Black Eyeliner. Waterproof, sharpenable, and smudge-proof for all-day perfection!",
+    "images": "https://glamsphere.org/hero-images/unlock-your-eye-game-wonderskin-eyeliner-for-flawless-flicks.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "unlock-your-eye-game-wonderskin-eyeliner-for-flawless-flicks",
   "title": "Unlock Your Eye Game: Wonderskin Eyeliner for Flawless Flicks",
   "excerpt": "Achieve flawless eyeliner flicks with Wonderskin's 1440 Longwear Deep Black Eyeliner. Waterproof, sharpenable, and smudge-proof for all-day perfection!",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/81yDA3hbyyL._SL1500_.jpg",
   "category": "Eye Makeup",
+  "categorySlug": "eye-makeup",
   "subcategory": "Makeup & Skincare",
+  "subcategorySlug": "makeup--skincare",
   "tags": [
     "Eye Makeup",
     "Makeup & Skincare"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -329,7 +341,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

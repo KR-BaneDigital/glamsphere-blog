@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Kerastase Shampoo: Unlock Silky, Salon-Worthy Locks at Home!",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-26T06:25:05.507Z",
     "authors": [
       "Sophia Ellis"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/kerastase-shampoo-unlock-silky-salon-worthy-locks-at-home.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Kerastase Shampoo: Unlock Silky, Salon-Worthy Locks at Home!",
-    "description": "Revitalize damaged hair with Kerastase's sulfate-free shampoo! Unlock silky, salon-worthy locks while strengthening and smoothing every strand at home."
+    "description": "Revitalize damaged hair with Kerastase's sulfate-free shampoo! Unlock silky, salon-worthy locks while strengthening and smoothing every strand at home.",
+    "images": "https://glamsphere.org/hero-images/kerastase-shampoo-unlock-silky-salon-worthy-locks-at-home.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "kerastase-shampoo-unlock-silky-salon-worthy-locks-at-home",
   "title": "Kerastase Shampoo: Unlock Silky, Salon-Worthy Locks at Home!",
   "excerpt": "Revitalize damaged hair with Kerastase's sulfate-free shampoo! Unlock silky, salon-worthy locks while strengthening and smoothing every strand at home.",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/4123gBlWe+L.jpg",
   "category": "Shampoos & Conditioners",
+  "categorySlug": "shampoos--conditioners",
   "subcategory": "Hair Care & Styling",
+  "subcategorySlug": "hair-care--styling",
   "tags": [
     "Shampoos & Conditioners",
     "Hair Care & Styling"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -330,7 +342,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )

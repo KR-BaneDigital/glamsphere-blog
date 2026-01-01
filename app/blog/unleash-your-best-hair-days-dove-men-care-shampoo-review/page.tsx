@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-header"
 import { BlogFooter } from "@/components/blog-footer"
 import { AffiliateProductReviewTemplate } from "@/components/blog-templates/affiliate-product-review-template"
 import type { Metadata } from "next"
+import type { BlogPost } from "@/lib/blog-data"
 
 export const metadata: Metadata = {
   "title": "Unleash Your Best Hair Days: Dove Men+Care Shampoo Review",
@@ -13,12 +14,20 @@ export const metadata: Metadata = {
     "publishedTime": "2025-12-26T19:24:09.872Z",
     "authors": [
       "Jasper Lee"
+    ],
+    "images": [
+      {
+        "url": "https://glamsphere.org/hero-images/unleash-your-best-hair-days-dove-men-care-shampoo-review.jpg",
+        "width": 1200,
+        "height": 630
+      }
     ]
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Unleash Your Best Hair Days: Dove Men+Care Shampoo Review",
-    "description": "Revitalize your hair with Dove Men+Care's 2-in-1 shampoo. Experience thick, strong locks from root to tip, fortified with calcium for lasting strength!"
+    "description": "Revitalize your hair with Dove Men+Care's 2-in-1 shampoo. Experience thick, strong locks from root to tip, fortified with calcium for lasting strength!",
+    "images": "https://glamsphere.org/hero-images/unleash-your-best-hair-days-dove-men-care-shampoo-review.jpg"
   }
 }
 
@@ -29,9 +38,12 @@ export default function BlogPost() {
   "slug": "unleash-your-best-hair-days-dove-men-care-shampoo-review",
   "title": "Unleash Your Best Hair Days: Dove Men+Care Shampoo Review",
   "excerpt": "Revitalize your hair with Dove Men+Care's 2-in-1 shampoo. Experience thick, strong locks from root to tip, fortified with calcium for lasting strength!",
+  "content": "",
   "image": "https://m.media-amazon.com/images/I/71Wo3O+idPL.jpg",
   "category": "Shampoos & Conditioners",
+  "categorySlug": "shampoos--conditioners",
   "subcategory": "Hair Care & Styling",
+  "subcategorySlug": "hair-care--styling",
   "tags": [
     "Shampoos & Conditioners",
     "Hair Care & Styling"
@@ -47,7 +59,7 @@ export default function BlogPost() {
   "featured": false,
   "views": 0,
   "relatedPosts": [],
-  "contentType": "affiliate-product-review",
+  "contentType": "affiliate-product-review" as const,
   "typeSpecificData": {
     "faq": [
       {
@@ -331,7 +343,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen">
       <BlogHeader />
-      <AffiliateProductReviewTemplate post={post} />
+      <AffiliateProductReviewTemplate post={post as any} />
       <BlogFooter />
     </div>
   )
